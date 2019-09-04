@@ -21,7 +21,6 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3228446999" Name="Play_Level_1_Ambience" ObjectPath="\Events\Default Work Unit\Play_Level_1_Ambience" DurationType="OneShot" DurationMin="34.000000" DurationMax="34.000000"/>
 				<Event Id="2943564027" Name="Play_Purgatory_lvl1_loop1" ObjectPath="\Events\Default Work Unit\Play_Purgatory_lvl1_loop1" DurationType="OneShot" DurationMin="34.000000" DurationMax="34.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

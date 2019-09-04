@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2943564027	Play_Purgatory_lvl1_loop1			\Default Work Unit\Play_Purgatory_lvl1_loop1	
-	3228446999	Play_Level_1_Ambience			\Default Work Unit\Play_Level_1_Ambience	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	455545818	Purgatory_lvl1_loop1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Purgatory_lvl1_loop1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Purgatory_lvl1_loop1		5997664
