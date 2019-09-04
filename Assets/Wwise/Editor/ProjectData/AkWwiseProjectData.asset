@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da560f1b76bfb40faa4bb0a096eec0be, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c62312e730dcb645842db273b43c7db7
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: e0e77607ee02944293a897793c48c715
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9fedc06944165348a60b99ebefa45cb9
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9a475af6ad0451448091a6368b37c4e7
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8356efaf5d1a1a47bb0978a6ff08db7e
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 74258a0bcfad3348b294107a1decbe02
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 56c055cedbc5d747afa4c80c56a02eba
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9fcd2fe138822c4b92b0ac8174d4b591
+    GuidInternal: 
+    m_lastTime: -8586340193044775808
+    List: []
+  ExpandedItems:
+  - /Minigame1_WwiseProject
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
