@@ -6,8 +6,8 @@
   <CreateWwiseListener>true</CreateWwiseListener>
   <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <SoundbankPath>Audio/</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2019.1.3.7048/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../Minigame1_WwiseProject/Minigame1_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../minigame1_sound_ny/minigame1_sound_ny.wproj</WwiseProjectPath>
 </WwiseSettings>
