@@ -445,5 +445,7 @@ MonoBehaviour:
   - /minigame1_sound_ny
   - /minigame1_sound_ny/Events
   - /minigame1_sound_ny/Events/Default Work Unit
+  - /minigame1_sound_ny/SoundBanks
+  - /minigame1_sound_ny/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -15,9 +15,11 @@ MonoBehaviour:
   PlatformSettingsNameList:
   - Android
   - Mac
+  - Windows
   PlatformSettingsList:
   - {fileID: 11400000, guid: ac6a1a35b09194a748f9390c7c23f651, type: 2}
   - {fileID: 11400000, guid: 6b4768e8876ba4f609f0c5ce53b1fdf8, type: 2}
+  - {fileID: 11400000, guid: e3d29462b91de4ede9504b265e848662, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio/GeneratedSoundBanks

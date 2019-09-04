@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory SoundSeed Grain.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Attenuations\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Audio Devices\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Control Surface Sessions\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Factory SoundSeed Grain.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Auro Headphone.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Convolution Reverb Effects Ambisonics.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Convolution Reverb Effects Stereo.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Effects.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Box Modeler.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Delay.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Dynamics.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Filters.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory McDSP Effects.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Events\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory Motion.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory SoundSeed Grain.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\minigame1_sound_ny.crossover.wsettings" DateLow="1567591546" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\minigame1_sound_ny.wproj" DateLow="1567590939" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Mixing Sessions\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Modulators\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Presets\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Queries\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Queries\Factory Queries.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\SoundBanks\Default Work Unit.wwu" DateLow="1567594850" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\States\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Switches\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Triggers\Default Work Unit.wwu" DateLow="1567590856" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Virtual Acoustics\Default Work Unit.wwu" DateLow="1567590855" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Virtual Acoustics\Factory Reflect Acoustic Textures.wwu" DateLow="1567590856" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory SoundSeed Grain.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Attenuations\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Audio Devices\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Control Surface Sessions\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Conversion Settings\Factory SoundSeed Grain.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Auro Headphone.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Convolution Reverb Effects Ambisonics.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Convolution Reverb Effects Stereo.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory Effects.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Box Modeler.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Delay.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Dynamics.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Filters.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Effects\Factory McDSP Effects.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Events\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory Motion.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Game Parameters\Factory SoundSeed Grain.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\minigame1_sound_ny.crossover.wsettings" DateLow="1567597865" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\minigame1_sound_ny.wproj" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Mixing Sessions\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Modulators\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Presets\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Queries\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Queries\Factory Queries.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\SoundBanks\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\States\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Switches\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Triggers\Default Work Unit.wwu" DateLow="1567597860" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Virtual Acoustics\Default Work Unit.wwu" DateLow="1567597859" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\Virtual Acoustics\Factory Reflect Acoustic Textures.wwu" DateLow="1567597860" DateHigh="0"/>
 </ValidationCache>

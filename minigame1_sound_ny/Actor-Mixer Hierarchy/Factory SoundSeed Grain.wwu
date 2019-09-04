@@ -458,6 +458,7 @@
 													<AudioFile>Roomtone\AbstractTail\Abstract_Tails_01.wav</AudioFile>
 													<ConvertedFileIDList>
 														<File Platform="Mac" ID="591628116"/>
+														<File Platform="Windows" ID="591628116"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1417,6 +1418,7 @@
 													<AudioFile>Roomtone\AbstractTail\Abstract_Tails_04.wav</AudioFile>
 													<ConvertedFileIDList>
 														<File Platform="Mac" ID="10763370"/>
+														<File Platform="Windows" ID="10763370"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -20445,6 +20447,7 @@
 											<AudioFile>Friction\Friction_Rub_Polystyrene_01.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Mac" ID="211582143"/>
+												<File Platform="Windows" ID="211582143"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -21204,6 +21207,7 @@
 													<AudioFile>Tonal Grains\Wavetable\Wavetable_02.wav</AudioFile>
 													<ConvertedFileIDList>
 														<File Platform="Mac" ID="464500334"/>
+														<File Platform="Windows" ID="464500334"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -22937,6 +22941,7 @@
 															<AudioFile>Tonal Grains\Virtual Instrument\Virtual_Instrument_01.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Mac" ID="975195426"/>
+																<File Platform="Windows" ID="975195426"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -23432,6 +23437,7 @@
 															<AudioFile>Tonal Grains\Virtual Instrument\Virtual_Instrument_06.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Mac" ID="836755962"/>
+																<File Platform="Windows" ID="836755962"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
