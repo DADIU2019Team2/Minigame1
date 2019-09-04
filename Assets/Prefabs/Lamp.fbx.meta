@@ -1,23 +1,17 @@
 fileFormatVersion: 2
-guid: e393c252a45c1c142bec305e8ff3acdb
+guid: 188440d7b0417df4db72b123bba2a74b
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
-      74: 1989289236423521904
-    second: Default Take
+      74: -3661779823755883
+    second: Lamp_Bone|Lamp_Jump
   - first:
-      74: -2591143779090105132
-    second: Lamp_Fall
+      74: -2196611308775913125
+    second: Lamp_Bone|Lamp_Land
   - first:
-      74: -6701484930307111609
-    second: Lamp_Jump
-  - first:
-      74: -2893725659513282849
-    second: Lamp_Land
-  - first:
-      74: -328355431159329412
-    second: Lamp_Walk
+      74: 5963589106626235349
+    second: Lamp_Bone|Lamp_Walk
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,38 +41,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
-      internalID: 1989289236423521904
-      firstFrame: 0
-      lastFrame: 31
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Lamp_Fall
-      takeName: Lamp_Fall
-      internalID: -2591143779090105132
+      name: Lamp_Bone|Lamp_Jump
+      takeName: Lamp_Bone|Lamp_Jump
+      internalID: -3661779823755883
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -105,9 +70,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Lamp_Jump
-      takeName: Lamp_Jump
-      internalID: -6701484930307111609
+      name: Lamp_Bone|Lamp_Land
+      takeName: Lamp_Bone|Lamp_Land
+      internalID: -2196611308775913125
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -134,38 +99,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Lamp_Land
-      takeName: Lamp_Land
-      internalID: -2893725659513282849
-      firstFrame: 0
-      lastFrame: 29
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Lamp_Walk
-      takeName: Lamp_Walk
-      internalID: -328355431159329412
+      name: Lamp_Bone|Lamp_Walk
+      takeName: Lamp_Bone|Lamp_Walk
+      internalID: 5963589106626235349
       firstFrame: 0
       lastFrame: 31
       wrapMode: 0
