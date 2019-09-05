@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Level_1_Ambience" ID="{A1BAAFAD-F907-41FD-AEAD-9BF719971793}">
+					<ChildrenList>
+						<Action Name="" ID="{99BAA1E8-06C1-40A0-AE22-B0E397110760}" ShortID="1057951991">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Purgatory_lvl1_loop1" ID="{04B4C9D2-2857-442F-9D81-8A3A753CF2F7}" WorkUnitID="{2C86CB25-D517-42ED-A255-0B06ED1ECD7F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Purgatory_lvl1_loop1" ID="{B40D3B90-7849-482F-B6E5-D07530EC61F5}">
+					<ChildrenList>
+						<Action Name="" ID="{DA8E8216-A460-43B7-844E-161F8FF338A0}" ShortID="50623707">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Purgatory_lvl1_loop1" ID="{04B4C9D2-2857-442F-9D81-8A3A753CF2F7}" WorkUnitID="{2C86CB25-D517-42ED-A255-0B06ED1ECD7F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
