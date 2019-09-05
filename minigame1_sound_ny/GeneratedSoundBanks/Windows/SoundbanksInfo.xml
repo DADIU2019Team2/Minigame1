@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>/Users/fredo/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/Minigame1/minigame1_sound_ny/</ProjectRoot>
+		<SourceFilesRoot>/Users/fredo/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/Minigame1/minigame1_sound_ny/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/fredo/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/Minigame1/minigame1_sound_ny/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/fredo/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/Minigame1/minigame1_sound_ny/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2943564027" Name="Play_Purgatory_lvl1_loop1" ObjectPath="\Events\Default Work Unit\Play_Purgatory_lvl1_loop1" DurationType="OneShot" DurationMin="34.000000" DurationMax="34.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="455545818" Language="SFX">
+					<ShortName>Purgatory_lvl1_loop1.wav</ShortName>
+					<Path>SFX/Purgatory_lvl1_loop1_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
