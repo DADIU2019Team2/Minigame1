@@ -63,3 +63,7 @@ crashlytics-build.properties
 
 # maya files
 **/*.ma
+
+# wwise stuff
+**/*.akd
+**/.cache
