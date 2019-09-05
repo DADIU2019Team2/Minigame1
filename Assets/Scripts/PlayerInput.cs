@@ -6,8 +6,8 @@ using UnityEngine.Android;
 
 public class PlayerInput : MonoBehaviour
 {
-    public GameObject rotationTestTarget;
-    public Text orientationText;
+    //public GameObject rotationTestTarget;
+    //public Text orientationText;
     public Gyroscope gyroscope;
 
     private static PlayerInput _instance;
@@ -38,7 +38,7 @@ public class PlayerInput : MonoBehaviour
 
 
 
-    public Quaternion GetAttitude()
+    public static Quaternion GetAttitude()
     {
         if (SystemInfo.supportsGyroscope)
         {
@@ -50,7 +50,7 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    public Vector3 RotationPlaneTest()
+    public static Vector3 RotationPlaneTest()
     {
         /* 
         Vector3 rot = GetAttitude().eulerAngles;
@@ -59,10 +59,22 @@ public class PlayerInput : MonoBehaviour
         */
         return new Vector3(0, 0, GetAttitude().eulerAngles.z);
     }
-
+    public static Vector3 RotationPlaneTestAllAxis()
+    {
+       
+        return new Vector3(GetAttitude().eulerAngles.y, -GetAttitude().eulerAngles.x, GetAttitude().eulerAngles.z);
+    }
+    public static Vector3 GetGravity()
+    {
+        return Input.gyro.gravity;
+    }
+    public static Vector3 GetAcceleration()
+    {
+        return Input.acceleration;
+    }
     void FixedUpdate()
     {
-        orientationText.text = "Orientation" + GetAttitude() + "\n" + "Euler: " + GetAttitude().eulerAngles;
-        rotationTestTarget.transform.rotation = Quaternion.Euler(RotationPlaneTest());
+      //  orientationText.text = "Orientation" + GetAttitude() + "\n" + "Euler: " + GetAttitude().eulerAngles;
+       // rotationTestTarget.transform.rotation = Quaternion.Euler(RotationPlaneTest());
     }
 }
