@@ -18,7 +18,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     string[] boneHeaders;
     public Transform[] boneTransforms;
     private int motionStartFrame, motionEndFrame;
-
+    public int distanceTestFrom, distanceTestTo;
     void Awake()
     {
         boneHeaders = new string[24];
@@ -55,6 +55,7 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Update()
     {
+        //this is debug controls
         if (Input.GetKeyDown("up"))
             SetMotionFrameBoundaries(0, 520);
         if (Input.GetKeyDown("right"))
@@ -63,6 +64,9 @@ public class ReadQuaternionCSV : MonoBehaviour
             SetMotionFrameBoundaries(0, 3399);
         if (Input.GetKeyDown("left"))
             SetMotionFrameBoundaries(0, 3399);
+
+        if(Input.GetKeyDown("space"))
+            Debug.Log("Distance of poses is " + MotionState.SquareDistance(mST[distanceTestFrom],mST[distanceTestTo]) + " units");
     }
 
     void LateUpdate()
@@ -79,7 +83,7 @@ public class ReadQuaternionCSV : MonoBehaviour
         MotionState currentMotionState = mST[frame];
 
         for (int i = 0; i < boneTransforms.Length; i++)
-            boneTransforms[i].rotation = currentMotionState.GetJointRotations()[i];
+            boneTransforms[i].rotation = currentMotionState.GetJointRotations()[i]; 
     }
 
     void SetMotionFrameBoundaries(int lower, int higher)

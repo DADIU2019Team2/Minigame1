@@ -28,8 +28,26 @@ public class MotionState
 
     }
 
-    public Quaternion[] GetJointRotations() {
+    public Quaternion[] GetJointRotations()
+    {
         return jointRotations;
     }
 
+    public static float SquareDistance(MotionState lhs, MotionState rhs)
+    {
+        if (lhs.numberOfJoints != rhs.numberOfJoints)
+            return -1;
+        
+        float result = 0f;
+
+        for (int i = 0; i < lhs.numberOfJoints; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+               result += (lhs.jointRotations[i][j] - rhs.jointRotations[i][j]) * (lhs.jointRotations[i][j] - rhs.jointRotations[i][j]);
+            }
+        }
+
+        return result;
+    }
 }
