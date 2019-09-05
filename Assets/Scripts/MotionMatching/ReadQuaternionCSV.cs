@@ -17,6 +17,9 @@ public class ReadQuaternionCSV : MonoBehaviour
     public Transform[] boneTransforms;
     private int motionStartFrame, motionEndFrame;
     public int distanceTestFrom, distanceTestTo;
+    Vector3 forwardOrientation;
+    Quaternion previousPoseHipRotation;
+    Quaternion nextPoseHipRotation;
     void Awake()
     {
         boneHeaders = new string[24];
@@ -26,7 +29,8 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Start()
     {
-
+        previousPoseHipRotation = Quaternion.identity;
+        nextPoseHipRotation = Quaternion.identity;
         iterateThroughJoint = motionStartFrame;
         rotations = new Quaternion[24];
         string path = "Assets/Resources/ft5.csv";
@@ -68,20 +72,44 @@ public class ReadQuaternionCSV : MonoBehaviour
     {
         //this is debug controls
         if (Input.GetKeyDown("up"))
-            //SetMotionFrameBoundaries(0, 520);
+        {
+            previousPoseHipRotation = boneTransforms[1].localRotation;
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 1);
+            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+        }
         if (Input.GetKeyDown("right"))
+        {
+            previousPoseHipRotation = boneTransforms[1].localRotation;
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 3);
-        //SetMotionFrameBoundaries(520, 855);
+            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+        }
         if (Input.GetKeyDown("down"))
+        {
+            previousPoseHipRotation = boneTransforms[1].localRotation;
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 2);
-        //SetMotionFrameBoundaries(0, 3399);
+            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+        }
         if (Input.GetKeyDown("left"))
+        {
+            previousPoseHipRotation = boneTransforms[1].localRotation;
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 4);
-        //SetMotionFrameBoundaries(0, 3399);
+            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+        }
 
         if (Input.GetKeyDown("space"))
-            Debug.Log("Distance of poses is " + MotionState.SquareDistance(mST[distanceTestFrom], mST[distanceTestTo]) + " units");
+            Debug.Log("Distance of poses is " + MotionState.SquareDistanceBackRotated(mST[distanceTestFrom], mST[distanceTestTo]) + " units");
+
+
+
+        forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
+        Debug.DrawLine(transform.position, transform.position + new Vector3(forwardOrientation.x, 0, forwardOrientation.z), Color.green);
+        Debug.DrawLine(transform.position, transform.position + new Vector3(boneTransforms[1].forward.x, 0, boneTransforms[1].forward.z), Color.red);
+        /* //forwardOrientation = Vector3.Cross(Vector3.up, forwardOrientation);
+        //Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.red);
+        Debug.DrawLine(boneTransforms[1].position, boneTransforms[1].position + boneTransforms[1].forward, Color.red);
+        Debug.DrawLine(boneTransforms[14].position, boneTransforms[14].position + boneTransforms[14].forward, Color.red);
+        Debug.DrawLine(boneTransforms[20].position, boneTransforms[20].position + boneTransforms[20].forward, Color.red); */
+
     }
 
     void LateUpdate()
@@ -91,7 +119,8 @@ public class ReadQuaternionCSV : MonoBehaviour
         SetBoneRotations(iterateThroughJoint);
 
         //testing if rotating the hip back to identity does anything useful
-        boneTransforms[1].rotation*=Quaternion.Inverse(mST[iterateThroughJoint].GetJointRotations()[1]);
+        //boneTransforms[1].rotation*=Quaternion.Inverse(mST[iterateThroughJoint].GetJointRotations()[1]);
+        boneTransforms[1].rotation = previousPoseHipRotation * Quaternion.Inverse(nextPoseHipRotation) * boneTransforms[1].rotation;
 
         iterateThroughJoint = (iterateThroughJoint += 1) % 3399;
     }
