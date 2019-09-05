@@ -529,7 +529,6 @@ MonoBehaviour:
   rotations: []
   mST: []
   iterateThroughJoint: 0
-  go: {fileID: 1527107462}
   boneHeaders: []
   boneTransforms:
   - {fileID: 2112139836}
@@ -556,6 +555,8 @@ MonoBehaviour:
   - {fileID: 873134378}
   - {fileID: 1319592521}
   - {fileID: 573107133}
+  distanceTestFrom: 0
+  distanceTestTo: 0
 --- !u!1001 &1749713819
 PrefabInstance:
   m_ObjectHideFlags: 0
