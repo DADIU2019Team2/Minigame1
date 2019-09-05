@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterLevel : MonoBehaviour
+public class GravityChange : MonoBehaviour
 {
     //public float speed;
     public float movementSpeed = 15.0f;
@@ -23,5 +23,6 @@ public class WaterLevel : MonoBehaviour
         //dir.x = dir.x;// * -1;
 
         Physics.gravity = dir * movementSpeed;
+
     }
 }
