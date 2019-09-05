@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: characterB.ma
-//Last modified: Thu, Sep 05, 2019 09:51:54 AM
+//Name: characterB_v003_AD.ma
+//Last modified: Thu, Sep 05, 2019 09:51:53 AM
 //Codeset: 1252
 requires maya "2018";
 requires -nodeType "decomposeMatrix" "matrixNodes" "1.0";
@@ -6223,4 +6223,4 @@ connectAttr "character_v001_AD:defaultRenderLayer.msg" ":defaultRenderingList1.r
 		 -na;
 connectAttr "character_v001_AD:characterRetopo:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
-// End of characterB.ma
+// End of characterB_v003_AD.ma
