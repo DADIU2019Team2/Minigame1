@@ -24,22 +24,38 @@ public class FollowPathFromNearest : MonoBehaviour
     private float inRangeOfTarget = 0.3f;
     private Vector3 velocity = Vector3.zero;
 
+    bool hasBeenInitiated;
+
     private void Start()
     {
         _pathToFollow = pathToFollow.GetComponent<PathToWindow>().getWindowPath();
-        Debug.Log("closest chekpoint is index: " + getClosestCheckpoint(_pathToFollow));
-        indexOfTarget = getClosestCheckpoint(_pathToFollow);
-        initialTarget = _pathToFollow[indexOfTarget];
-        target = initialTarget;
+        hasBeenInitiated = false;
+        
     }
 
     private void Update()
     {
+        if (!OnHitDestroyThis.windowIsDead)
+        {
+            return;
+        }
+        else
+        {
+            if(!hasBeenInitiated)
+                initiateWindowSuction();
+        }
         updateTarget();
         if (updateTarget())
-            moveToTarget();
+            moveToTarget();        
+    }
 
-        
+    void initiateWindowSuction()
+    {
+        Debug.Log("closest chekpoint is index: " + getClosestCheckpoint(_pathToFollow));
+        indexOfTarget = getClosestCheckpoint(_pathToFollow);
+        initialTarget = _pathToFollow[indexOfTarget];
+        target = initialTarget;
+        hasBeenInitiated = true;
     }
 
     private int getClosestCheckpoint(Transform[] path)
