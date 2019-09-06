@@ -8,6 +8,8 @@ public class OnHitDestroyThis : MonoBehaviour
     private int massThreshold = 10;
     [SerializeField]
     private float speedThreshold = 5f;
+
+    public static bool windowIsDead = false;
      
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +28,9 @@ public class OnHitDestroyThis : MonoBehaviour
         }
         Debug.Log(rb.name + " Had a speed of " + rb.velocity.magnitude + " on hit.");
         Debug.Log("Ball hit the window!!");
+        
         Destroy(gameObject);
+        //trigger the player being sucked into the window thing...
+        windowIsDead = true;
     }
 }
