@@ -1,5 +1,5 @@
 //Maya ASCII 2018 scene
-//Name: monsterA_v001_AD.ma
+//Name: monsterA.ma
 //Last modified: Fri, Sep 06, 2019 10:06:38 AM
 //Codeset: 1252
 requires maya "2018";
@@ -173,4 +173,4 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of monsterA_v001_AD.ma
+// End of monsterA.ma
