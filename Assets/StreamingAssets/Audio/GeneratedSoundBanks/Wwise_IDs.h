@@ -13,7 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_PURGATORY_LVL1_LOOP1 = 2943564027U;
+        static const AkUniqueID PLAY_COUCH_IMPACT = 2776670769U;
+        static const AkUniqueID PLAY_DRUM_COLLISION = 2072427939U;
+        static const AkUniqueID PLAY_FLOAT_THEME = 2142485738U;
+        static const AkUniqueID PLAY_GLASS_BREAKING = 2424027906U;
+        static const AkUniqueID PLAY_GRAVITY_SHIFT = 3025114257U;
+        static const AkUniqueID PLAY_METAL_IMPACT_SMALL = 1030011832U;
+        static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
+        static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
+        static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
+        static const AkUniqueID PLAY_WOOD_IMPACT = 1663130662U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
