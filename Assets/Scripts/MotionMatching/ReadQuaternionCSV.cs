@@ -24,8 +24,8 @@ public class ReadQuaternionCSV : MonoBehaviour
     Vector3 forwardOrientation;
     [SerializeField]
     Animator a;
-    Quaternion previousPoseHipRotation;
-    Quaternion nextPoseHipRotation;
+    Quaternion previousPoseOrientation;
+    Quaternion nextPoseOrientation;
     void Awake()
     {
         a = gameObject.GetComponent<Animator>();
@@ -36,8 +36,8 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Start()
     {
-        previousPoseHipRotation = Quaternion.identity;
-        nextPoseHipRotation = Quaternion.identity;
+        previousPoseOrientation = Quaternion.identity;
+        nextPoseOrientation = Quaternion.identity;
         iterateThroughJoint = motionStartFrame;
         rotations = new Quaternion[24];
         string path = "Assets/Resources/" + fileName + ".csv";
@@ -80,30 +80,36 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Update()
     {
+        forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
+        forwardOrientation.y = 0f;
+        Vector3 fwdFromArray = mST[iterateThroughJoint].GetJointRotations()[1] * Vector3.forward;
+        fwdFromArray.y = 0;
+        Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.green);
+        Debug.DrawLine(transform.position, transform.position + fwdFromArray, Color.red);
         //this is debug controls
         if (Input.GetKeyDown("up"))
         {
-            previousPoseHipRotation = boneTransforms[1].localRotation;
+            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 1);
-            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("right"))
         {
-            previousPoseHipRotation = boneTransforms[1].localRotation;
+            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 3);
-            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("down"))
         {
-            previousPoseHipRotation = boneTransforms[1].localRotation;
+            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 2);
-            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("left"))
         {
-            previousPoseHipRotation = boneTransforms[1].localRotation;
+            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 4);
-            nextPoseHipRotation = mST[iterateThroughJoint].GetJointRotations()[1];
+            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
 
         if (Input.GetKeyDown("space"))
@@ -111,21 +117,28 @@ public class ReadQuaternionCSV : MonoBehaviour
             Debug.Log("Left thigh local rotation: " + boneTransforms[2].localRotation.x + "; " + boneTransforms[2].localRotation.y + "; " + boneTransforms[2].localRotation.z + "; " + boneTransforms[2].localRotation.w + "; ");
             Quaternion backCalcRot = Quaternion.Inverse(mST[iterateThroughJoint - 1].GetJointRotations()[1]) * mST[iterateThroughJoint - 1].GetJointRotations()[2];
             Debug.Log("Back calculated local rotation: " + backCalcRot.x + "; " + backCalcRot.y + "; " + backCalcRot.z + "; " + backCalcRot.w);
- */ 
-        //WriteRotationsCSV("localTest", localMST, boneHeaders);
-            //Debug.Log("Distance of poses is " + MotionState.SquareDistanceBackRotated(mST[distanceTestFrom], mST[distanceTestTo]) + " units");
+ */
+         //WriteRotationsCSV("localTest", localMST, boneHeaders);
+         //Debug.Log("Distance of poses is " + MotionState.SquareDistanceBackRotated(mST[distanceTestFrom], mST[distanceTestTo]) + " units");
         }
 
 
-        forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
-        Debug.DrawLine(transform.position, transform.position + new Vector3(forwardOrientation.x, 0, forwardOrientation.z), Color.green);
-        Debug.DrawLine(transform.position, transform.position + new Vector3(boneTransforms[1].forward.x, 0, boneTransforms[1].forward.z), Color.red);
         /* //forwardOrientation = Vector3.Cross(Vector3.up, forwardOrientation);
         //Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.red);
         Debug.DrawLine(boneTransforms[1].position, boneTransforms[1].position + boneTransforms[1].forward, Color.red);
         Debug.DrawLine(boneTransforms[14].position, boneTransforms[14].position + boneTransforms[14].forward, Color.red);
         Debug.DrawLine(boneTransforms[20].position, boneTransforms[20].position + boneTransforms[20].forward, Color.red); */
 
+    }
+
+    Vector3 MakeForwardOrientation(int frame)
+    {
+        Quaternion hipQ = localMST[frame].GetJointRotations()[1];
+        Quaternion leftShoulderQ = localMST[frame].GetJointRotations()[14];
+        Quaternion rightShoulderQ = localMST[frame].GetJointRotations()[20];
+        Vector3 result = (hipQ * Vector3.forward + leftShoulderQ * Vector3.forward + rightShoulderQ * Vector3.forward) / 3f;
+        result.y = 0f;
+        return result;
     }
 
     void LateUpdate()
@@ -136,9 +149,10 @@ public class ReadQuaternionCSV : MonoBehaviour
 
         //testing if rotating the hip back to identity does anything useful
         //boneTransforms[1].rotation*=Quaternion.Inverse(mST[iterateThroughJoint].GetJointRotations()[1]);
-        //boneTransforms[1].rotation = previousPoseHipRotation * Quaternion.Inverse(nextPoseHipRotation) * boneTransforms[1].rotation;
+        //boneTransforms[1].rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
 
-        iterateThroughJoint = (iterateThroughJoint += 1) % 3399;
+        iterateThroughJoint = (iterateThroughJoint += 1) % 3398;
+        //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
     }
 
     void OnAnimatorIK(int layerIndex)
@@ -166,6 +180,7 @@ public class ReadQuaternionCSV : MonoBehaviour
         a.SetBoneLocalRotation(HumanBodyBones.RightUpperArm, localMST[iterateThroughJoint].GetJointRotations()[21]);
         a.SetBoneLocalRotation(HumanBodyBones.RightLowerArm, localMST[iterateThroughJoint].GetJointRotations()[22]);
         a.SetBoneLocalRotation(HumanBodyBones.RightHand, localMST[iterateThroughJoint].GetJointRotations()[23]);
+
     }
 
     /* float GetLocalBoneDistance(Transform[] lhs, Transform[] rhs)
