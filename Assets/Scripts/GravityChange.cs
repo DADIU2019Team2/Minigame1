@@ -29,13 +29,11 @@ public class GravityChange : MonoBehaviour
     void Update()
     {
 
-#if UNITY_ANDROID && !UNITY_EDITOR   
-        //gravity code for android phone
+        #if UNITY_ANDROID   //gravity code for android phone
         dir = Vector3.zero;
         dir.x = PlayerInput.GetAcceleration().x;
         dir.y = PlayerInput.GetAcceleration().y;
         Physics.gravity = dir * gravityIntensity;
-        Debug.Log("Android"+dir);
 #endif
 
 
@@ -63,7 +61,6 @@ public class GravityChange : MonoBehaviour
         dir.y = gravityY;
         Physics.gravity = dir * gravityIntensity;
 
-
-    #endif
+#endif
     }
 }
