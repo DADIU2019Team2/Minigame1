@@ -91,27 +91,35 @@ public class ReadQuaternionCSV : MonoBehaviour
         //this is debug controls
         if (Input.GetKeyDown("up"))
         {
+            TurnHip();
             //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 1);
             //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("right"))
         {
+            TurnHip();
             //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 3);
             //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("down"))
         {
+            TurnHip();
             //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 2);
             //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("left"))
         {
+            TurnHip();
             //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 4);
             //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
+
+           
+
+
         }
 
         if (Input.GetKeyDown("space"))
@@ -141,6 +149,11 @@ public class ReadQuaternionCSV : MonoBehaviour
         Vector3 result = (hipQ * Vector3.forward + leftShoulderQ * Vector3.forward + rightShoulderQ * Vector3.forward) / 3f;
         result.y = 0f;
         return result;
+    }
+
+    void TurnHip()
+    {
+        transform.eulerAngles = new Vector3(0, boneTransforms[1].eulerAngles.y, 0);
     }
 
     void LateUpdate()
