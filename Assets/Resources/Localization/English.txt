@@ -1,0 +1,6 @@
+UI_MENU_NEWGAME="New Game"
+UI_MENU_CONTINUE="Continue Game"
+UI_MENU_OPTIONS="Options"
+UI_MENU_MASTERVOLUME="Master Volume"
+UI_MENU_SFXVOLUME="Sound Effects Volume"
+UI_MENU_MUSICVOLUME="Music Volume"
