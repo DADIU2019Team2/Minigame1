@@ -1,2 +1,4 @@
 The showcase scene is not supossed to be interactive, however the lighting of the live scenes must by available.
 Additional lights should be in this scene for the artist to test thier models.
+
+Note that models can be deleted and switched around as the artist like, the positions don't matter here.
