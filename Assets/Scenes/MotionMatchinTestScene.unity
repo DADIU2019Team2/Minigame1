@@ -526,8 +526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4144cc7490f6543b4d1dde5a9bc5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: localTest
   rotations: []
   mST: []
+  localMST: []
   iterateThroughJoint: 0
   boneHeaders: []
   boneTransforms:
@@ -557,6 +559,7 @@ MonoBehaviour:
   - {fileID: 573107133}
   distanceTestFrom: 0
   distanceTestTo: 0
+  a: {fileID: 0}
 --- !u!1001 &1749713819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -573,6 +576,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 7d8502943210b184db99a7efde4c3653,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d743b9b3c4de62a42ba4e9ccff2cdc99, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 7d8502943210b184db99a7efde4c3653,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7d8502943210b184db99a7efde4c3653,
         type: 3}

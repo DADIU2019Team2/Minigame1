@@ -47,7 +47,7 @@ public class MotionState
 
         float result = 0f;
 
-        for (int i = 0; i < lhs.numberOfJoints; i++)
+        for (int i = 1; i < lhs.numberOfJoints; i++)
         {
             for (int j = 0; j < 4; j++)
             {
