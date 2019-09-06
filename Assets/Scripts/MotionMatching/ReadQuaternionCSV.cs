@@ -81,35 +81,37 @@ public class ReadQuaternionCSV : MonoBehaviour
     void Update()
     {
         forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
-        forwardOrientation.y = 0f;
-        Vector3 fwdFromArray = mST[iterateThroughJoint].GetJointRotations()[1] * Vector3.forward;
-        fwdFromArray.y = 0;
         Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.green);
+        /* forwardOrientation.y = 0f;
+        Vector3 fwdFromArray = mST[iterateThroughJoint].GetJointRotations()[1] * Vector3.forward;
         Debug.DrawLine(transform.position, transform.position + fwdFromArray, Color.red);
+        fwdFromArray.y = 0; */
+
+
         //this is debug controls
         if (Input.GetKeyDown("up"))
         {
-            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
+            //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 1);
-            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
+            //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("right"))
         {
-            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
+            //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 3);
-            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
+            //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("down"))
         {
-            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
+            //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 2);
-            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
+            //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
         if (Input.GetKeyDown("left"))
         {
-            previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
+            //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 4);
-            nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
+            //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
         }
 
         if (Input.GetKeyDown("space"))
