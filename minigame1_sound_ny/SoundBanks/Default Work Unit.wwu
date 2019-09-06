@@ -5,7 +5,17 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{B61D0227-A9C3-4BB6-929F-67CAAD76D52F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Purgatory_lvl1_loop1" ID="{B40D3B90-7849-482F-B6E5-D07530EC61F5}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Portal_enter_next_level" ID="{CE6CB9AB-58E5-40A6-9950-C06969ACB626}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Gravity_shift" ID="{14E0B20B-CE46-415C-8485-B72764BE4BF8}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Monster_impact" ID="{95AE3DEA-76B3-42C4-AD83-ACA48A16739A}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Smaller_glass_breaking" ID="{938656BF-1310-44F3-A7ED-0800DE0E8E43}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Glass_breaking" ID="{B7A13CDA-A0B4-455E-B982-2DE5AA143751}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Float_theme" ID="{7F8C5D8E-AB28-45CA-ACAA-3CCC2A29126C}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level1" ID="{4371EFFE-CBCA-4670-9BBE-8322C6444C53}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Wood_impact" ID="{92AEFD84-7C90-4687-BF4D-417C79211BFE}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Metal_impact_small" ID="{E318A0F2-C1DA-46F7-A42E-0BF36E8151F5}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Drum_collision" ID="{4AAB4B8A-E727-4730-99AB-5ECF56798F6D}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Couch_Impact" ID="{F5C32A76-4D17-484D-922B-2FDDE67F4A45}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
