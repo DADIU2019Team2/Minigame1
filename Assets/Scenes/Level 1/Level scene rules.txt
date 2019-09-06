@@ -1,0 +1,2 @@
+There should only be one version of the current level at any time, these levels are the ones we use in the actual game. 
+Older versions should be moved to another folder for safe keeping.
