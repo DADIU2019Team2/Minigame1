@@ -63,12 +63,9 @@ public class GravityChange : MonoBehaviour
         dir.y = gravityY;
         Physics.gravity = dir * gravityIntensity;
 
-<<<<<<< HEAD
+
 #endif
 
-=======
 
-    #endif
->>>>>>> Gravity
     }
 }
