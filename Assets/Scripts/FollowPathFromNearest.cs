@@ -117,7 +117,7 @@ public class FollowPathFromNearest : MonoBehaviour
     void moveToTarget()
     {
         Vector3 dirToTarget = target.position - transform.position;
-        Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
+        //Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
         transform.position = Vector3.SmoothDamp(transform.position, 
             target.position, ref velocity, smoothTime * animationSpeedMaybe * Time.deltaTime);
     }

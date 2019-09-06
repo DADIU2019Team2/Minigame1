@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHitWin : MonoBehaviour
 {
@@ -19,5 +18,13 @@ public class PlayerHitWin : MonoBehaviour
     public void playerWonLevel()
     {
         WinScreenOverlay.SetActive(true);
+        //Debug.Log("I got here");
+        string sceneName = MainMenu.GetSceneNameFromBuildIndex(SceneManager.GetActiveScene().buildIndex);
+        if (PlayerPrefs.HasKey(sceneName))
+        {
+            return;
+        }
+        //sets levels completed to one more than before this level was completed
+        PlayerPrefs.SetString(sceneName, "Completed");
     }
 }
