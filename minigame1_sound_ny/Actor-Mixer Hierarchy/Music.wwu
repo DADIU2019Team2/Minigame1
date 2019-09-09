@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Float theme" ID="{2201B658-F01C-4AB5-8EFF-0D41138858CE}" ShortID="1012947635">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{71E77CC1-01C9-4BC7-BFC2-790088BC5BB2}" ShortID="222770058">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Music" ID="{2DEFA3E3-43A2-4F07-ABC6-F6D45F467960}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1D837154-5FE2-431E-AA18-C1112CF2CCD0}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{32021086-5A19-44E2-8AA3-8682526C3AFE}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Float theme" ID="{86AEF18D-314A-4423-901A-679FF14E79F9}" ShortID="198088005">
+							<Language>SFX</Language>
+							<AudioFile>Float theme.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Float theme" ID="{86AEF18D-314A-4423-901A-679FF14E79F9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
