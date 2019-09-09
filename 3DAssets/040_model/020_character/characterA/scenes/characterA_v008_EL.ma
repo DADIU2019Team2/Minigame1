@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: characterA_v008_EL.ma
-//Last modified: Mon, Sep 09, 2019 12:02:46 PM
+//Last modified: Mon, Sep 09, 2019 01:15:48 PM
 //Codeset: 1252
 requires maya "2018";
 requires -nodeType "ngSkinLayerData" -dataType "ngSkinLayerDataStorage" "ngSkinTools" "1.7.9";
@@ -14,13 +14,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "44EADACE-41CA-6A4D-5140-C88FCECB104D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.584984664119659 207.68741843819015 183.58994494845953 ;
-	setAttr ".r" -type "double3" 1056.8616472694168 -3950.9999999978677 -1.2075752608734616e-15 ;
+	setAttr ".t" -type "double3" -144.45557890530281 219.02862145048971 413.43080287442808 ;
+	setAttr ".r" -type "double3" 1068.861647269327 -3979.7999999956223 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5E5205A3-44CF-05F4-3A0D-FAB927E69805";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 181.15165139065158;
+	setAttr ".coi" 427.19619494196957;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
