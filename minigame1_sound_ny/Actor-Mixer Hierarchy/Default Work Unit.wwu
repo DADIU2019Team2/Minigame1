@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2C86CB25-D517-42ED-A255-0B06ED1ECD7F}" SchemaVersion="94">
 	<AudioObjects>
-<<<<<<< Updated upstream
 		<WorkUnit Name="Default Work Unit" ID="{2C86CB25-D517-42ED-A255-0B06ED1ECD7F}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Couch Impact" ID="{3DA3CAB4-6481-4C88-B091-34BAD426350C}" ShortID="200252442">
@@ -287,8 +286,5 @@
 				</Sound>
 			</ChildrenList>
 		</WorkUnit>
-=======
-		<WorkUnit Name="Default Work Unit" ID="{2C86CB25-D517-42ED-A255-0B06ED1ECD7F}" PersistMode="Standalone"/>
->>>>>>> Stashed changes
 	</AudioObjects>
 </WwiseDocument>

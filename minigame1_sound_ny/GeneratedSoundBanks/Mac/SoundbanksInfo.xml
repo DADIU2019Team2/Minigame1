@@ -23,39 +23,23 @@
 			<IncludedEvents>
 				<Event Id="2776670769" Name="Play_Couch_Impact" ObjectPath="\Events\Default Work Unit\Play_Couch_Impact" DurationType="OneShot" DurationMin="0.523403" DurationMax="0.523403"/>
 				<Event Id="2072427939" Name="Play_Drum_collision" ObjectPath="\Events\Default Work Unit\Play_Drum_collision" DurationType="OneShot" DurationMin="0.668730" DurationMax="0.668730"/>
+				<Event Id="2142485738" Name="Play_Float_theme" ObjectPath="\Events\Default Work Unit\Play_Float_theme" DurationType="Infinite"/>
 				<Event Id="2424027906" Name="Play_Glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Glass_breaking" DurationType="OneShot" DurationMin="3.476503" DurationMax="3.476503"/>
 				<Event Id="3025114257" Name="Play_Gravity_shift" ObjectPath="\Events\Default Work Unit\Play_Gravity_shift" DurationType="OneShot" DurationMin="3.186576" DurationMax="3.186576"/>
-<<<<<<< Updated upstream
-=======
-				<Event Id="3605952550" Name="Play_Level1music" ObjectPath="\Events\Default Work Unit\Play_Level1music" DurationType="OneShot" DurationMin="16.000000" DurationMax="16.000000"/>
-				<Event Id="565626987" Name="Play_Level2music" ObjectPath="\Events\Default Work Unit\Play_Level2music" DurationType="OneShot" DurationMin="32.000000" DurationMax="32.000000"/>
-				<Event Id="1946308780" Name="Play_Level3music" ObjectPath="\Events\Default Work Unit\Play_Level3music" DurationType="OneShot" DurationMin="32.000000" DurationMax="32.000000"/>
-				<Event Id="3045698593" Name="Play_Level4music" ObjectPath="\Events\Default Work Unit\Play_Level4music" DurationType="OneShot" DurationMin="32.000000" DurationMax="32.000000"/>
-				<Event Id="839894203" Name="Play_Level4musicloop" ObjectPath="\Events\Default Work Unit\Play_Level4musicloop" DurationType="OneShot" DurationMin="32.000000" DurationMax="32.000000"/>
->>>>>>> Stashed changes
 				<Event Id="1030011832" Name="Play_Metal_impact_small" ObjectPath="\Events\Default Work Unit\Play_Metal_impact_small" DurationType="OneShot" DurationMin="0.352374" DurationMax="0.352374"/>
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.433770" DurationMax="1.433770"/>
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="3.040023" DurationMax="3.040023"/>
 				<Event Id="1720134853" Name="Play_Smaller_glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Smaller_glass_breaking" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="1663130662" Name="Play_Wood_impact" ObjectPath="\Events\Default Work Unit\Play_Wood_impact" DurationType="OneShot" DurationMin="0.674059" DurationMax="0.674059"/>
-				<Event Id="864292832" Name="Play_Wood_impact2" ObjectPath="\Events\Default Work Unit\Play_Wood_impact2" DurationType="OneShot" DurationMin="0.969926" DurationMax="0.969926"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="153861738" Language="SFX">
-					<ShortName>Level2music.wav</ShortName>
-					<Path>SFX/Level2music_10C4C929.wem</Path>
-				</File>
 				<File Id="163531620" Language="SFX">
 					<ShortName>Gravity shift.wav</ShortName>
 					<Path>SFX/Gravity shift_10C4C929.wem</Path>
 				</File>
-				<File Id="330191231" Language="SFX">
-					<ShortName>Wood impact2.wav</ShortName>
-					<Path>SFX/Wood impact2_10C4C929.wem</Path>
-				</File>
-				<File Id="394742082" Language="SFX">
-					<ShortName>Level3music.wav</ShortName>
-					<Path>SFX/Level3music_10C4C929.wem</Path>
+				<File Id="198088005" Language="SFX">
+					<ShortName>Float theme.wav</ShortName>
+					<Path>SFX/Float theme_D79FB2B7.wem</Path>
 				</File>
 				<File Id="470386603" Language="SFX">
 					<ShortName>Smaller glass breaking.wav</ShortName>
@@ -85,23 +69,9 @@
 					<ShortName>Monster impact.wav</ShortName>
 					<Path>SFX/Monster impact_10C4C929.wem</Path>
 				</File>
-<<<<<<< Updated upstream
 				<File Id="937877114" Language="SFX">
 					<ShortName>Portal enter next level.wav</ShortName>
 					<Path>SFX/Portal enter next level_10C4C929.wem</Path>
-=======
-				<File Id="819010376" Language="SFX">
-					<ShortName>Level4music.wav</ShortName>
-					<Path>SFX/Level4music_10C4C929.wem</Path>
-				</File>
-				<File Id="998941212" Language="SFX">
-					<ShortName>Level1music.wav</ShortName>
-					<Path>SFX/Level1music_10C4C929.wem</Path>
-				</File>
-				<File Id="1063477166" Language="SFX">
-					<ShortName>Level4musicloop.wav</ShortName>
-					<Path>SFX/Level4musicloop_10C4C929.wem</Path>
->>>>>>> Stashed changes
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
