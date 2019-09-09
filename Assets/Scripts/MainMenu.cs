@@ -76,7 +76,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Next level is valid = " + SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid());
         if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
         {
-            SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
+            SceneManager.LoadScene(indexOfLastCompletedLevel + 1, LoadSceneMode.Single);
         }
         else
         {
