@@ -10,8 +10,8 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetSFXVolume(sfxLevel);
-        SetSoundVolume(soundLevel);
+    //    SetSFXVolume(sfxLevel);
+    //    SetSoundVolume(soundLevel);
       
         
     }
@@ -21,18 +21,48 @@ public class SoundManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            SetSFXVolume(sfxLevel);
-            SetSoundVolume(soundLevel);
-            AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
+            //SetSFXVolume(sfxLevel);
+            //SetSoundVolume(soundLevel);
+            //AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
+            SaveLoad.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            //SetSFXVolume(sfxLevel);
+            //SetSoundVolume(soundLevel);
+            //AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
+            SaveLoad.Load();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Game.current.levelProgress[0] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Game.current.levelProgress[1] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Game.current.levelProgress[2] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Game.current.levelProgress[3] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Game.current.levelProgress[4] = true;
         }
     }
-    public void SetSFXVolume(float volume)
-    {
-        AkSoundEngine.SetRTPCValue("World", volume);
+    //public void SetSFXVolume(float volume)
+    //{
+    //    Debug.Log(volume);
+    //    AkSoundEngine.SetRTPCValue("World", volume);
         
-    }
-    public void SetSoundVolume(float volume)
-    {
-        AkSoundEngine.SetRTPCValue("Music", volume);
-    }
+    //}
+    //public void SetSoundVolume(float volume)
+    //{
+    //    Debug.Log(volume);
+    //    AkSoundEngine.SetRTPCValue("Music", volume);
+    //}
 }
