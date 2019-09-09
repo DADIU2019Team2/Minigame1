@@ -1,5 +1,5 @@
 //Maya ASCII 2018 scene
-//Name: characterA.ma
+//Name: characterA_v006_AD.ma
 //Last modified: Mon, Sep 09, 2019 04:18:09 PM
 //Codeset: 1252
 file -rdi 1 -ns ":" -rfn "characterARN" -op "v=0;" -typ "mayaAscii" "C:/Users/Dadiu student/Documents/GitHub/Minigame1/3DAssets/040_model/020_character/characterA/live/characterA.ma";
@@ -448,7 +448,7 @@ createNode joint -n "RightToeTip" -p "RightToe";
 	setAttr ".jo" -type "double3" 1.7810436050275091 -6.5016936671981226e-06 9.7930294996496129e-06 ;
 	setAttr ".radi" 3;
 createNode fosterParent -n "characterARNfosterParent1";
-	rename -uid "558079F1-4AF7-99A3-390F-3FB8B1D71603";
+	rename -uid "EABE7E5B-43DE-2085-33E1-7288BA0DB25F";
 createNode mesh -n "character_geoShapeDeformed" -p "characterARNfosterParent1";
 	rename -uid "3FB10CA4-405D-286F-A689-2893D0DEAF52";
 	setAttr -k off ".v";
@@ -5713,4 +5713,4 @@ connectAttr "character_v001_AD:characterRetopo:defaultRenderLayer.msg" ":default
 connectAttr "groupId14.msg" ":defaultLastHiddenSet.gn" -na;
 connectAttr "character_geoShapeDeformed.iog.og[14]" ":defaultLastHiddenSet.dsm" 
 		-na;
-// End of characterA.ma
+// End of characterA_v006_AD.ma
