@@ -81,7 +81,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     void Update()
     {
         forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
-        Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.green);
+        //Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.green);
         /* forwardOrientation.y = 0f;
         Vector3 fwdFromArray = mST[iterateThroughJoint].GetJointRotations()[1] * Vector3.forward;
         Debug.DrawLine(transform.position, transform.position + fwdFromArray, Color.red);
