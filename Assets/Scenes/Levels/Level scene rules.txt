@@ -1,2 +1,2 @@
-The current version used in the game should br in this folder, this should be the only scene in this folder at any time.
-Move older versions to another folder for safe keeping.
+There should only be one version of the current level at any time, these levels are the ones we use in the actual game. 
+Older versions should be moved to another folder for safe keeping.

@@ -5,7 +5,23 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{B61D0227-A9C3-4BB6-929F-67CAAD76D52F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Purgatory_lvl1_loop1" ID="{B40D3B90-7849-482F-B6E5-D07530EC61F5}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level3music" ID="{2FA6E2C0-4B09-4024-9655-90B272FE24DD}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Wood_impact" ID="{3AB28509-9BED-41C6-AA28-B6150A203C4F}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level4music" ID="{94918AEA-AD2E-41E1-820E-D97A3FBC2A69}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Couch_Impact" ID="{4D7E400C-75FF-43B9-9B3A-67FF0FEB2E16}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Gravity_shift" ID="{8374DEA1-5819-4409-9DF5-F6810084CB05}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Metal_impact_small" ID="{FA66C28F-3606-443D-A8E6-BCB5085CCD36}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_Game_Parameter_World" ID="{7A772E77-BE59-44C4-A5B1-AA7F793540A5}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Monster_impact" ID="{1F21E52C-B1CA-44FD-BF20-933AFEDD42DB}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Drum_collision" ID="{C97CF631-D53A-45CC-B948-C8D38110CF82}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level2music" ID="{4F133B50-F585-46FF-8487-EC19FDCB3D47}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Glass_breaking" ID="{8BA46623-C93F-4A4E-9A1D-E7EA88BC0A03}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Wood_impact2" ID="{DB625B0D-32EA-4A71-AABE-C66B319710AB}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_Game_Parameter_Music" ID="{F184F069-F8AA-4B47-B2D9-B59EA8D034EC}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level4musicloop" ID="{EA874117-82C2-4C38-90DB-FEA387299219}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Smaller_glass_breaking" ID="{40A5BA2D-CAC2-4D53-83CE-9556648BA0E6}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Level1music" ID="{C92881A8-F2E4-4F81-9BB0-DD6776758389}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Portal_enter_next_level" ID="{2BC21793-6C40-4FDB-841F-40FE5E426A22}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

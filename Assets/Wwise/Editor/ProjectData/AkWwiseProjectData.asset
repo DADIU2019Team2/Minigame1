@@ -184,14 +184,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3713ca50998571499d3e31b46f895c9d
     GuidInternal: 
-    m_lastTime: -8586340090264775808
+    m_lastTime: -8586335877644775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f92c26f321240f4f9309ee83162c4682
     GuidInternal: 
+<<<<<<< HEAD
+    m_lastTime: -8586335885004775808
+=======
+<<<<<<< Updated upstream
     m_lastTime: -8586340083304775808
+=======
+    m_lastTime: -8586335777324775808
+>>>>>>> Stashed changes
+>>>>>>> Sound
     List:
     - name: Main
       guid: 27021db6c3a9b64b929f67caad76d52f
@@ -207,39 +215,331 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5d06e612f0eec94ab85bb5de10ac826d
     GuidInternal: 
+<<<<<<< HEAD
+    m_lastTime: -8586335885004775808
+=======
+<<<<<<< Updated upstream
     m_lastTime: -8586340083304775808
+>>>>>>> Sound
     List:
-    - name: Play_Level_1_Ambience
-      guid: adafbaa107f9fd41aead9bf719971793
-      id: 3228446999
+    - name: Play_Couch_Impact
+      guid: 762ac3f5174d4d48922b2fdde67f4a45
+      id: 2776670769
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Level_1_Ambience
+      - ElementName: Play_Couch_Impact
         ObjectType: 3
-      Path: Default Work Unit/Play_Level_1_Ambience
+      Path: Default Work Unit/Play_Couch_Impact
       maxAttenuation: 0
+<<<<<<< HEAD
+      maxDuration: 0.523403
+      minDuration: 0.523403
+    - name: Play_Drum_collision
+      guid: 8a4bab4a27e7304799ab5ecf56798f6d
+=======
       maxDuration: -1
       minDuration: -1
     - name: Play_Purgatory_lvl1_loop1
       guid: 903b0db449782f48b6e5d07530ec61f5
       id: 2943564027
+=======
+    m_lastTime: -8586335777324775808
+    List:
+    - name: Play_Couch_Impact
+      guid: 0c407e4dff75b9439b3a67ff0feb2e16
+      id: 2776670769
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Purgatory_lvl1_loop1
+      - ElementName: Play_Couch_Impact
         ObjectType: 3
-      Path: Default Work Unit/Play_Purgatory_lvl1_loop1
+      Path: Default Work Unit/Play_Couch_Impact
       maxAttenuation: 0
+      maxDuration: 0.523403
+      minDuration: 0.523403
+    - name: Play_Drum_collision
+      guid: 31f67cc93ad5cc45b948c8d38110cf82
+>>>>>>> Sound
+      id: 2072427939
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Drum_collision
+        ObjectType: 3
+      Path: Default Work Unit/Play_Drum_collision
+      maxAttenuation: 0
+      maxDuration: 0.66873
+      minDuration: 0.66873
+<<<<<<< HEAD
+    - name: Play_Float_theme
+      guid: 8e5d8c7f28abca45acaa3ccc2a29126c
+      id: 2142485738
+=======
+    - name: Play_Glass_breaking
+      guid: 2366a48b3fc94e4a9a1de7ea88bc0a03
+      id: 2424027906
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Glass_breaking
+        ObjectType: 3
+      Path: Default Work Unit/Play_Glass_breaking
+      maxAttenuation: 0
+      maxDuration: 3.476503
+      minDuration: 3.476503
+    - name: Play_Gravity_shift
+      guid: a1de7483195809449df5f6810084cb05
+      id: 3025114257
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Gravity_shift
+        ObjectType: 3
+      Path: Default Work Unit/Play_Gravity_shift
+      maxAttenuation: 0
+      maxDuration: 3.186576
+      minDuration: 3.186576
+    - name: Play_Level1music
+      guid: a88128c9e4f2814f9bb0dd6776758389
+      id: 3605952550
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level1music
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level1music
+      maxAttenuation: 0
+      maxDuration: 16
+      minDuration: 16
+    - name: Play_Level2music
+      guid: 503b134f85f5ff468487ec19fdcb3d47
+      id: 565626987
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level2music
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level2music
+      maxAttenuation: 0
+      maxDuration: 32
+      minDuration: 32
+    - name: Play_Level3music
+      guid: c0e2a62f094b2440965590b272fe24dd
+      id: 1946308780
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level3music
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level3music
+      maxAttenuation: 0
+      maxDuration: 32
+      minDuration: 32
+    - name: Play_Level4music
+      guid: ea8a91942eade141820ed97a3fbc2a69
+      id: 3045698593
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level4music
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level4music
+      maxAttenuation: 0
+      maxDuration: 32
+      minDuration: 32
+    - name: Play_Level4musicloop
+      guid: 174187eac282384c90dbfea387299219
+      id: 839894203
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level4musicloop
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level4musicloop
+      maxAttenuation: 0
+      maxDuration: 32
+      minDuration: 32
+    - name: Play_Metal_impact_small
+      guid: 8fc266fa06363d44a8e6bcb5085ccd36
+      id: 1030011832
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Metal_impact_small
+        ObjectType: 3
+      Path: Default Work Unit/Play_Metal_impact_small
+      maxAttenuation: 0
+      maxDuration: 0.352374
+      minDuration: 0.352374
+    - name: Play_Monster_impact
+      guid: 2ce5211fcab1fd44bf20933afedd42db
+      id: 3939836301
+>>>>>>> Stashed changes
+>>>>>>> Sound
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Float_theme
+        ObjectType: 3
+      Path: Default Work Unit/Play_Float_theme
+      maxAttenuation: 0
+<<<<<<< Updated upstream
       maxDuration: -1
       minDuration: -1
+<<<<<<< HEAD
+    - name: Play_Glass_breaking
+      guid: da3ca1b7b4a05e45b9822de5aa143751
+      id: 2424027906
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Glass_breaking
+        ObjectType: 3
+      Path: Default Work Unit/Play_Glass_breaking
+      maxAttenuation: 0
+      maxDuration: 3.476503
+      minDuration: 3.476503
+    - name: Play_Gravity_shift
+      guid: 0bb2e01446ce5c418485b72764be4bf8
+      id: 3025114257
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Gravity_shift
+        ObjectType: 3
+      Path: Default Work Unit/Play_Gravity_shift
+      maxAttenuation: 0
+      maxDuration: 3.186576
+      minDuration: 3.186576
+    - name: Play_Level1
+      guid: feef7143cacb70469bbe8322c6444c53
+      id: 3659125941
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Level1
+        ObjectType: 3
+      Path: Default Work Unit/Play_Level1
+      maxAttenuation: 0
+      maxDuration: 32
+      minDuration: 0
+    - name: Play_Metal_impact_small
+      guid: f2a018e3dac1f746a42e0bf36e8151f5
+      id: 1030011832
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Metal_impact_small
+        ObjectType: 3
+      Path: Default Work Unit/Play_Metal_impact_small
+      maxAttenuation: 0
+      maxDuration: 0.352374
+      minDuration: 0.352374
+    - name: Play_Monster_impact
+      guid: ea3dae95b376c442ad83aca48a16739a
+      id: 3939836301
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Monster_impact
+        ObjectType: 3
+      Path: Default Work Unit/Play_Monster_impact
+      maxAttenuation: 0
+      maxDuration: 1.43377
+      minDuration: 1.43377
+    - name: Play_Portal_enter_next_level
+      guid: abb96ccee558a6409950c06969acb626
+=======
+=======
+      maxDuration: 1.43377
+      minDuration: 1.43377
+    - name: Play_Portal_enter_next_level
+      guid: 9317c22b406cdb4f841f40fe5e426a22
+>>>>>>> Sound
+      id: 3255294874
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Portal_enter_next_level
+        ObjectType: 3
+      Path: Default Work Unit/Play_Portal_enter_next_level
+      maxAttenuation: 0
+      maxDuration: 3.040023
+      minDuration: 3.040023
+    - name: Play_Smaller_glass_breaking
+<<<<<<< HEAD
+      guid: bf5686931013f344a7ed0800de0e8e43
+=======
+      guid: 2dbaa540c2ca534d83ce9556648ba0e6
+>>>>>>> Sound
+      id: 1720134853
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Smaller_glass_breaking
+        ObjectType: 3
+      Path: Default Work Unit/Play_Smaller_glass_breaking
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: Play_Wood_impact
+<<<<<<< HEAD
+      guid: 84fdae92907c8746bf4d417c79211bfe
+=======
+      guid: 0985b23aed9bc641aa28b6150a203c4f
+>>>>>>> Sound
+      id: 1663130662
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Wood_impact
+        ObjectType: 3
+      Path: Default Work Unit/Play_Wood_impact
+      maxAttenuation: 0
+      maxDuration: 0.674059
+      minDuration: 0.674059
+<<<<<<< HEAD
+=======
+    - name: Play_Wood_impact2
+      guid: 0d5b62dbea32714aaabec66b319710ab
+      id: 864292832
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Wood_impact2
+        ObjectType: 3
+      Path: Default Work Unit/Play_Wood_impact2
+      maxAttenuation: 0
+      maxDuration: 0.969926
+      minDuration: 0.969926
+>>>>>>> Stashed changes
+>>>>>>> Sound
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 493bb8d2612cd04aab9636c6020424b3
     GuidInternal: 
-    m_lastTime: -8586340090264775808
-    List: []
+    m_lastTime: -8586335877654775808
+    List:
+    - name: Music
+      guid: 7e6db5316f1a8c47a7229b4f05b3525e
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 13
+      Path: Default Work Unit/Music
+    - name: World
+      guid: 14d6fddca700c545b784bf570902d5e0
+      id: 2609808943
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 13
+      Path: Default Work Unit/World
   - PhysicalPath: Game Parameters/Factory Motion.wwu
     ParentPhysicalPath: 
     guid: 225213d7dbd1d042adc0930743567776
@@ -420,6 +720,12 @@ MonoBehaviour:
       - ElementName: Simulation_FA_SSGrain
         ObjectType: 13
       Path: Factory SoundSeed Grain/Simulation_FA_SSGrain
+  - PhysicalPath: Game Parameters/Music.wwu
+    ParentPhysicalPath: 
+    guid: 63506a07dfeb3e4fa4a5b04480a5b11a
+    GuidInternal: 
+    m_lastTime: -8586335925244775808
+    List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -445,5 +751,7 @@ MonoBehaviour:
   - /minigame1_sound_ny
   - /minigame1_sound_ny/Events
   - /minigame1_sound_ny/Events/Default Work Unit
+  - /minigame1_sound_ny/SoundBanks
+  - /minigame1_sound_ny/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
