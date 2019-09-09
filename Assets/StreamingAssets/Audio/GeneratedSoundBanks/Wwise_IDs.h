@@ -15,14 +15,22 @@ namespace AK
     {
         static const AkUniqueID PLAY_COUCH_IMPACT = 2776670769U;
         static const AkUniqueID PLAY_DRUM_COLLISION = 2072427939U;
-        static const AkUniqueID PLAY_FLOAT_THEME = 2142485738U;
         static const AkUniqueID PLAY_GLASS_BREAKING = 2424027906U;
         static const AkUniqueID PLAY_GRAVITY_SHIFT = 3025114257U;
+<<<<<<< Updated upstream
+=======
+        static const AkUniqueID PLAY_LEVEL1MUSIC = 3605952550U;
+        static const AkUniqueID PLAY_LEVEL2MUSIC = 565626987U;
+        static const AkUniqueID PLAY_LEVEL3MUSIC = 1946308780U;
+        static const AkUniqueID PLAY_LEVEL4MUSIC = 3045698593U;
+        static const AkUniqueID PLAY_LEVEL4MUSICLOOP = 839894203U;
+>>>>>>> Stashed changes
         static const AkUniqueID PLAY_METAL_IMPACT_SMALL = 1030011832U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
         static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
         static const AkUniqueID PLAY_WOOD_IMPACT = 1663130662U;
+        static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
