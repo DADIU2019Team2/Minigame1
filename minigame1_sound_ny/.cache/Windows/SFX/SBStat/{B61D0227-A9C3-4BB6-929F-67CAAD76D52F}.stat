@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
-<<<<<<< HEAD
-	<Timestamp>1568019232</Timestamp>
-	<DataSize>22513408</DataSize>
-	<FileSize>22515157</FileSize>
-	<DecodedSize>22513356</DecodedSize>
-=======
-<<<<<<< Updated upstream
-	<Timestamp>1567764798</Timestamp>
-	<DataSize>14046068</DataSize>
-	<FileSize>14047060</FileSize>
-	<DecodedSize>14046028</DecodedSize>
-=======
-	<Timestamp>1568029155</Timestamp>
-	<DataSize>28277312</DataSize>
-	<FileSize>28278857</FileSize>
-	<DecodedSize>28277252</DecodedSize>
->>>>>>> Stashed changes
->>>>>>> Sound
+	<Timestamp>1568032581</Timestamp>
+	<DataSize>39983164</DataSize>
+	<FileSize>39984877</FileSize>
+	<DecodedSize>39983080</DecodedSize>
 	<SFXPreFetchSize>0</SFXPreFetchSize>
-	<SFXInMemorySize>28277252</SFXInMemorySize>
+	<SFXInMemorySize>39983080</SFXInMemorySize>
 	<SFXMissingFiles>0</SFXMissingFiles>
 	<MusicPreFetchSize>0</MusicPreFetchSize>
-	<MusicInMemorySize>8467328</MusicInMemorySize>
+	<MusicInMemorySize>0</MusicInMemorySize>
 	<MusicMissingFiles>0</MusicMissingFiles>
 	<VoicePreFetchSize>0</VoicePreFetchSize>
 	<VoiceInMemorySize>0</VoiceInMemorySize>
