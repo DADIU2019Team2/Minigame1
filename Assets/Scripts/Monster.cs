@@ -10,6 +10,8 @@ public class Monster : MonoBehaviour
 
     private float timer = 0;
 
+    private Vector3 currentDestination;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,22 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
-        navAgent.destination = playerTransform.position;
-        
-    }
+        timer += Time.deltaTime;
+        if (timer >= 2)
+        {
+            Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
 
+            Vector3 playerPos = playerTransform.position;
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(playerPos, out hit, 8f, NavMesh.AllAreas))
+            {
+                currentDestination = hit.position;
+            } else { currentDestination = transform.position; }
+
+
+            //navAgent.destination = playerTransform.position;
+            navAgent.destination = currentDestination;
+        }
+        timer %= 2;
+    }
 }
