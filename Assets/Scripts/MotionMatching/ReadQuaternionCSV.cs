@@ -6,12 +6,13 @@ using System.IO;
 
 public class ReadQuaternionCSV : MonoBehaviour
 {
-    public enum MovementType {Idle, Walking, RightTurn90, LeftTurn90, RightTurn180, LeftTurn180};
+    public enum MovementType { Idle, Walking, RightTurn90, LeftTurn90, RightTurn180, LeftTurn180 };
     public string fileName;
     [SerializeField]
     private int iterateThroughJoint;
     // Start is called before the first frame update
     Quaternion[] rotations;
+    [SerializeField]
     MotionState[] mST;
     string[] boneHeaders;
     int motionStartFrame, motionEndFrame;
@@ -38,11 +39,12 @@ public class ReadQuaternionCSV : MonoBehaviour
         {
             string[] splitLine = everyLine[i].Split(',');
 
-            for (int j = 0; j < splitLine.Length; j += 4)
+            for (int j = 0; j < splitLine.Length - 1; j += 4)
             {
                 rotations[j / 4] = new Quaternion(float.Parse(splitLine[j]), float.Parse(splitLine[j + 1]), float.Parse(splitLine[j + 2]), float.Parse(splitLine[j + 3]));
             }
             mST[i - 1] = new MotionState(rotations);
+            mST[i - 1].SetMotionType(int.Parse(splitLine[splitLine.Length - 1]));
         }
         string[] tempHeader = everyLine[0].Split(',');
         for (int i = 0; i < boneHeaders.Length; i++)
@@ -50,8 +52,9 @@ public class ReadQuaternionCSV : MonoBehaviour
             boneHeaders[i] = tempHeader[i * 4];
         }
 
+
         //this is where we tag motion data
-        for (int i = 0; i < mST.Length; i++)
+       /*  for (int i = 0; i < mST.Length; i++)
         {
             if (i >= 0 && i <= 520 || i >= 880 && i <= 1214 || i >= 1587 && i <= 1780)
                 mST[i].SetMotionType(1); // walking forward
@@ -62,7 +65,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             if (i > 1780 && i < 2157)
                 mST[i].SetMotionType(4); // 90 right
 
-        }
+        } */
     }
 
     void Update()
@@ -175,14 +178,13 @@ public class ReadQuaternionCSV : MonoBehaviour
         Debug.Log("Frame boundaries:" + lower + " to " + higher);
     }
 
-    public void GiveInput(MovementType state)
+    public void GiveInput(MovementType state, Vector3 wishDirection)
     {
         //this will give input to the animation engine to change states;
     }
 
-    int FindClosestMotionState(int current, MovementType type)
+    int FindClosestMotionState(int current, int state)
     {
-        int state = (int)type;
         int stateFrame = 0;
         float distance = float.MaxValue;
 
