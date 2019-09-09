@@ -17,7 +17,7 @@ public class Monster : MonoBehaviour
         if (navAgent == null) { navAgent = GetComponent<NavMeshAgent>(); }
         if (playerTransform == null) { playerTransform = GameObject.FindGameObjectWithTag("Player").transform; }
 
-        navAgent.autoRepath = true;
+        navAgent.autoRepath = false;
     }
 
     // Update is called once per frame
@@ -25,6 +25,7 @@ public class Monster : MonoBehaviour
     {
         Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
         navAgent.destination = playerTransform.position;
+        
     }
 
 }

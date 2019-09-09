@@ -2767,12 +2767,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4cc683288b1d0514cb803bbb42193ff7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.79
+      value: 10.83
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc683288b1d0514cb803bbb42193ff7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -37.94
+      value: -43.24
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4cc683288b1d0514cb803bbb42193ff7,
         type: 3}
@@ -3983,8 +3983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
-  m_StartPoint: {x: 0, y: 1.1505117, z: -9.546345}
-  m_EndPoint: {x: 0, y: -0.9198282, z: -6.7314224}
+  m_StartPoint: {x: 0, y: 1.5891004, z: -9.77018}
+  m_EndPoint: {x: 0, y: -0.18930101, z: -7.102062}
   m_Width: 7.56
   m_CostModifier: -1
   m_Bidirectional: 1
@@ -4626,7 +4626,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 710793974}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.8530043, y: -0.37632674, z: -0.00000007476931}
+  m_ConnectedAnchor: {x: -4.1772223, y: -1.6558368, z: -0.0000005981545}
   serializedVersion: 2
   m_Spring: 30
   m_Damper: 0.7
