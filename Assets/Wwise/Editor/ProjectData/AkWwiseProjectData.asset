@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3713ca50998571499d3e31b46f895c9d
     GuidInternal: 
-    m_lastTime: -8586335877644775808
+    m_lastTime: -8586340090264775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
@@ -209,15 +209,15 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586340083304775808
     List:
-    - name: Play_Couch_Impact
-      guid: 762ac3f5174d4d48922b2fdde67f4a45
-      id: 2776670769
+    - name: Play_Level_1_Ambience
+      guid: adafbaa107f9fd41aead9bf719971793
+      id: 3228446999
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Couch_Impact
+      - ElementName: Play_Level_1_Ambience
         ObjectType: 3
-      Path: Default Work Unit/Play_Couch_Impact
+      Path: Default Work Unit/Play_Level_1_Ambience
       maxAttenuation: 0
     m_lastTime: -8586335777324775808
     List:
@@ -287,7 +287,7 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Level2music
+      - ElementName: Play_Purgatory_lvl1_loop1
         ObjectType: 3
       Path: Default Work Unit/Play_Level2music
       maxAttenuation: 0
@@ -408,26 +408,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 493bb8d2612cd04aab9636c6020424b3
     GuidInternal: 
-    m_lastTime: -8586335877654775808
-    List:
-    - name: Music
-      guid: 7e6db5316f1a8c47a7229b4f05b3525e
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Music
-        ObjectType: 13
-      Path: Default Work Unit/Music
-    - name: World
-      guid: 14d6fddca700c545b784bf570902d5e0
-      id: 2609808943
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 13
-      Path: Default Work Unit/World
+    m_lastTime: -8586340090264775808
+    List: []
   - PhysicalPath: Game Parameters/Factory Motion.wwu
     ParentPhysicalPath: 
     guid: 225213d7dbd1d042adc0930743567776
@@ -608,12 +590,6 @@ MonoBehaviour:
       - ElementName: Simulation_FA_SSGrain
         ObjectType: 13
       Path: Factory SoundSeed Grain/Simulation_FA_SSGrain
-  - PhysicalPath: Game Parameters/Music.wwu
-    ParentPhysicalPath: 
-    guid: 63506a07dfeb3e4fa4a5b04480a5b11a
-    GuidInternal: 
-    m_lastTime: -8586335925244775808
-    List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -639,7 +615,5 @@ MonoBehaviour:
   - /minigame1_sound_ny
   - /minigame1_sound_ny/Events
   - /minigame1_sound_ny/Events/Default Work Unit
-  - /minigame1_sound_ny/SoundBanks
-  - /minigame1_sound_ny/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
-  CurrentPluginConfig: 
+  CurrentPluginConfig:

@@ -4,8 +4,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#ifndef __WWISE_IDS_H__
-#define __WWISE_IDS_H__
+#ifndef _WWISE_IDS_H_
+#define _WWISE_IDS_H_
 
 #include <AK/SoundEngine/Common/AkTypes.h>
 
@@ -40,7 +40,6 @@ namespace AK
         static const AkUniqueID DENSITY_FA_SSGRAIN = 2715217995U;
         static const AkUniqueID IMMERSION_FA_SSGRAIN = 2481728872U;
         static const AkUniqueID INSTRUMENT_FA_SSGRAIN = 2317409760U;
-        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID PROXIMITY_FA_SSGRAIN = 1791284502U;
         static const AkUniqueID RPM = 796049864U;
@@ -56,7 +55,6 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
-        static const AkUniqueID WORLD = 2609808943U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -79,4 +77,4 @@ namespace AK
 
 }// namespace AK
 
-#endif // __WWISE_IDS_H__
+#endif // _WWISE_IDS_H_
