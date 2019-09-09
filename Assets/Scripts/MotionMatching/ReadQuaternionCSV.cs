@@ -6,26 +6,18 @@ using System.IO;
 
 public class ReadQuaternionCSV : MonoBehaviour
 {
+    public enum MovementType {Idle, Walking, RightTurn90, LeftTurn90, RightTurn180, LeftTurn180};
     public string fileName;
-    // Start is called before the first frame update
-    public Quaternion[] rotations;
-    [SerializeField]
-    MotionState[] mST;
-    [SerializeField]
-    MotionState[] localMST;
     [SerializeField]
     private int iterateThroughJoint;
-
-    [SerializeField]
+    // Start is called before the first frame update
+    Quaternion[] rotations;
+    MotionState[] mST;
     string[] boneHeaders;
-    public Transform[] boneTransforms;
-    private int motionStartFrame, motionEndFrame;
-    public int distanceTestFrom, distanceTestTo;
-    Vector3 forwardOrientation;
-    [SerializeField]
+    int motionStartFrame, motionEndFrame;
     Animator a;
-    Quaternion previousPoseOrientation;
-    Quaternion nextPoseOrientation;
+    [SerializeField]
+    Transform hipsTransform;
     void Awake()
     {
         a = gameObject.GetComponent<Animator>();
@@ -36,8 +28,6 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Start()
     {
-        previousPoseOrientation = Quaternion.identity;
-        nextPoseOrientation = Quaternion.identity;
         iterateThroughJoint = motionStartFrame;
         rotations = new Quaternion[24];
         string path = "Assets/Resources/" + fileName + ".csv";
@@ -60,9 +50,6 @@ public class ReadQuaternionCSV : MonoBehaviour
             boneHeaders[i] = tempHeader[i * 4];
         }
 
-        localMST = mST;
-        //localMST = CreateLocalRotations(mST);
-
         //this is where we tag motion data
         for (int i = 0; i < mST.Length; i++)
         {
@@ -80,7 +67,6 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void Update()
     {
-        forwardOrientation = (boneTransforms[1].forward + boneTransforms[14].forward + boneTransforms[20].forward) / 3f;
         //Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.green);
         /* forwardOrientation.y = 0f;
         Vector3 fwdFromArray = mST[iterateThroughJoint].GetJointRotations()[1] * Vector3.forward;
@@ -117,43 +103,10 @@ public class ReadQuaternionCSV : MonoBehaviour
             iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, 4);
             //nextPoseOrientation = Quaternion.LookRotation(fwdFromArray);
 
-           
+
 
 
         }
-
-        if (Input.GetKeyDown("space"))
-        {/* 
-            Debug.Log("Left thigh local rotation: " + boneTransforms[2].localRotation.x + "; " + boneTransforms[2].localRotation.y + "; " + boneTransforms[2].localRotation.z + "; " + boneTransforms[2].localRotation.w + "; ");
-            Quaternion backCalcRot = Quaternion.Inverse(mST[iterateThroughJoint - 1].GetJointRotations()[1]) * mST[iterateThroughJoint - 1].GetJointRotations()[2];
-            Debug.Log("Back calculated local rotation: " + backCalcRot.x + "; " + backCalcRot.y + "; " + backCalcRot.z + "; " + backCalcRot.w);
- */
-         //WriteRotationsCSV("localTest", localMST, boneHeaders);
-         //Debug.Log("Distance of poses is " + MotionState.SquareDistanceBackRotated(mST[distanceTestFrom], mST[distanceTestTo]) + " units");
-        }
-
-
-        /* //forwardOrientation = Vector3.Cross(Vector3.up, forwardOrientation);
-        //Debug.DrawLine(transform.position, transform.position + forwardOrientation, Color.red);
-        Debug.DrawLine(boneTransforms[1].position, boneTransforms[1].position + boneTransforms[1].forward, Color.red);
-        Debug.DrawLine(boneTransforms[14].position, boneTransforms[14].position + boneTransforms[14].forward, Color.red);
-        Debug.DrawLine(boneTransforms[20].position, boneTransforms[20].position + boneTransforms[20].forward, Color.red); */
-
-    }
-
-    Vector3 MakeForwardOrientation(int frame)
-    {
-        Quaternion hipQ = localMST[frame].GetJointRotations()[1];
-        Quaternion leftShoulderQ = localMST[frame].GetJointRotations()[14];
-        Quaternion rightShoulderQ = localMST[frame].GetJointRotations()[20];
-        Vector3 result = (hipQ * Vector3.forward + leftShoulderQ * Vector3.forward + rightShoulderQ * Vector3.forward) / 3f;
-        result.y = 0f;
-        return result;
-    }
-
-    void TurnHip()
-    {
-        transform.eulerAngles = new Vector3(0, boneTransforms[1].eulerAngles.y, 0);
     }
 
     void LateUpdate()
@@ -170,54 +123,49 @@ public class ReadQuaternionCSV : MonoBehaviour
         //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
     }
 
+    Vector3 MakeForwardOrientation(int frame)
+    {
+        Quaternion hipQ = mST[frame].GetJointRotations()[1];
+        Quaternion leftShoulderQ = mST[frame].GetJointRotations()[14];
+        Quaternion rightShoulderQ = mST[frame].GetJointRotations()[20];
+        Vector3 result = (hipQ * Vector3.forward + leftShoulderQ * Vector3.forward + rightShoulderQ * Vector3.forward) / 3f;
+        result.y = 0f;
+        return result;
+    }
+
+    void TurnHip()
+    {
+        transform.eulerAngles = new Vector3(0, hipsTransform.eulerAngles.y, 0);
+    }
+
     void OnAnimatorIK(int layerIndex)
     {
-        a.SetBoneLocalRotation(HumanBodyBones.Hips, localMST[iterateThroughJoint].GetJointRotations()[1]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftUpperLeg, localMST[iterateThroughJoint].GetJointRotations()[2]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftLowerLeg, localMST[iterateThroughJoint].GetJointRotations()[3]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftFoot, localMST[iterateThroughJoint].GetJointRotations()[4]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftToes, localMST[iterateThroughJoint].GetJointRotations()[5]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightUpperLeg, localMST[iterateThroughJoint].GetJointRotations()[6]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightLowerLeg, localMST[iterateThroughJoint].GetJointRotations()[7]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightFoot, localMST[iterateThroughJoint].GetJointRotations()[8]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightToes, localMST[iterateThroughJoint].GetJointRotations()[9]);
-        a.SetBoneLocalRotation(HumanBodyBones.Spine, localMST[iterateThroughJoint].GetJointRotations()[10]);
-        //a.SetBoneLocalRotation(HumanBodyBones.Chest, localMST[iterateThroughJoint].GetJointRotations()[11]);
-        a.SetBoneLocalRotation(HumanBodyBones.Chest, localMST[iterateThroughJoint].GetJointRotations()[12]);
-        a.SetBoneLocalRotation(HumanBodyBones.UpperChest, localMST[iterateThroughJoint].GetJointRotations()[13]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftShoulder, localMST[iterateThroughJoint].GetJointRotations()[14]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftUpperArm, localMST[iterateThroughJoint].GetJointRotations()[15]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftLowerArm, localMST[iterateThroughJoint].GetJointRotations()[16]);
-        a.SetBoneLocalRotation(HumanBodyBones.LeftHand, localMST[iterateThroughJoint].GetJointRotations()[17]);
-        a.SetBoneLocalRotation(HumanBodyBones.Neck, localMST[iterateThroughJoint].GetJointRotations()[18]);
-        a.SetBoneLocalRotation(HumanBodyBones.Head, localMST[iterateThroughJoint].GetJointRotations()[19]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightShoulder, localMST[iterateThroughJoint].GetJointRotations()[20]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightUpperArm, localMST[iterateThroughJoint].GetJointRotations()[21]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightLowerArm, localMST[iterateThroughJoint].GetJointRotations()[22]);
-        a.SetBoneLocalRotation(HumanBodyBones.RightHand, localMST[iterateThroughJoint].GetJointRotations()[23]);
+        a.SetBoneLocalRotation(HumanBodyBones.Hips, mST[iterateThroughJoint].GetJointRotations()[1]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftUpperLeg, mST[iterateThroughJoint].GetJointRotations()[2]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftLowerLeg, mST[iterateThroughJoint].GetJointRotations()[3]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftFoot, mST[iterateThroughJoint].GetJointRotations()[4]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftToes, mST[iterateThroughJoint].GetJointRotations()[5]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightUpperLeg, mST[iterateThroughJoint].GetJointRotations()[6]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightLowerLeg, mST[iterateThroughJoint].GetJointRotations()[7]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightFoot, mST[iterateThroughJoint].GetJointRotations()[8]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightToes, mST[iterateThroughJoint].GetJointRotations()[9]);
+        a.SetBoneLocalRotation(HumanBodyBones.Spine, mST[iterateThroughJoint].GetJointRotations()[10]);
+        //a.SetBoneLocalRotation(HumanBodyBones.Chest, mST[iterateThroughJoint].GetJointRotations()[11]);
+        a.SetBoneLocalRotation(HumanBodyBones.Chest, mST[iterateThroughJoint].GetJointRotations()[12]);
+        a.SetBoneLocalRotation(HumanBodyBones.UpperChest, mST[iterateThroughJoint].GetJointRotations()[13]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftShoulder, mST[iterateThroughJoint].GetJointRotations()[14]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftUpperArm, mST[iterateThroughJoint].GetJointRotations()[15]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftLowerArm, mST[iterateThroughJoint].GetJointRotations()[16]);
+        a.SetBoneLocalRotation(HumanBodyBones.LeftHand, mST[iterateThroughJoint].GetJointRotations()[17]);
+        a.SetBoneLocalRotation(HumanBodyBones.Neck, mST[iterateThroughJoint].GetJointRotations()[18]);
+        a.SetBoneLocalRotation(HumanBodyBones.Head, mST[iterateThroughJoint].GetJointRotations()[19]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightShoulder, mST[iterateThroughJoint].GetJointRotations()[20]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightUpperArm, mST[iterateThroughJoint].GetJointRotations()[21]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightLowerArm, mST[iterateThroughJoint].GetJointRotations()[22]);
+        a.SetBoneLocalRotation(HumanBodyBones.RightHand, mST[iterateThroughJoint].GetJointRotations()[23]);
 
     }
 
-    /* float GetLocalBoneDistance(Transform[] lhs, Transform[] rhs)
-    {
-        float distance = 0f;
-        for (int i = 2; i < lhs.Length; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                distance += (lhs[i].localRotation[j] - rhs[i].localRotation[j]) * (lhs[i].localRotation[j] - rhs[i].localRotation[j]);
-            }
-        }
-        return distance;
-    } */
-
-    void SetBoneRotations(int frame)
-    {
-        MotionState currentMotionState = mST[frame];
-
-        for (int i = 0; i < boneTransforms.Length; i++)
-            boneTransforms[i].rotation = currentMotionState.GetJointRotations()[i];
-    }
 
     void SetMotionFrameBoundaries(int lower, int higher)
     {
@@ -227,8 +175,14 @@ public class ReadQuaternionCSV : MonoBehaviour
         Debug.Log("Frame boundaries:" + lower + " to " + higher);
     }
 
-    int FindClosestMotionState(int current, int state)
+    public void GiveInput(MovementType state)
     {
+        //this will give input to the animation engine to change states;
+    }
+
+    int FindClosestMotionState(int current, MovementType type)
+    {
+        int state = (int)type;
         int stateFrame = 0;
         float distance = float.MaxValue;
 
@@ -244,76 +198,5 @@ public class ReadQuaternionCSV : MonoBehaviour
         }
         Debug.Log("Frame to jump to: " + stateFrame + ". Distance from current state: " + distance);
         return stateFrame;
-    }
-
-    MotionState[] CreateLocalRotations(MotionState[] globalStates)
-    {
-        MotionState[] localFrames = new MotionState[globalStates.Length];
-        for (int i = 0; i < globalStates.Length; i++)
-        {
-            Quaternion[] tempGlobalPose = globalStates[i].GetJointRotations();
-            Quaternion[] localPoseVector = new Quaternion[globalStates[0].numberOfJoints];
-            localPoseVector[0] = tempGlobalPose[0];
-            for (int j = 1; j < 6; j++)
-            {
-                localPoseVector[j] = Quaternion.Inverse(tempGlobalPose[j - 1]) * tempGlobalPose[j];
-            }
-            localPoseVector[6] = Quaternion.Inverse(tempGlobalPose[1]) * tempGlobalPose[6];
-            for (int j = 7; j < 10; j++)
-            {
-                localPoseVector[j] = Quaternion.Inverse(tempGlobalPose[j - 1]) * tempGlobalPose[j];
-            }
-            localPoseVector[10] = Quaternion.Inverse(tempGlobalPose[1]) * tempGlobalPose[10];
-            for (int j = 11; j < 18; j++)
-            {
-                localPoseVector[j] = Quaternion.Inverse(tempGlobalPose[j - 1]) * tempGlobalPose[j];
-            }
-            localPoseVector[18] = Quaternion.Inverse(tempGlobalPose[13]) * tempGlobalPose[18];
-            localPoseVector[19] = Quaternion.Inverse(tempGlobalPose[18]) * tempGlobalPose[19];
-            localPoseVector[20] = Quaternion.Inverse(tempGlobalPose[13]) * tempGlobalPose[20];
-            for (int j = 21; j < 24; j++)
-            {
-                localPoseVector[j] = Quaternion.Inverse(tempGlobalPose[j - 1]) * tempGlobalPose[j];
-            }
-            localFrames[i] = new MotionState(localPoseVector);
-        }
-        return localFrames;
-    }
-
-    public void WriteRotationsCSV(string saveFileName, MotionState[] everyMotionStates, string[] rokokoHeaders)
-    {
-        string filePath = "Assets/Resources/" + saveFileName + ".csv";
-        if (File.Exists(filePath) == false)
-        {
-            string temp = "";
-            string[] tempRokokoHeaders = new string[4 * rokokoHeaders.Length];
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < tempRokokoHeaders.Length; i++)
-            {
-                tempRokokoHeaders[i] = rokokoHeaders[i / 4];
-            }
-            temp = string.Join(",", tempRokokoHeaders);
-            sb.AppendLine(temp);
-
-
-            for (int i = 0; i < everyMotionStates.Length; i++)
-            {
-                temp = "";
-                Quaternion[] tempQuaternion = new Quaternion[26];
-                tempQuaternion = everyMotionStates[i].GetJointRotations();
-                for (int j = 0; j < tempQuaternion.Length; j++)
-                {
-                    temp += tempQuaternion[j].x.ToString() + "," + tempQuaternion[j].y.ToString() + "," + tempQuaternion[j].z.ToString() + "," + tempQuaternion[j].w.ToString();
-                    if (j != tempQuaternion.Length - 1)
-                        temp += ",";
-                }
-                sb.AppendLine(temp);
-            }
-
-
-            StreamWriter outStream = File.CreateText(filePath);
-            outStream.Write(sb);
-            outStream.Close();
-        }
     }
 }
