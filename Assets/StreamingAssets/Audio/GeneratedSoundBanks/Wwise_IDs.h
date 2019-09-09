@@ -13,27 +13,25 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BOX_PLASTIC_IMPACT_1 = 2306258661U;
+        static const AkUniqueID PLAY_BOX_PLASTIC_IMPACT_2 = 2306258662U;
         static const AkUniqueID PLAY_COUCH_IMPACT = 2776670769U;
         static const AkUniqueID PLAY_DRUM_COLLISION = 2072427939U;
+        static const AkUniqueID PLAY_FLOAT_THEME = 2142485738U;
+        static const AkUniqueID PLAY_FRIDGE_IMPACT = 785252386U;
         static const AkUniqueID PLAY_GLASS_BREAKING = 2424027906U;
         static const AkUniqueID PLAY_GRAVITY_SHIFT = 3025114257U;
-<<<<<<< HEAD
-        static const AkUniqueID PLAY_LEVEL1 = 3659125941U;
-=======
-<<<<<<< Updated upstream
-=======
         static const AkUniqueID PLAY_LEVEL1MUSIC = 3605952550U;
         static const AkUniqueID PLAY_LEVEL2MUSIC = 565626987U;
         static const AkUniqueID PLAY_LEVEL3MUSIC = 1946308780U;
         static const AkUniqueID PLAY_LEVEL4MUSIC = 3045698593U;
         static const AkUniqueID PLAY_LEVEL4MUSICLOOP = 839894203U;
->>>>>>> Stashed changes
->>>>>>> Sound
         static const AkUniqueID PLAY_METAL_IMPACT_SMALL = 1030011832U;
+        static const AkUniqueID PLAY_METAL_IMPACT = 26906972U;
+        static const AkUniqueID PLAY_MONSTER_CRAWL_SCRAPE1 = 1470122796U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
         static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
-        static const AkUniqueID PLAY_WOOD_IMPACT = 1663130662U;
         static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
     } // namespace EVENTS
 
@@ -70,8 +68,6 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
