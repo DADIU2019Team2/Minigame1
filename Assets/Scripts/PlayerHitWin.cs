@@ -19,12 +19,6 @@ public class PlayerHitWin : MonoBehaviour
     {
         WinScreenOverlay.SetActive(true);
         //Debug.Log("I got here");
-        string sceneName = MainMenu.GetSceneNameFromBuildIndex(SceneManager.GetActiveScene().buildIndex);
-        if (PlayerPrefs.HasKey(sceneName))
-        {
-            return;
-        }
-        //sets levels completed to one more than before this level was completed
-        PlayerPrefs.SetString(sceneName, "Completed");
+        GameManager.instance.levelCompleted();
     }
 }
