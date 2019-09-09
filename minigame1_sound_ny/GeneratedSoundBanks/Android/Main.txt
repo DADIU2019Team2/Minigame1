@@ -8,17 +8,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2776670769	Play_Couch_Impact			\Default Work Unit\Play_Couch_Impact	
 	3025114257	Play_Gravity_shift			\Default Work Unit\Play_Gravity_shift	
 	3255294874	Play_Portal_enter_next_level			\Default Work Unit\Play_Portal_enter_next_level	
+	3659125941	Play_Level1			\Default Work Unit\Play_Level1	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	163531620	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Gravity shift_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gravity shift		562176
 	198088005	Float theme	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Float theme_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Float theme		11289664
+	458886373	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Portal enter next level		536324
 	470386603	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Smaller glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Smaller glass breaking		352864
+	540843851	Purgatory level 1 loop2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Purgatory level 1 loop2_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1\Loop2\Purgatory level 1 loop2		5644864
 	583490262	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass breaking		521740
 	594628702	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Drum collision_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drum collision		118028
 	610621807	Metal impact small	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Metal impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal impact small		114724
 	615944886	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Couch Impact		121892
 	729551035	Wood impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Wood impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood impact		118968
 	753152296	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Monster impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster impact		309648
-	937877114	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Portal enter next level		536324
+	859261905	Purgatory level 1 loop1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Purgatory level 1 loop1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1\Loop1\Purgatory level 1 loop1		2822464
 

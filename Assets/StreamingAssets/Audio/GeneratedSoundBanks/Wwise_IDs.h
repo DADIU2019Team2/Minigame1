@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_FLOAT_THEME = 2142485738U;
         static const AkUniqueID PLAY_GLASS_BREAKING = 2424027906U;
         static const AkUniqueID PLAY_GRAVITY_SHIFT = 3025114257U;
+        static const AkUniqueID PLAY_LEVEL1 = 3659125941U;
         static const AkUniqueID PLAY_METAL_IMPACT_SMALL = 1030011832U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
@@ -30,6 +31,7 @@ namespace AK
         static const AkUniqueID DENSITY_FA_SSGRAIN = 2715217995U;
         static const AkUniqueID IMMERSION_FA_SSGRAIN = 2481728872U;
         static const AkUniqueID INSTRUMENT_FA_SSGRAIN = 2317409760U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID PROXIMITY_FA_SSGRAIN = 1791284502U;
         static const AkUniqueID RPM = 796049864U;
@@ -45,6 +47,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID WORLD = 2609808943U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -56,7 +59,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

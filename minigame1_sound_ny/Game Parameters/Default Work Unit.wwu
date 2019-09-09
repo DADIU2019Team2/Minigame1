@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}"/>
+				<GameParameter Name="World" ID="{DCFDD614-00A7-45C5-B784-BF570902D5E0}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
