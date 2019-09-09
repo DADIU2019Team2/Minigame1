@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 using System.IO;
+using UnityEngine.AI;
 
 public class ReadQuaternionCSV : MonoBehaviour
 {
@@ -129,6 +130,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
             Debug.Log(rotationAngle);
             GiveInput(target.position);
+            GetComponent<NavMeshAgent>().destination = target.position;
         }
     }
 
@@ -141,8 +143,9 @@ public class ReadQuaternionCSV : MonoBehaviour
         //testing if rotating the hip back to identity does anything useful
         //boneTransforms[1].rotation*=Quaternion.Inverse(mST[iterateThroughJoint].GetJointRotations()[1]);
         //boneTransforms[1].rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
-
+        RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
         iterateThroughJoint = (iterateThroughJoint += 1) % 3398;
+        AreWeThereYet();
         //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
     }
 
@@ -165,7 +168,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     {
         float yRot = nextHipRot.eulerAngles.y;
         Quaternion newOrientation = Quaternion.Euler(0f, yRot, 0f);
-        hipsTransform.rotation = Quaternion.Inverse(newOrientation) * transform.rotation;
+        hipsTransform.rotation *= Quaternion.Inverse(newOrientation);
     }
 
     void OnAnimatorIK(int layerIndex)
@@ -208,6 +211,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     public void GiveInput(Vector3 wishPosition)
     {
         int targetState = 0;
+        currentWishDirection = wishPosition;
         Vector3 targetDirection = wishPosition - transform.position;
         float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
         if (Mathf.Abs(rotationAngle) < trigger90)
@@ -223,21 +227,38 @@ public class ReadQuaternionCSV : MonoBehaviour
 
         iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, targetState);
         RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
+        currentMotionType = targetState;
     }
 
     void AreWeThereYet()
     {
-        Vector3 targetDirection = currentWishDirection - transform.position;
+        
+        Vector3 targetDirection = target.position - transform.position;
         float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
+        Debug.Log(rotationAngle);
         int motionType = 0;
-        float vel = 0f;
+        float vel = GetComponent<NavMeshAgent>().velocity.magnitude;
+        Debug.Log("vel " + vel);
         if (vel <= cutOffSpeed)
+        {
             motionType = 0;
+            if (motionType != currentMotionType)
+            {
+                iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
+                currentMotionType = motionType;
+            }
+        }
+           
         else if (Mathf.Abs(rotationAngle) < trigger90)
         {
             motionType = 1;
+            if (motionType != currentMotionType)
+            {
+                iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
+                currentMotionType = motionType;
+            }
         }
-        FindClosestMotionState(iterateThroughJoint, motionType);
+
     }
 
     int FindClosestMotionState(int current, int state)
