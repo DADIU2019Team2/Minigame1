@@ -564,11 +564,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 29.809057
       objectReference: {fileID: 0}
+    - target: {fileID: -2156677456255399576, guid: f5ebba61a2cb2104381df5f932fc71eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eaaaa9ec7ec938d40a0710af224cf289, type: 2}
+    - target: {fileID: 898606835246669508, guid: f5ebba61a2cb2104381df5f932fc71eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c42f391afb81b2c499fd02bd653a71b4, type: 2}
     - target: {fileID: 4000252126760550350, guid: f5ebba61a2cb2104381df5f932fc71eb,
         type: 3}
       propertyPath: m_Name
       value: stairs
       objectReference: {fileID: 0}
+    - target: {fileID: 6866412723838559329, guid: f5ebba61a2cb2104381df5f932fc71eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 93b50fbf9b5eb3944b2c3f75581d5bc1, type: 2}
+    - target: {fileID: 8492576612177176201, guid: f5ebba61a2cb2104381df5f932fc71eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2de6224df39f554188579a339b2d805, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ebba61a2cb2104381df5f932fc71eb, type: 3}
 --- !u!1 &390247502 stripped
