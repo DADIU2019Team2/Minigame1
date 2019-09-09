@@ -1,5 +1,5 @@
 //Maya ASCII 2018 scene
-//Name: monsterA.ma
+//Name: monsterA_v007_EL.ma
 //Last modified: Mon, Sep 09, 2019 02:41:19 PM
 //Codeset: 1252
 requires maya "2018";
@@ -5923,4 +5923,4 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "monsterA_v005_AD:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
 connectAttr "monsterLow:defaultMat1F.msg" ":defaultTextureList1.tx" -na;
-// End of monsterA.ma
+// End of monsterA_v007_EL.ma
