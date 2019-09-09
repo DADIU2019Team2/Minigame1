@@ -1,14 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
+	565626987	Play_Level2music			\Default Work Unit\Play_Level2music	
+	839894203	Play_Level4musicloop			\Default Work Unit\Play_Level4musicloop	
+	864292832	Play_Wood_impact2			\Default Work Unit\Play_Wood_impact2	
 	1030011832	Play_Metal_impact_small			\Default Work Unit\Play_Metal_impact_small	
 	1663130662	Play_Wood_impact			\Default Work Unit\Play_Wood_impact	
 	1720134853	Play_Smaller_glass_breaking			\Default Work Unit\Play_Smaller_glass_breaking	
+	1946308780	Play_Level3music			\Default Work Unit\Play_Level3music	
 	2072427939	Play_Drum_collision			\Default Work Unit\Play_Drum_collision	
-	2142485738	Play_Float_theme			\Default Work Unit\Play_Float_theme	
 	2424027906	Play_Glass_breaking			\Default Work Unit\Play_Glass_breaking	
 	2776670769	Play_Couch_Impact			\Default Work Unit\Play_Couch_Impact	
 	3025114257	Play_Gravity_shift			\Default Work Unit\Play_Gravity_shift	
+	3045698593	Play_Level4music			\Default Work Unit\Play_Level4music	
 	3255294874	Play_Portal_enter_next_level			\Default Work Unit\Play_Portal_enter_next_level	
+<<<<<<< HEAD
 	3659125941	Play_Level1			\Default Work Unit\Play_Level1	
+=======
+<<<<<<< Updated upstream
+>>>>>>> Sound
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -23,5 +31,30 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	615944886	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Couch Impact		121892
 	729551035	Wood impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood impact		118968
 	753152296	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster impact		309648
+<<<<<<< HEAD
 	859261905	Purgatory level 1 loop1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Purgatory level 1 loop1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1\Loop1\Purgatory level 1 loop1		2822464
+=======
+	937877114	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Portal enter next level		536324
+=======
+	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
+	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	153861738	Level2music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level2music_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Level2music		5644864
+	163531620	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Gravity shift_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		562176
+	330191231	Wood impact2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact2_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Wood impact2		118968
+	394742082	Level3music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level3music_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Level3music		5644864
+	458886373	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Portal enter next level		536324
+	470386603	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Smaller glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		352864
+	583490262	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		521740
+	594628702	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Drum collision_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Drum collision		118028
+	610621807	Metal impact small	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Metal impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Metal impact small		114724
+	615944886	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		121892
+	729551035	Wood impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Wood impact		118968
+	753152296	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		309648
+	819010376	Level4music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4music_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Level4music		5644864
+	998941212	Level1music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level1music_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Level1music		2822464
+	1063477166	Level4musicloop	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4musicloop_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Level4musicloop		5644864
+>>>>>>> Stashed changes
+>>>>>>> Sound
 
