@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: monsterA_v006_AD.ma
-//Last modified: Mon, Sep 09, 2019 01:09:27 PM
+//Last modified: Mon, Sep 09, 2019 01:10:58 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "34459C60-4342-C91B-8F10-34A792A104DC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 124.25744715639593 178.88089749058153 182.92969081439171 ;
-	setAttr ".r" -type "double3" 709.46164720297179 -5366.9999999984921 -4.7404708163742913e-16 ;
+	setAttr ".t" -type "double3" 93.13447801082097 184.61886485655961 276.77810887897658 ;
+	setAttr ".r" -type "double3" 709.4616472029702 -5378.9999999983638 8.5170880601894955e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B17AA34D-4EC3-FA1A-464D-659F38E9F1FA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 229.44111198244389;
+	setAttr ".coi" 306.13264760524663;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -76,10 +76,10 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "monsterLow:polySurface1";
-	rename -uid "32EA1FB8-4832-B28F-52C6-6897ABC4ED27";
-createNode mesh -n "monsterLow:polySurface1Shape" -p "monsterLow:polySurface1";
-	rename -uid "F861079F-42B4-E324-A170-E5A05E014A88";
+createNode transform -n "monsterA_geo";
+	rename -uid "3C8FEA57-4643-B149-4C53-11ADDBDC7262";
+createNode mesh -n "monsterA_geoShape" -p "monsterA_geo";
+	rename -uid "8AA9DA50-4D3F-D531-2D96-7DA66A30357F";
 	setAttr -k off ".v";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:1930]";
 	setAttr ".vir" yes;
@@ -5866,9 +5866,6 @@ createNode shadingEngine -n "monsterLow:defaultMat";
 	setAttr ".ro" yes;
 createNode materialInfo -n "monsterLow:materialInfo1";
 	rename -uid "FB4E2F9A-496B-0E6D-8897-AC9A3814247E";
-createNode groupId -n "monsterLow:groupId1";
-	rename -uid "E6AAE290-41A1-25A0-538E-B0B8DA33910B";
-	setAttr ".ihi" 0;
 createNode lambert -n "monsterLow:defaultMat1";
 	rename -uid "8F93BC17-4685-873A-D63B-C9B4ECE20C7D";
 	setAttr ".ambc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
@@ -5878,6 +5875,9 @@ createNode file -n "monsterLow:defaultMat1F";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "monsterLow:defaultMat1P2D";
 	rename -uid "3CD3B58F-4913-421C-2AE3-CAAF19BAC712";
+createNode groupId -n "groupId1";
+	rename -uid "5282600E-4053-258A-D158-20AF3E310FB2";
+	setAttr ".ihi" 0;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -5909,10 +5909,8 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "monsterLow:groupId1.id" "monsterLow:polySurface1Shape.iog.og[0].gid"
-		;
-connectAttr "monsterLow:defaultMat.mwc" "monsterLow:polySurface1Shape.iog.og[0].gco"
-		;
+connectAttr "groupId1.id" "monsterA_geoShape.iog.og[0].gid";
+connectAttr "monsterLow:defaultMat.mwc" "monsterA_geoShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "monsterLow:defaultMat.message" ":defaultLightSet.message";
@@ -5924,9 +5922,8 @@ connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "monsterA_v005_AD:renderLayerManager.rlmi[0]" "monsterA_v005_AD:defaultRenderLayer.rlid"
 		;
 connectAttr "monsterLow:defaultMat1.oc" "monsterLow:defaultMat.ss";
-connectAttr "monsterLow:groupId1.msg" "monsterLow:defaultMat.gn" -na;
-connectAttr "monsterLow:polySurface1Shape.iog.og[0]" "monsterLow:defaultMat.dsm"
-		 -na;
+connectAttr "groupId1.msg" "monsterLow:defaultMat.gn" -na;
+connectAttr "monsterA_geoShape.iog.og[0]" "monsterLow:defaultMat.dsm" -na;
 connectAttr "monsterLow:defaultMat.msg" "monsterLow:materialInfo1.sg";
 connectAttr "monsterLow:defaultMat1.msg" "monsterLow:materialInfo1.m";
 connectAttr "monsterLow:defaultMat1F.msg" "monsterLow:materialInfo1.t" -na;
