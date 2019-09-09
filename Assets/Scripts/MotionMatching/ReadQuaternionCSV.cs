@@ -19,12 +19,26 @@ public class ReadQuaternionCSV : MonoBehaviour
     Animator a;
     [SerializeField]
     Transform hipsTransform;
+
+    public int currentMotionType;
+    public Vector3 currentWishDirection;
+    public float cutOffSpeed;
+
+    [Range(0, 90f)]
+    public float trigger90;
+    [Range(0, 180f)]
+    public float trigger180;
+
+    public Transform target;
+
     void Awake()
     {
         a = gameObject.GetComponent<Animator>();
         boneHeaders = new string[24];
         motionStartFrame = 0;
-        motionEndFrame = 3399;
+        motionEndFrame = 8000;
+        if (trigger180 < trigger90)
+            trigger180 = trigger90;
     }
 
     void Start()
@@ -54,18 +68,18 @@ public class ReadQuaternionCSV : MonoBehaviour
 
 
         //this is where we tag motion data
-       /*  for (int i = 0; i < mST.Length; i++)
-        {
-            if (i >= 0 && i <= 520 || i >= 880 && i <= 1214 || i >= 1587 && i <= 1780)
-                mST[i].SetMotionType(1); // walking forward
-            if (i > 520 && i < 880)
-                mST[i].SetMotionType(2); // 180 left
-            if (i > 1214 && i < 1587)
-                mST[i].SetMotionType(3); // 180 right
-            if (i > 1780 && i < 2157)
-                mST[i].SetMotionType(4); // 90 right
+        /*  for (int i = 0; i < mST.Length; i++)
+         {
+             if (i >= 0 && i <= 520 || i >= 880 && i <= 1214 || i >= 1587 && i <= 1780)
+                 mST[i].SetMotionType(1); // walking forward
+             if (i > 520 && i < 880)
+                 mST[i].SetMotionType(2); // 180 left
+             if (i > 1214 && i < 1587)
+                 mST[i].SetMotionType(3); // 180 right
+             if (i > 1780 && i < 2157)
+                 mST[i].SetMotionType(4); // 90 right
 
-        } */
+         } */
     }
 
     void Update()
@@ -108,7 +122,13 @@ public class ReadQuaternionCSV : MonoBehaviour
 
 
 
-
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            Vector3 targetDirection = target.position - transform.position;
+            float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
+            Debug.Log(rotationAngle);
+            GiveInput(target.position);
         }
     }
 
@@ -139,6 +159,13 @@ public class ReadQuaternionCSV : MonoBehaviour
     void TurnHip()
     {
         transform.eulerAngles = new Vector3(0, hipsTransform.eulerAngles.y, 0);
+    }
+
+    void RotateBack(Quaternion nextHipRot)
+    {
+        float yRot = nextHipRot.eulerAngles.y;
+        Quaternion newOrientation = Quaternion.Euler(0f, yRot, 0f);
+        hipsTransform.rotation = Quaternion.Inverse(newOrientation) * transform.rotation;
     }
 
     void OnAnimatorIK(int layerIndex)
@@ -178,9 +205,39 @@ public class ReadQuaternionCSV : MonoBehaviour
         Debug.Log("Frame boundaries:" + lower + " to " + higher);
     }
 
-    public void GiveInput(MovementType state, Vector3 wishDirection)
+    public void GiveInput(Vector3 wishPosition)
     {
-        //this will give input to the animation engine to change states;
+        int targetState = 0;
+        Vector3 targetDirection = wishPosition - transform.position;
+        float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
+        if (Mathf.Abs(rotationAngle) < trigger90)
+            targetState = 1;
+        if (rotationAngle >= trigger90 && rotationAngle <= trigger180)
+            targetState = 3;
+        if (rotationAngle > trigger180 && rotationAngle <= 180f)
+            targetState = 5;
+        if (rotationAngle <= -trigger90 && rotationAngle >= -trigger180)
+            targetState = 2;
+        if (rotationAngle < -trigger180 && rotationAngle > -180f)
+            targetState = 4;
+
+        iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, targetState);
+        RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
+    }
+
+    void AreWeThereYet()
+    {
+        Vector3 targetDirection = currentWishDirection - transform.position;
+        float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
+        int motionType = 0;
+        float vel = 0f;
+        if (vel <= cutOffSpeed)
+            motionType = 0;
+        else if (Mathf.Abs(rotationAngle) < trigger90)
+        {
+            motionType = 1;
+        }
+        FindClosestMotionState(iterateThroughJoint, motionType);
     }
 
     int FindClosestMotionState(int current, int state)
