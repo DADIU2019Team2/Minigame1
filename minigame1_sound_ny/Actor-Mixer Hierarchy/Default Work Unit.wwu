@@ -173,6 +173,9 @@
 						<AudioFileSource Name="Portal enter next level" ID="{9F3C63CD-C16E-41F8-A1C0-3B0912256DD8}" ShortID="937877114">
 							<Language>SFX</Language>
 							<AudioFile>Portal enter next level.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="458886373"/>
+							</ConvertedFileIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>

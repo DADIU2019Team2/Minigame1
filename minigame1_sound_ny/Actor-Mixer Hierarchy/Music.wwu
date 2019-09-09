@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Music" ID="{734EF710-B94F-4962-8848-46FD1DF04A23}" ShortID="632971470">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{6E3BDB51-A7C7-4346-8565-D5E3C77F02E6}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Float theme" ID="{77350DA1-05F4-438D-AF43-AB114EFB58A5}" ShortID="1012947636">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{C82DBFDD-069B-4119-AA75-7C0767CED485}" ShortID="461580406">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{625B691C-8022-461D-B89D-ABC4582258A8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Float theme" ID="{417C6303-9120-4CB7-8DD6-B52C0CA17C6F}" ShortID="198088006">
+									<Language>SFX</Language>
+									<AudioFile>Float theme.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="198088005"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Float theme" ID="{417C6303-9120-4CB7-8DD6-B52C0CA17C6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
