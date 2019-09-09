@@ -74,14 +74,16 @@ public class MainMenu : MonoBehaviour
 
         Debug.Log("Last completed level is: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel));
         Debug.Log("Next level is valid = " + SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid());
-        if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
+        Debug.Log("Attempting to load: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel + 1));
+        SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
+        /*if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
         {
             SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
         }
         else
         {
             Debug.LogError("The scene you are trying to load is not valid, likely cause: does not exist");
-        }
-        
+        }*/
+
     }
 }
