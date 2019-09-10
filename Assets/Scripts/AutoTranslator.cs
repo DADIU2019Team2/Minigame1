@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-[RequireComponent(typeof(Text))]
+//[RequireComponent(typeof(Text))]
 public class AutoTranslator : MonoBehaviour
 {
     public string textKey;
@@ -15,7 +16,15 @@ public class AutoTranslator : MonoBehaviour
     }
     public void OnLanguageChange()
     {
-        Text textElement = GetComponent<Text>();
-        textElement.text = LocalizationManager.TranslateKey(textKey);
+        if(GetComponent<Text>() != null)
+        {
+            Text textElement = GetComponent<Text>();
+            textElement.text = LocalizationManager.TranslateKey(textKey);
+        }
+        else if(GetComponent<TextMeshProUGUI>() != null)
+        {
+            TextMeshProUGUI textElement = GetComponent<TextMeshProUGUI>();
+            textElement.text = LocalizationManager.TranslateKey(textKey);
+        }
     }
 }

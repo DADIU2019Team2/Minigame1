@@ -6,7 +6,7 @@
 				<ActorMixer Name="World" ID="{A054D3A2-A286-41E9-A909-79B7C43EE5CE}" ShortID="318657870">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+							<ObjectRef Name="World" ID="{886AF221-1794-4E6E-AD00-AF06D264AC36}" WorkUnitID="{BEE67B39-44BB-4FA5-8F58-AE2742BB2D3F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="World" ID="{8C3EEA4D-73F0-4D58-A48A-41CC095FBA00}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>

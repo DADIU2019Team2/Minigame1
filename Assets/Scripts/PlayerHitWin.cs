@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHitWin : MonoBehaviour
 {
     [SerializeField]
-    private GameObject WinScreenOverlay;
+   // private GameObject WinScreenOverlay;
 
     private void OnTriggerEnter(Collider other)
     {
