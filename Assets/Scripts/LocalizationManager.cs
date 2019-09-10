@@ -17,7 +17,6 @@ public class LocalizationManager : MonoBehaviour
         languageID = (int)gameLanguage;
         dictionary = new Dictionary<string, string>();
         LoadLanguageFile(gameLanguage);
-
     }
 
     void LoadLanguageFile(GameLanguage language)
@@ -52,9 +51,18 @@ public class LocalizationManager : MonoBehaviour
         foreach (AutoTranslator a in autos)
             a.OnLanguageChange();
     }
+    public void ButtonChangeLanguage(string language)
+    {
+        ChangeLanguage((GameLanguage)System.Enum.Parse(typeof(GameLanguage), language));
+    }
 
     public static string TranslateKey(string key)
     {
+        if (dictionary ==null)
+        {
+            Debug.Log("No Dictionary");
+
+        }
         if (dictionary.ContainsKey(key) == false)
             return key;
         else
