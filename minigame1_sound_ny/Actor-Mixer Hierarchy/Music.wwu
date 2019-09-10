@@ -148,6 +148,25 @@
 								<ActiveSource Name="Level4musicloop" ID="{21B68C69-5221-4F88-BF5F-7CA241E535E3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Menu Music" ID="{4F6AAA24-CB63-43A3-B4B6-558E1571949E}" ShortID="648143650">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Menu Music" ID="{640384CF-BD1D-47F5-BF90-EC076F64CA7D}" ShortID="364062423">
+									<Language>SFX</Language>
+									<AudioFile>Menu Music.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Menu Music" ID="{640384CF-BD1D-47F5-BF90-EC076F64CA7D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
