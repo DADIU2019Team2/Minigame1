@@ -30,9 +30,12 @@ namespace AK
         static const AkUniqueID PLAY_METAL_IMPACT = 26906972U;
         static const AkUniqueID PLAY_MONSTER_CRAWL_SCRAPE1 = 1470122796U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
+        static const AkUniqueID PLAY_PHONE = 190234274U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
         static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
         static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
+        static const AkUniqueID SET_GAME_PARAMETER_MUSIC = 236152504U;
+        static const AkUniqueID SET_GAME_PARAMETER_WORLD = 4138451597U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
