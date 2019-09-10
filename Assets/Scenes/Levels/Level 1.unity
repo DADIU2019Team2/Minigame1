@@ -848,7 +848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526218917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.53, y: 0, z: 0}
+  m_LocalPosition: {x: -1.78, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1669730912}
@@ -908,11 +908,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb2e005f48a7d342b7de1ae9f748b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationSpeedMaybe: 200
-  smoothTime: 2
+  animationSpeedMaybe: 20
+  smoothTime: 1
   pathToFollow: {fileID: 1669730911}
   nameOfEnvironmentLayer: Building
-  inRangeOfTarget: 0.3
+  inRangeOfTarget: 0.2
   windowSuction: 0
 --- !u!1 &736259618
 GameObject:
@@ -1864,6 +1864,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1953497941}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: e5c64103f267fd94eb15696b4d59481a,
+        type: 3}
+      propertyPath: m_Name
+      value: BunkBed
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e5c64103f267fd94eb15696b4d59481a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1944,11 +1949,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6e85d49b7d49cd244b926817a8ff93a0, type: 2}
-    - target: {fileID: -927199367670048503, guid: e5c64103f267fd94eb15696b4d59481a,
-        type: 3}
-      propertyPath: m_Name
-      value: BunkBed
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c64103f267fd94eb15696b4d59481a, type: 3}
 --- !u!4 &1427049295 stripped
@@ -2398,6 +2398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: level one environment_003
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 230f2b052877ee24eaa297d6fe15aeb4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 230f2b052877ee24eaa297d6fe15aeb4,
         type: 3}
