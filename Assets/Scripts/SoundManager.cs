@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public float soundLevel = 1f;
-    public float sfxLevel = 1f;
-   // public static AudioSource audioSource;
+    //public float soundLevel = 1f;
+    //public float sfxLevel = 1f;
+    //public static AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,50 +19,31 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            //SetSFXVolume(sfxLevel);
-            //SetSoundVolume(soundLevel);
-            //AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
-            SaveLoad.Save();
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            //SetSFXVolume(sfxLevel);
-            //SetSoundVolume(soundLevel);
-            //AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
-            SaveLoad.Load();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            Game.current.levelProgress[0] = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            Game.current.levelProgress[1] = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Game.current.levelProgress[2] = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            Game.current.levelProgress[3] = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            Game.current.levelProgress[4] = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    SetSFXVolume(sfxLevel);
+        //    SetSoundVolume(soundLevel);
+        //    AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
+
+        //}
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    SetSFXVolume(sfxLevel);
+        //    SetSoundVolume(soundLevel);
+        //    AkSoundEngine.PostEvent("Play_Couch_Impact", gameObject);
+
+        //}
+
     }
-    //public void SetSFXVolume(float volume)
-    //{
-    //    Debug.Log(volume);
-    //    AkSoundEngine.SetRTPCValue("World", volume);
-        
-    //}
-    //public void SetSoundVolume(float volume)
-    //{
-    //    Debug.Log(volume);
-    //    AkSoundEngine.SetRTPCValue("Music", volume);
-    //}
+    public void SetSFXVolume(float volume)
+    {
+        Debug.Log(volume);
+        AkSoundEngine.SetRTPCValue("World", volume);
+
+    }
+    public void SetSoundVolume(float volume)
+    {
+        Debug.Log(volume);
+        AkSoundEngine.SetRTPCValue("Music", volume);
+    }
 }

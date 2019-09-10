@@ -36,28 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Level4music" ID="{087F6FA8-7239-472B-86F7-64E120F805A0}">
-					<ChildrenList>
-						<Action Name="" ID="{2B175019-71CD-4FCF-BA0C-F6EA1BAF2624}" ShortID="370475476">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level4music" ID="{CE204803-AF8A-46C1-9AC9-2A83E8C9D243}" WorkUnitID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Level4musicloop" ID="{6C971C15-B631-4973-91F0-42C5D57357CC}">
-					<ChildrenList>
-						<Action Name="" ID="{A65DEAD2-5836-4BC7-9E9C-0AB84B90802B}" ShortID="688322168">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level4musicloop" ID="{C1AE32A1-D173-4395-B6C2-D3B0EC1286FD}" WorkUnitID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Box_plastic_impact_1" ID="{8AE2B39D-9B31-4F72-8654-B55212D56B77}">
 					<ChildrenList>
 						<Action Name="" ID="{3BA6F788-EA6E-4771-963E-FE7C4AAC5100}" ShortID="405334270">
@@ -207,6 +185,67 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Wood impact2" ID="{AA47C569-F203-4854-8A37-E1F75AE05D33}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level4music" ID="{EA3D6338-FCB6-4195-AD7C-7375DE439C18}">
+					<ChildrenList>
+						<Action Name="" ID="{884CB3E6-B33F-4E90-AE1B-E7BE0E678456}" ShortID="531704393">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level4music" ID="{CE204803-AF8A-46C1-9AC9-2A83E8C9D243}" WorkUnitID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level4musicloop" ID="{EF06AB5C-1857-4B6D-B117-239C3C09C7B8}">
+					<ChildrenList>
+						<Action Name="" ID="{B1B02770-912C-4DFA-A264-C382369D33C1}" ShortID="1044831716">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level4musicloop" ID="{C1AE32A1-D173-4395-B6C2-D3B0EC1286FD}" WorkUnitID="{E12F50C6-1E4A-42B5-8A22-9CBCFAB5E575}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cardboard_impact" ID="{F92A1BAA-A1F1-4FEC-80C1-F8938FC3DA94}">
+					<ChildrenList>
+						<Action Name="" ID="{60DE1AA3-D275-4406-9223-9464E6A140D1}" ShortID="127517090">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cardboard_impact" ID="{4A16D544-D755-43D5-8F3C-7C40D5F614B1}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Game_Parameter_World" ID="{8C159C11-AE71-4D5D-8B41-FF8EB4B7D481}">
+					<ChildrenList>
+						<Action Name="" ID="{82F644A0-E84A-4CA0-8CC2-FC3259B9125A}" ShortID="451236482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World" ID="{DCFDD614-00A7-45C5-B784-BF570902D5E0}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Game_Parameter_Music" ID="{4D8EFB55-03DA-4248-A1AA-308C978A5E5F}">
+					<ChildrenList>
+						<Action Name="" ID="{B317D149-DB55-49F4-B4AF-B7A26902378C}" ShortID="812098630">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
