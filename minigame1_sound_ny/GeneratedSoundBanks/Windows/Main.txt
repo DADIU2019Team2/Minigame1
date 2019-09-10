@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	26906972	Play_Metal_impact			\Default Work Unit\Play_Metal_impact	
+	236152504	Set_Game_Parameter_Music			\Default Work Unit\Set_Game_Parameter_Music	
 	565626987	Play_Level2music			\Default Work Unit\Play_Level2music	
 	785252386	Play_Fridge_impact			\Default Work Unit\Play_Fridge_impact	
 	839894203	Play_Level4musicloop			\Default Work Unit\Play_Level4musicloop	
@@ -19,6 +20,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3255294874	Play_Portal_enter_next_level			\Default Work Unit\Play_Portal_enter_next_level	
 	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
+	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Gravity shift_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		562176

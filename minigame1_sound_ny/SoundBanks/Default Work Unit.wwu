@@ -9,6 +9,7 @@
 						<ObjectRef Name="Play_Drum_collision" ID="{9BBE262E-0F62-40F4-8822-C5947EA89534}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Float_theme" ID="{A9051A33-7641-4192-A0C7-E24803F4C54C}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Level4music" ID="{EA3D6338-FCB6-4195-AD7C-7375DE439C18}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_Game_Parameter_Music" ID="{4D8EFB55-03DA-4248-A1AA-308C978A5E5F}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Box_plastic_impact_2" ID="{282CC75C-4C83-43AB-8AC5-D138B1593E88}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Monster_crawl_scrape1" ID="{07FB1DBD-2A43-4410-9088-22269EB6E11E}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Fridge_impact" ID="{E1188F74-5E13-474A-84BA-2B5EE607F2B4}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
@@ -20,6 +21,7 @@
 						<ObjectRef Name="Play_Level4musicloop" ID="{EF06AB5C-1857-4B6D-B117-239C3C09C7B8}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Glass_breaking" ID="{D5327865-436E-4C8F-9CE6-0D9DB5ECCC98}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Level2music" ID="{B3FE91B3-BE86-4CAD-B7BC-AE2844C50249}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Set_Game_Parameter_World" ID="{8C159C11-AE71-4D5D-8B41-FF8EB4B7D481}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Gravity_shift" ID="{C84F1AB5-5246-4E19-A78C-E5CF9488D731}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Level3music" ID="{44EBE656-448C-4EDD-B620-6D67565671D1}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Box_plastic_impact_1" ID="{8AE2B39D-9B31-4F72-8654-B55212D56B77}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
