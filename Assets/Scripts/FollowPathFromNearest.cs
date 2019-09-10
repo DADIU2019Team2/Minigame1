@@ -24,22 +24,41 @@ public class FollowPathFromNearest : MonoBehaviour
     private float inRangeOfTarget = 0.3f;
     private Vector3 velocity = Vector3.zero;
 
+    public bool windowSuction = false;
+
+    bool hasBeenInitiated;
+
     private void Start()
     {
+        windowSuction = false;
         _pathToFollow = pathToFollow.GetComponent<PathToWindow>().getWindowPath();
-        Debug.Log("closest chekpoint is index: " + getClosestCheckpoint(_pathToFollow));
-        indexOfTarget = getClosestCheckpoint(_pathToFollow);
-        initialTarget = _pathToFollow[indexOfTarget];
-        target = initialTarget;
+        hasBeenInitiated = false;
+        
     }
 
     private void Update()
     {
+        if (!windowSuction)
+        {
+            return;
+        }
+        else
+        {
+            if(!hasBeenInitiated)
+                initiateWindowSuction();
+        }
         updateTarget();
         if (updateTarget())
-            moveToTarget();
+            moveToTarget();        
+    }
 
-        
+    void initiateWindowSuction()
+    {
+        Debug.Log("closest chekpoint is index: " + getClosestCheckpoint(_pathToFollow));
+        indexOfTarget = getClosestCheckpoint(_pathToFollow);
+        initialTarget = _pathToFollow[indexOfTarget];
+        target = initialTarget;
+        hasBeenInitiated = true;
     }
 
     private int getClosestCheckpoint(Transform[] path)
@@ -101,8 +120,13 @@ public class FollowPathFromNearest : MonoBehaviour
     void moveToTarget()
     {
         Vector3 dirToTarget = target.position - transform.position;
-        Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
+        //Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
         transform.position = Vector3.SmoothDamp(transform.position, 
             target.position, ref velocity, smoothTime * animationSpeedMaybe * Time.deltaTime);
+    }
+
+    public void setWindowSuction(bool _windowSuction)
+    {
+        windowSuction = _windowSuction;
     }
 }

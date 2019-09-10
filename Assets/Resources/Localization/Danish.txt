@@ -1,0 +1,6 @@
+UI_MENU_NEWGAME="New Game but in Danish"
+UI_MENU_CONTINUE="Continue Game but in Danish"
+UI_MENU_OPTIONS="Options but in Danish"
+UI_MENU_MASTERVOLUME="Master Volume but in Danish"
+UI_MENU_SFXVOLUME="Sound Effects Volume but in Danish"
+UI_MENU_MUSICVOLUME="Music Volume but in Danish"
