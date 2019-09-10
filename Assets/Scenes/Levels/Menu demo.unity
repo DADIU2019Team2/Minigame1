@@ -1624,81 +1624,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400202192}
-    - target: {fileID: 7849561808231374500, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: optionsButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400202194}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonChangeLanguage
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808358268589, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Danish
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400202194}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonChangeLanguage
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849561808506642086, guid: e0b845fd1a0d55c4481a268ca97ace42,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: English
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0b845fd1a0d55c4481a268ca97ace42, type: 3}
 --- !u!1 &1139381734 stripped
@@ -2517,24 +2452,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1977939170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7849561807886903057, guid: e0b845fd1a0d55c4481a268ca97ace42,
-    type: 3}
-  m_PrefabInstance: {fileID: 1139381733}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1977939172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977939170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b8c8a93cfb92943afbbad57301d8c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1991901629
 GameObject:
   m_ObjectHideFlags: 0
