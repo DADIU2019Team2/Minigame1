@@ -1,8 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    static int indexOfLastCompletedLevel = 0;
+    bool sceneTransfer = false;
+    static MainMenu instance = null;
+    public GameObject[] sceneTransitionCanvas;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     public static int lastCompletedLevelIndex(int levelIndex)
     {
         return levelIndex;
@@ -19,7 +31,7 @@ public class MainMenu : MonoBehaviour
 
     public void continueButton()
     {
-        loadLevelAfterLastCompletedLevel();
+        loadLevelAfterLastCompletedLevel(true);
         //Debug.Log("I have pressed the continue button... but nothing happens yet.");
     }
 
@@ -42,7 +54,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public static void loadLevelAfterLastCompletedLevel()
+    public static void loadLevelAfterLastCompletedLevel(bool continuing = false)
     {
         //get all scenenames and sort by index in build menu
         int totalScenes = SceneManager.sceneCountInBuildSettings;
@@ -53,7 +65,7 @@ public class MainMenu : MonoBehaviour
         }
 
         //string test = GetSceneNameFromBuildIndex(2);
-        int indexOfLastCompletedLevel = 0;
+        indexOfLastCompletedLevel = 0;
         for (int i = 0; i < scenes.Length; i++)
         {
             if (PlayerPrefs.HasKey(scenes[i]))
@@ -72,13 +84,27 @@ public class MainMenu : MonoBehaviour
             //the first level in the build index
             indexOfLastCompletedLevel = GameManager.indexOfFirstLevelInBuildManager - 1;
         }
+        if (indexOfLastCompletedLevel == totalScenes-1)
+        {
+            resetProgress();
+            SceneManager.LoadScene(0);
+            return;
+        }
 
         Debug.Log("Last completed level is: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel));
         Debug.Log("Next level is valid = " + SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid());
         Debug.Log("Attempting to load: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel + 1));
-        SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
-        /*if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
+        if (continuing == true)
         {
+            SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
+        }
+        else
+        {
+            MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(true);
+            MainMenu.instance.ActivateSceneTransfer();
+        }
+        /*if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
+        {11
             SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
         }
         else
@@ -87,8 +113,17 @@ public class MainMenu : MonoBehaviour
         }*/
 
     }
+    void ActivateSceneTransfer()
+    {
+        Invoke("SceneTransfer", 5f);
+    }
+    void SceneTransfer()
+    {
+        MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(false);
+        SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
+    }
 
-    void resetProgress()
+    static void resetProgress()
     {
         //get all scenenames and sort by index in build menu
         int totalScenes = SceneManager.sceneCountInBuildSettings;
