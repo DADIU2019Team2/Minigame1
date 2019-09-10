@@ -91,16 +91,22 @@ public class MainMenu : MonoBehaviour
             return;
         }
 
-        Debug.Log("Last completed level is: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel));
-        Debug.Log("Next level is valid = " + SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid());
-        Debug.Log("Attempting to load: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel + 1));
+        //Debug.Log("Last completed level is: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel));
+        //Debug.Log("Next level is valid = " + SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid());
+        //Debug.Log("Attempting to load: " + GameManager.GetSceneNameFromBuildIndex(indexOfLastCompletedLevel + 1));
         if (continuing == true)
         {
+            Debug.Log("Loading Level");
             SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
         }
         else
         {
-            MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(true);
+            Debug.Log("Loading Level async");
+            if (MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel] != null)
+            {
+                MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(true);
+            }
+            
             MainMenu.instance.ActivateSceneTransfer();
         }
         /*if (SceneManager.GetSceneByBuildIndex(indexOfLastCompletedLevel + 1).IsValid())
@@ -119,11 +125,36 @@ public class MainMenu : MonoBehaviour
     }
     void SceneTransfer()
     {
-        MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(false);
+        
         SceneManager.LoadScene(indexOfLastCompletedLevel + 1);
+        Debug.Log("Swapping Scene");
+        if (MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel] != null)
+        {
+            MainMenu.instance.sceneTransitionCanvas[indexOfLastCompletedLevel].SetActive(false);
+        }
     }
 
     static void resetProgress()
+    {
+        //get all scenenames and sort by index in build menu
+        int totalScenes = SceneManager.sceneCountInBuildSettings;
+        string[] scenes = new string[totalScenes];
+        //get all scenes
+        for (int i = 1; i < totalScenes; i++)
+        {
+            scenes[i - 1] = GameManager.GetSceneNameFromBuildIndex(i - 1);
+        }
+        //check if scenes are saved in prefabs
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            if (PlayerPrefs.HasKey(scenes[i]))
+            {
+                PlayerPrefs.SetInt(scenes[i], 0);
+            }
+        }
+    }
+
+    public void DummyresetProgress()
     {
         //get all scenenames and sort by index in build menu
         int totalScenes = SceneManager.sceneCountInBuildSettings;
