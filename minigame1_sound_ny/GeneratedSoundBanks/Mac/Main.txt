@@ -25,29 +25,29 @@ Event	ID	Name			Wwise Object Path	Notes
 	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Gravity shift_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		562176
-	49339866	Level4musicloop	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4musicloop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4musicloop		5644864
-	55922586	Cardboard_impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Cardboard_impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Cardboard_impact		190192
-	109745358	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Drum collision_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Drum collision		118028
-	124015959	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Portal enter next level		452532
-	284439750	Level2music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level2music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level2music		5644864
-	328393997	Level4music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4music		5644864
-	340749903	Level3music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level3music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level3music		5644864
-	364062423	Menu Music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Menu Music_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Music\Menu Music		5644864
-	424168267	Box plastic impact 2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Box plastic impact 2_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 2		159736
-	523084725	Box plastic impact 1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Box plastic impact 1_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 1		219608
-	534304541	Level1music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level1music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level1music		2822464
-	546481007	Metal impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Metal impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Metal impact		114724
-	625558375	Wood impact2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact2_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Wood impact2		118968
-	696233840	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Smaller glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		352864
-	921042868	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		309648
-	955037914	Fridge impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Fridge impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Fridge impact		121892
-	962014589	Float theme	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Float theme_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Float theme		11289664
-	968578251	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		121892
-	1000857820	Monster crawl scrape1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster crawl scrape1_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster crawl scrape1		117688
-	1037106992	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		521740
+	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Gravity shift_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		23415
+	49339866	Level4musicloop	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4musicloop_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4musicloop		425134
+	55922586	Cardboard_impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Cardboard_impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Cardboard_impact		8799
+	109745358	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Drum collision_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Drum collision		5270
+	124015959	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Portal enter next level_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Portal enter next level		19930
+	284439750	Level2music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level2music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level2music		412664
+	328393997	Level4music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level4music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4music		422335
+	340749903	Level3music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level3music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level3music		433949
+	364062423	Menu Music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Menu Music_6296B0F9.wem		\Actor-Mixer Hierarchy\Music\Music\Menu Music		421667
+	424168267	Box plastic impact 2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Box plastic impact 2_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 2		9214
+	523084725	Box plastic impact 1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Box plastic impact 1_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 1		12217
+	534304541	Level1music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level1music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level1music		233003
+	546481007	Metal impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Metal impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Metal impact		5773
+	625558375	Wood impact2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact2_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Wood impact2		4957
+	696233840	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Smaller glass breaking_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		15391
+	921042868	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		13644
+	955037914	Fridge impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Fridge impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Fridge impact		4705
+	962014589	Float theme	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Float theme_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Float theme		496154
+	968578251	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Couch Impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		4721
+	1000857820	Monster crawl scrape1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster crawl scrape1_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Monster crawl scrape1		6907
+	1037106992	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Glass breaking_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		28010
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	791523558	Silence	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Silence_D79FB2B7.wem	791523558.wem	\Interactive Music Hierarchy\Music\Phone\Silence\Silence	
-	905005226	Phone ringing	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Phone ringing_D79FB2B7.wem	905005226.wem	\Interactive Music Hierarchy\Music\Phone\Phone ringing\Phone ringing	
+	791523558	Silence	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Silence_CB105973.wem	791523558.wem	\Interactive Music Hierarchy\Music\Phone\Silence\Silence	
+	905005226	Phone ringing	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Phone ringing_CB105973.wem	905005226.wem	\Interactive Music Hierarchy\Music\Phone\Phone ringing\Phone ringing	
 
