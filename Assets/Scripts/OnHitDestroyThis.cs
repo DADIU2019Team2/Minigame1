@@ -30,6 +30,7 @@ public class OnHitDestroyThis : MonoBehaviour
         Debug.Log("Ball hit the window!!");
         
         Destroy(gameObject);
+        Debug.Log("BROKE WINDOW!");
         //trigger the player being sucked into the window thing...
         FollowPathFromNearest followPath = GameObject.FindObjectOfType<FollowPathFromNearest>();
         followPath.setWindowSuction(true);
