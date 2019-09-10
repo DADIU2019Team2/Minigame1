@@ -14,11 +14,6 @@ public class OnTRiggerExitEndLevel : MonoBehaviour
             Debug.Log("Fridge is gone from window now");
             followPath.setWindowSuction(true);
         }
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
         if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Player")))
         {
             //player goes out the window
@@ -26,5 +21,6 @@ public class OnTRiggerExitEndLevel : MonoBehaviour
             //temp to see if it actually works...
             MainMenu.loadLevelAfterLastCompletedLevel();
         }
+
     }
 }
