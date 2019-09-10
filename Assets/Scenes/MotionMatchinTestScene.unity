@@ -635,9 +635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileName: localTest
   iterateThroughJoint: 0
-  mST: []
   hipsTransform: {fileID: 280943338}
-  currentMotionType: 0
+  currentMotionType: 1
   currentWishDirection: {x: 0, y: 0, z: 0}
   cutOffSpeed: 0
   trigger90: 10
