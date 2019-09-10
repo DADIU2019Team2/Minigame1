@@ -6,7 +6,7 @@
 				<ActorMixer Name="Music" ID="{3DC5F901-0489-4F9E-A346-8D5DBDC382A9}" ShortID="543707705">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+							<ObjectRef Name="Music" ID="{08FDB012-76EA-4B17-8E15-1346299DFDFB}" WorkUnitID="{BD581FC9-1F19-43E9-A933-6021A0AF10B3}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{6E3BDB51-A7C7-4346-8565-D5E3C77F02E6}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
