@@ -1,17 +1,50 @@
 fileFormatVersion: 2
 guid: 188440d7b0417df4db72b123bba2a74b
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable:
-  - first:
-      74: -3661779823755883
-    second: Lamp_Bone|Lamp_Jump
-  - first:
-      74: -2196611308775913125
-    second: Lamp_Bone|Lamp_Land
-  - first:
-      74: 5963589106626235349
-    second: Lamp_Bone|Lamp_Walk
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Control_Bone
+    100002: Foot
+    100004: Foot_Bone
+    100006: Foot_Bone_end
+    100008: Head
+    100010: //RootNode
+    100012: Lamp_Bone
+    100014: Lamp_pos
+    100016: LowerBody
+    100018: LowerBody_Bone
+    100020: UpperBody
+    100022: UpperBody_Bone
+    100024: UpperBody_Bone.001
+    100026: UpperBody_Bone.001_end
+    400000: Control_Bone
+    400002: Foot
+    400004: Foot_Bone
+    400006: Foot_Bone_end
+    400008: Head
+    400010: //RootNode
+    400012: Lamp_Bone
+    400014: Lamp_pos
+    400016: LowerBody
+    400018: LowerBody_Bone
+    400020: UpperBody
+    400022: UpperBody_Bone
+    400024: UpperBody_Bone.001
+    400026: UpperBody_Bone.001_end
+    2100000: Base Replace
+    2100002: Lamp Outer MAIN color
+    4300000: Foot
+    4300002: LowerBody
+    4300004: UpperBody
+    4300006: Head
+    7400000: Lamp_Bone|Lamp_Jump
+    7400002: Lamp_Bone|Lamp_Land
+    7400004: Lamp_Bone|Lamp_Walk
+    9500000: //RootNode
+    13700000: Foot
+    13700002: Head
+    13700004: LowerBody
+    13700006: UpperBody
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +76,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Lamp_Bone|Lamp_Jump
       takeName: Lamp_Bone|Lamp_Jump
-      internalID: -3661779823755883
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -72,7 +104,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Lamp_Bone|Lamp_Land
       takeName: Lamp_Bone|Lamp_Land
-      internalID: -2196611308775913125
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -101,7 +132,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Lamp_Bone|Lamp_Walk
       takeName: Lamp_Bone|Lamp_Walk
-      internalID: 5963589106626235349
       firstFrame: 0
       lastFrame: 31
       wrapMode: 0
@@ -133,7 +163,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -141,32 +170,27 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -176,8 +200,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
