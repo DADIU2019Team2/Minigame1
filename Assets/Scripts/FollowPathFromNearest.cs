@@ -137,6 +137,7 @@ public class FollowPathFromNearest : MonoBehaviour
 
     void destroyHarness()
     {
-        Destroy(harness.gameObject);
+        if(harness !=null)
+            Destroy(harness.gameObject);
     }
 }
