@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{82ECEC65-C033-42AF-A208-E0B44B8E0629}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\Float object:action sounds"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\Float processed sounds"/>
 				<Property Name="Event Action List\{087F6FA8-7239-472B-86F7-64E120F805A0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{14E0B20B-CE46-415C-8485-B72764BE4BF8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{252E3725-5A82-4AA7-8E19-3C089D868EE0}\x64_Expand States" Type="string" Value=""/>
@@ -34,6 +34,7 @@
 				<Property Name="Event Action List\{EA3D6338-FCB6-4195-AD7C-7375DE439C18}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EA833B41-6E7B-4A1D-A7D6-355CC5AD5FC5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EF06AB5C-1857-4B6D-B117-239C3C09C7B8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F53C6633-B7F8-4A90-A570-37C19E104E0E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F5C32A76-4D17-484D-922B-2FDDE67F4A45}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F6F168F2-9C90-49E0-BDE5-3338971BA44E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F92A1BAA-A1F1-4FEC-80C1-F8938FC3DA94}\x64_Expand States" Type="string" Value=""/>
@@ -83,7 +84,7 @@
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{CE204803-AF8A-46C1-9AC9-2A83E8C9D243}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
