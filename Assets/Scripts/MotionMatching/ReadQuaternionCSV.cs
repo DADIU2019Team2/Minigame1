@@ -22,14 +22,14 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     public int currentMotionType;
     public Vector3 currentWishDirection;
-    public float cutOffSpeed;
+    public float cutOffDistance;
 
     [Range(0, 90f)]
     public float trigger90;
     [Range(0, 180f)]
     public float trigger180;
 
-    public Transform target;
+    public Vector3 target;
     bool isTurning;
     void Awake()
     {
@@ -125,11 +125,11 @@ public class ReadQuaternionCSV : MonoBehaviour
         }
         if (Input.GetKeyDown("space"))
         {
-            Vector3 targetDirection = target.position - transform.position;
+            Vector3 targetDirection = target - transform.position;
             float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
             Debug.Log(rotationAngle);
-            GiveInput(target.position);
-            GetComponent<NavMeshAgent>().destination = target.position;
+            GiveInput(target);
+            GetComponent<NavMeshAgent>().destination = target;
         }
     }
 
@@ -144,14 +144,14 @@ public class ReadQuaternionCSV : MonoBehaviour
         //boneTransforms[1].rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
 
 
-        //RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
-        iterateThroughJoint = (iterateThroughJoint += 1) % mST.Length;
-        //AreWeThereYet();
-        if (iterateThroughJoint % 50 == 0) // maybe turn into a coroutine
+        RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
+        iterateThroughJoint = (iterateThroughJoint += 3) % mST.Length;
+        AreWeThereYet();
+        if (iterateThroughJoint % 50 == 0 && !isTurning)  // maybe turn into a coroutine
         {
             LoopAnimation();
         }
-
+ 
         //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
     }
 
@@ -248,31 +248,30 @@ public class ReadQuaternionCSV : MonoBehaviour
     void AreWeThereYet()
     {
 
-        Vector3 targetDirection = target.position - transform.position;
+        Vector3 targetDirection = target - transform.position;
         float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
-        Debug.Log(rotationAngle);
+        //Debug.Log(rotationAngle);
         int motionType = 0;
         float vel = GetComponent<NavMeshAgent>().velocity.magnitude;
-        Debug.Log("vel " + vel);
-        if (vel <= cutOffSpeed)
+        if (targetDirection.magnitude <= cutOffDistance)
         {
             motionType = 0;
             if (motionType != currentMotionType)
             {
-                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
+                isTurning = false;
             }
         }
 
-        else if (Mathf.Abs(rotationAngle) < trigger90)
+         if (Mathf.Abs(rotationAngle) < trigger90)
         {
             motionType = 1;
             if (motionType != currentMotionType)
             {
-                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
+                isTurning = false;
             }
         }
 

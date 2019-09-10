@@ -42,5 +42,6 @@ public class Monster : MonoBehaviour
             navAgent.destination = currentDestination;
         }
         timer %= 2;
+        
     }
 }
