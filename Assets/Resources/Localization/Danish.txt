@@ -9,3 +9,4 @@ UI_TRANSITION_DIALOGUE_1-2="Den seng kan jeg godt huske. Vi lå altid her og hvis
 UI_TRANSITION_DIALOGUE_2-3="Den her lejlighed.. Det var her, jeg fik opkaldet. Jeg håber, at jeg aldrig skal se det sted igen."
 UI_TRANSITION_DIALOGUE_3-4="Nej.. Nej! Alle andre steder.. Please!"
 UI_TRANSITION_DIALOGUE_4-END="Tak."
+UI_RELOAD_SCENE="Genstart Nivaue"

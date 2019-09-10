@@ -9,4 +9,5 @@ UI_TRANSITION_DIALOGUE_1-2="I remember that bed. We would lie here. Whispering f
 UI_TRANSITION_DIALOGUE_2-3="This flat.. This is where I got the call. I never want to see this place again."
 UI_TRANSITION_DIALOGUE_3-4="No! No! Anywhere else.. please..."
 UI_TRANSITION_DIALOGUE_4-END="Thank you."
+UI_RELOAD_SCENE="Reload Level"
 
