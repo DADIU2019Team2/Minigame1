@@ -30,7 +30,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     public float trigger180;
 
     public Transform target;
-
+    bool isTurning;
     void Awake()
     {
         a = gameObject.GetComponent<Animator>();
@@ -147,7 +147,7 @@ public class ReadQuaternionCSV : MonoBehaviour
         //RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
         iterateThroughJoint = (iterateThroughJoint += 1) % mST.Length;
         //AreWeThereYet();
-        if (iterateThroughJoint % 100 == 0) // maybe turn into a coroutine
+        if (iterateThroughJoint % 50 == 0) // maybe turn into a coroutine
         {
             LoopAnimation();
         }
@@ -167,9 +167,9 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void LoopAnimation()
     {
-        if (mST[(iterateThroughJoint + Random.Range(1, 400)) % mST.Length].GetMotionType() != currentMotionType)
+        if (!isTurning && mST[(iterateThroughJoint + Random.Range(1, 300)) % mST.Length].GetMotionType() != currentMotionType)
         {
-            iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, currentMotionType, 200);
+            iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, currentMotionType, 100);
         }
     }
 
@@ -224,6 +224,7 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     public void GiveInput(Vector3 wishPosition)
     {
+        isTurning = true;
         int targetState = 0;
         currentWishDirection = wishPosition;
         Vector3 targetDirection = wishPosition - transform.position;
@@ -258,6 +259,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             motionType = 0;
             if (motionType != currentMotionType)
             {
+                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
             }
@@ -268,6 +270,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             motionType = 1;
             if (motionType != currentMotionType)
             {
+                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
             }
