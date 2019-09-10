@@ -9,12 +9,13 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music" ID="{DFF2AEB3-876C-4FEF-A593-1F0B1537E0ED}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Level1music" ID="{ED20BBA7-6C36-4308-AD08-D999E5A73DDB}" ShortID="621520545">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -41,6 +42,7 @@
 						</Sound>
 						<Sound Name="Level2music" ID="{A368682F-9521-49C0-BED5-529D8B14D0B7}" ShortID="942816269">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -67,6 +69,7 @@
 						</Sound>
 						<Sound Name="Level3music" ID="{CFFCE1C9-589B-4329-8772-87EAB40D2B75}" ShortID="580242462">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -93,6 +96,7 @@
 						</Sound>
 						<Sound Name="Level4music" ID="{CE204803-AF8A-46C1-9AC9-2A83E8C9D243}" ShortID="997611689">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -119,6 +123,7 @@
 						</Sound>
 						<Sound Name="Level4musicloop" ID="{C1AE32A1-D173-4395-B6C2-D3B0EC1286FD}" ShortID="662825594">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
