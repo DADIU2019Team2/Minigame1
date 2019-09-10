@@ -4,6 +4,13 @@
 		<WorkUnit Name="World" ID="{BEB6C068-14C7-4147-840B-567D7D8043BB}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Box plastic impact 1" ID="{D3BEDA7F-3D6F-4341-813B-464421D3937E}" ShortID="17337452">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -23,6 +30,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Box plastic impact 2" ID="{9974DF28-5772-4842-9077-5CA91B1336A2}" ShortID="531503752">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -42,6 +56,18 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Couch Impact" ID="{A12CC4E6-DE74-4E28-A43F-89047E6020E7}" ShortID="759665842">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>830</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -61,6 +87,18 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Drum collision" ID="{EC5D0D41-573A-4ABE-9BC2-580CCF532985}" ShortID="608525467">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-200</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -99,6 +137,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Fridge impact" ID="{6F3146E9-165D-4F23-ADFD-AAF9C2F58CD3}" ShortID="300683739">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>200</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -118,6 +163,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Glass breaking" ID="{8B669966-0B54-466D-BA76-CEDA2E08D139}" ShortID="1011622745">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -137,6 +189,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Gravity shift" ID="{B6C5941E-63E2-4D20-A6DE-D0554A9246BA}" ShortID="789075354">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -156,6 +215,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Metal impact" ID="{E156C62D-F907-4AD2-B029-4AD7BD063F65}" ShortID="329763916">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -175,6 +241,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Monster crawl scrape1" ID="{91B08247-61D9-4367-AD2D-527ECA73C8C3}" ShortID="1034386314">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -232,6 +305,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Smaller glass breaking" ID="{A8B59CA2-9AA2-49BF-8080-369DC55F32A6}" ShortID="309042028">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -251,6 +331,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Wood impact2" ID="{AA47C569-F203-4854-8A37-E1F75AE05D33}" ShortID="122706452">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -267,6 +354,25 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Wood impact2" ID="{3E85D2D6-C4CF-4E9F-AB54-DD11654A111C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Cardboard_impact" ID="{4A16D544-D755-43D5-8F3C-7C40D5F614B1}" ShortID="243013596">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cardboard_impact" ID="{C870AACC-E753-4D44-AC6E-D60252BBC734}" ShortID="55922586">
+							<Language>SFX</Language>
+							<AudioFile>Cardboard_impact.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Cardboard_impact" ID="{C870AACC-E753-4D44-AC6E-D60252BBC734}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
