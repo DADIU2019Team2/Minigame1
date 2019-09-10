@@ -66,6 +66,8 @@ public class ReadQuaternionCSV : MonoBehaviour
             boneHeaders[i] = tempHeader[i * 4];
         }
 
+        StartCoroutine("PingForInput");
+
 
         //this is where we tag motion data
         /*  for (int i = 0; i < mST.Length; i++)
@@ -151,8 +153,17 @@ public class ReadQuaternionCSV : MonoBehaviour
         {
             LoopAnimation();
         }
- 
+
         //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
+    }
+
+    IEnumerator PingForInput()
+    {
+        while (true)
+        {
+            GiveInput(GetComponent<NavMeshAgent>().destination);
+            yield return new WaitForSeconds(2f);
+        }
     }
 
     Vector3 MakeForwardOrientation(int frame)
@@ -264,7 +275,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             }
         }
 
-         if (Mathf.Abs(rotationAngle) < trigger90)
+        if (Mathf.Abs(rotationAngle) < trigger90)
         {
             motionType = 1;
             if (motionType != currentMotionType)
