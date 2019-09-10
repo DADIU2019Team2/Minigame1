@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void newGameButton()
     {
+        resetProgress();
         Debug.Log("I have pressed the new game button and " + 
             GameManager.GetSceneNameFromBuildIndex(GameManager.indexOfFirstLevelInBuildManager) + " is being loaded");
         //PlayerPrefs.SetInt("LevelsCompleted", 0); //resat how many times a level has been completed
@@ -85,5 +86,25 @@ public class MainMenu : MonoBehaviour
             Debug.LogError("The scene you are trying to load is not valid, likely cause: does not exist");
         }*/
 
+    }
+
+    void resetProgress()
+    {
+        //get all scenenames and sort by index in build menu
+        int totalScenes = SceneManager.sceneCountInBuildSettings;
+        string[] scenes = new string[totalScenes];
+        //get all scenes
+        for (int i = 1; i < totalScenes; i++)
+        {
+            scenes[i - 1] = GameManager.GetSceneNameFromBuildIndex(i - 1);
+        }
+        //check if scenes are saved in prefabs
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            if (PlayerPrefs.HasKey(scenes[i]))
+            {
+                PlayerPrefs.SetInt(scenes[i], 0);
+            }
+        }
     }
 }
