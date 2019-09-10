@@ -36,8 +36,6 @@ public class PlayerInput : MonoBehaviour
         #endif
     }
 
-
-
     public static Quaternion GetAttitude()
     {
         if (SystemInfo.supportsGyroscope)
