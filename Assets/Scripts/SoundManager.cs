@@ -12,6 +12,8 @@ public class SoundManager : MonoBehaviour
     {
     //    SetSFXVolume(sfxLevel);
     //    SetSoundVolume(soundLevel);
+      
+        
     }
 
     // Update is called once per frame
