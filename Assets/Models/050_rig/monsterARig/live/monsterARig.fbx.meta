@@ -1,8 +1,124 @@
 fileFormatVersion: 2
 guid: a97d15d92e85e8143b0b09d8f4842ff7
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: LeftArm
+    100006: LeftFinger1Distal
+    100008: LeftFinger1Metacarpal
+    100010: LeftFinger1Proximal
+    100012: LeftFinger2Distal
+    100014: LeftFinger2Medial
+    100016: LeftFinger2Metacarpal
+    100018: LeftFinger2Proximal
+    100020: LeftFinger3Distal
+    100022: LeftFinger3Medial
+    100024: LeftFinger3Metacarpal
+    100026: LeftFinger3Proximal
+    100028: LeftFinger4Distal
+    100030: LeftFinger4Medial
+    100032: LeftFinger4Metacarpal
+    100034: LeftFinger4Proximal
+    100036: LeftFoot
+    100038: LeftForeArm
+    100040: LeftHand
+    100042: LeftShin
+    100044: LeftShoulder
+    100046: LeftThigh
+    100048: LeftToe
+    100050: monsterA_geo
+    100052: //RootNode
+    100054: Neck
+    100056: RightArm
+    100058: RightFinger1Distal
+    100060: RightFinger1Metacarpal
+    100062: RightFinger1Proximal
+    100064: RightFinger2Distal
+    100066: RightFinger2Medial
+    100068: RightFinger2Metacarpal
+    100070: RightFinger2Proximal
+    100072: RightFinger3Distal
+    100074: RightFinger3Medial
+    100076: RightFinger3Metacarpal
+    100078: RightFinger3Proximal
+    100080: RightFinger4Distal
+    100082: RightFinger4Medial
+    100084: RightFinger4Metacarpal
+    100086: RightFinger4Proximal
+    100088: RightFoot
+    100090: RightForeArm
+    100092: RightHand
+    100094: RightShin
+    100096: RightShoulder
+    100098: RightThigh
+    100100: RightToe
+    100102: Root
+    100104: Spine1
+    100106: Spine2
+    100108: Spine3
+    100110: Spine4
+    400000: Head
+    400002: Hips
+    400004: LeftArm
+    400006: LeftFinger1Distal
+    400008: LeftFinger1Metacarpal
+    400010: LeftFinger1Proximal
+    400012: LeftFinger2Distal
+    400014: LeftFinger2Medial
+    400016: LeftFinger2Metacarpal
+    400018: LeftFinger2Proximal
+    400020: LeftFinger3Distal
+    400022: LeftFinger3Medial
+    400024: LeftFinger3Metacarpal
+    400026: LeftFinger3Proximal
+    400028: LeftFinger4Distal
+    400030: LeftFinger4Medial
+    400032: LeftFinger4Metacarpal
+    400034: LeftFinger4Proximal
+    400036: LeftFoot
+    400038: LeftForeArm
+    400040: LeftHand
+    400042: LeftShin
+    400044: LeftShoulder
+    400046: LeftThigh
+    400048: LeftToe
+    400050: monsterA_geo
+    400052: //RootNode
+    400054: Neck
+    400056: RightArm
+    400058: RightFinger1Distal
+    400060: RightFinger1Metacarpal
+    400062: RightFinger1Proximal
+    400064: RightFinger2Distal
+    400066: RightFinger2Medial
+    400068: RightFinger2Metacarpal
+    400070: RightFinger2Proximal
+    400072: RightFinger3Distal
+    400074: RightFinger3Medial
+    400076: RightFinger3Metacarpal
+    400078: RightFinger3Proximal
+    400080: RightFinger4Distal
+    400082: RightFinger4Medial
+    400084: RightFinger4Metacarpal
+    400086: RightFinger4Proximal
+    400088: RightFoot
+    400090: RightForeArm
+    400092: RightHand
+    400094: RightShin
+    400096: RightShoulder
+    400098: RightThigh
+    400100: RightToe
+    400102: Root
+    400104: Spine1
+    400106: Spine2
+    400108: Spine3
+    400110: Spine4
+    2100000: monsterLow_defaultMat1
+    4300000: monsterA_geo
+    9500000: //RootNode
+    13700000: monsterA_geo
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -37,7 +153,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -45,32 +160,27 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -80,8 +190,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
