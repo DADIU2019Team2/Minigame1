@@ -6,7 +6,7 @@ using System.IO;
 public class LocalizationManager : MonoBehaviour
 {
 
-    Dictionary<string, string> dictionary;
+    public static Dictionary<string, string> dictionary;
     public enum GameLanguage { English, Danish };
     private int languageID;
     public GameLanguage gameLanguage;
@@ -48,9 +48,12 @@ public class LocalizationManager : MonoBehaviour
         languageID = (int)gameLanguage;
 
         LoadLanguageFile(gameLanguage);
+        AutoTranslator[] autos = FindObjectsOfType<AutoTranslator>();
+        foreach (AutoTranslator a in autos)
+            a.OnLanguageChange();
     }
 
-    public string GetValue(string key)
+    public static string TranslateKey(string key)
     {
         if (dictionary.ContainsKey(key) == false)
             return key;
@@ -59,11 +62,4 @@ public class LocalizationManager : MonoBehaviour
             return dictionary[key];
         }
     }
-
-    void Update()
-    {
-        if (Input.GetKeyUp("space"))
-            ChangeLanguage(gameLanguage);
-    }
-
 }

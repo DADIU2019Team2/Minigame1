@@ -29,14 +29,17 @@ public class PlayerInput : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(this.gameObject);
 
+
+    }
+
+    private void Start()
+    {
         #if PLATFORM_ANDROID
         //Set up and enable the gyroscope (check your device has one)
         gyroscope = Input.gyro;
         gyroscope.enabled = true;
         #endif
     }
-
-
 
     public static Quaternion GetAttitude()
     {
@@ -61,7 +64,7 @@ public class PlayerInput : MonoBehaviour
     }
     public static Vector3 RotationPlaneTestAllAxis()
     {
-       
+
         return new Vector3(GetAttitude().eulerAngles.y, -GetAttitude().eulerAngles.x, GetAttitude().eulerAngles.z);
     }
     public static Vector3 GetGravity()
@@ -74,7 +77,7 @@ public class PlayerInput : MonoBehaviour
     }
     void FixedUpdate()
     {
-      //  orientationText.text = "Orientation" + GetAttitude() + "\n" + "Euler: " + GetAttitude().eulerAngles;
-       // rotationTestTarget.transform.rotation = Quaternion.Euler(RotationPlaneTest());
+        //  orientationText.text = "Orientation" + GetAttitude() + "\n" + "Euler: " + GetAttitude().eulerAngles;
+        // rotationTestTarget.transform.rotation = Quaternion.Euler(RotationPlaneTest());
     }
 }
