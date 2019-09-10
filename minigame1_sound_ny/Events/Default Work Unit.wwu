@@ -223,6 +223,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_Game_Parameter_World" ID="{8C159C11-AE71-4D5D-8B41-FF8EB4B7D481}">
+					<ChildrenList>
+						<Action Name="" ID="{82F644A0-E84A-4CA0-8CC2-FC3259B9125A}" ShortID="451236482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World" ID="{DCFDD614-00A7-45C5-B784-BF570902D5E0}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Game_Parameter_Music" ID="{4D8EFB55-03DA-4248-A1AA-308C978A5E5F}">
+					<ChildrenList>
+						<Action Name="" ID="{B317D149-DB55-49F4-B4AF-B7A26902378C}" ShortID="812098630">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

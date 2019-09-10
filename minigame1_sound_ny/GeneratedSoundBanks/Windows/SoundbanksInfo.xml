@@ -41,6 +41,8 @@
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="2.565011" DurationMax="2.565011"/>
 				<Event Id="1720134853" Name="Play_Smaller_glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Smaller_glass_breaking" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="864292832" Name="Play_Wood_impact2" ObjectPath="\Events\Default Work Unit\Play_Wood_impact2" DurationType="OneShot" DurationMin="0.674059" DurationMax="0.674059"/>
+				<Event Id="236152504" Name="Set_Game_Parameter_Music" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4138451597" Name="Set_Game_Parameter_World" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_World" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="19848566" Language="SFX">
