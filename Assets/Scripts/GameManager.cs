@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.LogError("There is more than one gamemaster component in the scene");
             Destroy(gameObject);
@@ -43,5 +43,10 @@ public class GameManager : MonoBehaviour
         timesLevelCompleted = timesLevelCompleted + 1;
         //sets levels completed to one more than before this level was completed
         PlayerPrefs.SetInt(sceneName, timesLevelCompleted);
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene.
     }
 }
