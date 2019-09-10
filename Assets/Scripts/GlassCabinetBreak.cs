@@ -5,6 +5,7 @@ using UnityEngine;
 public class GlassCabinetBreak : MonoBehaviour
 {
     bool enableCollisionBreaking = false;
+    private bool alreadyBroken = false;
 
     [SerializeField]
     private GameObject actualBall;
@@ -16,7 +17,7 @@ public class GlassCabinetBreak : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (enableCollisionBreaking.Equals(true))
+        if (enableCollisionBreaking.Equals(true) && !alreadyBroken)
         {
             Transform[] children = GetComponentsInChildren<Transform>();
             children[0] = null; //remove the parent from the array
@@ -24,11 +25,12 @@ public class GlassCabinetBreak : MonoBehaviour
             //kill glass
             children[children.Length - 1].gameObject.SetActive(false);
             //remove ball
-            GameObject fakeBall = GetComponent<SphereCollider>().gameObject;
+            GameObject fakeBall = GetComponentInChildren<SphereCollider>().gameObject;
             fakeBall.SetActive(false);
             actualBall.transform.position = fakeBall.transform.position;
             actualBall.transform.rotation = fakeBall.transform.rotation;
             actualBall.SetActive(true);
+            alreadyBroken = true;
         }
     }
 

@@ -127,7 +127,7 @@ public class FollowPathFromNearest : MonoBehaviour
         //Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
         transform.position = Vector3.SmoothDamp(transform.position, 
             target.position, ref velocity, smoothTime * animationSpeedMaybe * Time.deltaTime);
-        Debug.Log("Attempting to move to " + target.name);
+        //Debug.Log("Attempting to move to " + target.name);
     }
 
     public void setWindowSuction(bool _windowSuction)

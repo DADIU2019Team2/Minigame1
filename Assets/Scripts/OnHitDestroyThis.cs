@@ -31,6 +31,7 @@ public class OnHitDestroyThis : MonoBehaviour
         
         Destroy(gameObject);
         //trigger the player being sucked into the window thing...
-        windowIsDead = true;
+        FollowPathFromNearest followPath = GameObject.FindObjectOfType<FollowPathFromNearest>();
+        followPath.setWindowSuction(true);
     }
 }
