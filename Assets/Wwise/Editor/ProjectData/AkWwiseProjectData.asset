@@ -191,7 +191,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f92c26f321240f4f9309ee83162c4682
     GuidInternal: 
-    m_lastTime: -8586335007844775808
+    m_lastTime: -8586334997844775808
     List:
     - name: Main
       guid: 27021db6c3a9b64b929f67caad76d52f
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5d06e612f0eec94ab85bb5de10ac826d
     GuidInternal: 
-    m_lastTime: -8586335007844775808
+    m_lastTime: -8586334997854775808
     List:
     - name: Play_Box_plastic_impact_1
       guid: 9db3e28a319b724f8654b55212d56b77
@@ -719,7 +719,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /minigame1_sound_ny
-  - /minigame1_sound_ny/Events
-  - /minigame1_sound_ny/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

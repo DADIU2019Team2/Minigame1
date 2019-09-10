@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_LEVEL3MUSIC = 1946308780U;
         static const AkUniqueID PLAY_LEVEL4MUSIC = 3045698593U;
         static const AkUniqueID PLAY_LEVEL4MUSICLOOP = 839894203U;
+        static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_METAL_IMPACT = 26906972U;
         static const AkUniqueID PLAY_MONSTER_CRAWL_SCRAPE1 = 1470122796U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;

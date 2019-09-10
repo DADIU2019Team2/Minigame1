@@ -44,6 +44,7 @@
 				<Event Id="1946308780" Name="Play_Level3music" ObjectPath="\Events\Default Work Unit\Play_Level3music" DurationType="Infinite"/>
 				<Event Id="3045698593" Name="Play_Level4music" ObjectPath="\Events\Default Work Unit\Play_Level4music" DurationType="Infinite"/>
 				<Event Id="839894203" Name="Play_Level4musicloop" ObjectPath="\Events\Default Work Unit\Play_Level4musicloop" DurationType="Infinite"/>
+				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Default Work Unit\Play_Menu_Music" DurationType="OneShot" DurationMin="32.000000" DurationMax="32.000000"/>
 				<Event Id="26906972" Name="Play_Metal_impact" ObjectPath="\Events\Default Work Unit\Play_Metal_impact" DurationType="OneShot" DurationMin="0.650000" DurationMax="0.650000"/>
 				<Event Id="1470122796" Name="Play_Monster_crawl_scrape1" ObjectPath="\Events\Default Work Unit\Play_Monster_crawl_scrape1" DurationType="OneShot" DurationMin="0.666803" DurationMax="0.666803"/>
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.755011" DurationMax="1.755011"/>
@@ -90,6 +91,10 @@
 				<File Id="340749903" Language="SFX">
 					<ShortName>Level3music.wav</ShortName>
 					<Path>SFX/Level3music_D79FB2B7.wem</Path>
+				</File>
+				<File Id="364062423" Language="SFX">
+					<ShortName>Menu Music.wav</ShortName>
+					<Path>SFX/Menu Music_10C4C929.wem</Path>
 				</File>
 				<File Id="424168267" Language="SFX">
 					<ShortName>Box plastic impact 2.wav</ShortName>

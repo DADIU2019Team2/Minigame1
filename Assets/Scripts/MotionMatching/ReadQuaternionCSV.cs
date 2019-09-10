@@ -13,7 +13,6 @@ public class ReadQuaternionCSV : MonoBehaviour
     private int iterateThroughJoint;
     // Start is called before the first frame update
     Quaternion[] rotations;
-    [SerializeField]
     MotionState[] mST;
     string[] boneHeaders;
     int motionStartFrame, motionEndFrame;
@@ -31,7 +30,7 @@ public class ReadQuaternionCSV : MonoBehaviour
     public float trigger180;
 
     public Transform target;
-
+    bool isTurning;
     void Awake()
     {
         a = gameObject.GetComponent<Animator>();
@@ -143,9 +142,16 @@ public class ReadQuaternionCSV : MonoBehaviour
         //testing if rotating the hip back to identity does anything useful
         //boneTransforms[1].rotation*=Quaternion.Inverse(mST[iterateThroughJoint].GetJointRotations()[1]);
         //boneTransforms[1].rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
-        RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
-        iterateThroughJoint = (iterateThroughJoint += 1) % 3398;
-        AreWeThereYet();
+
+
+        //RotateBack(mST[iterateThroughJoint].GetJointRotations()[1]);
+        iterateThroughJoint = (iterateThroughJoint += 1) % mST.Length;
+        //AreWeThereYet();
+        if (iterateThroughJoint % 50 == 0) // maybe turn into a coroutine
+        {
+            LoopAnimation();
+        }
+
         //transform.rotation = previousPoseOrientation * Quaternion.Inverse(nextPoseOrientation) * boneTransforms[1].rotation;
     }
 
@@ -157,6 +163,14 @@ public class ReadQuaternionCSV : MonoBehaviour
         Vector3 result = (hipQ * Vector3.forward + leftShoulderQ * Vector3.forward + rightShoulderQ * Vector3.forward) / 3f;
         result.y = 0f;
         return result;
+    }
+
+    void LoopAnimation()
+    {
+        if (!isTurning && mST[(iterateThroughJoint + Random.Range(1, 300)) % mST.Length].GetMotionType() != currentMotionType)
+        {
+            iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, currentMotionType, 100);
+        }
     }
 
     void TurnHip()
@@ -210,6 +224,7 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     public void GiveInput(Vector3 wishPosition)
     {
+        isTurning = true;
         int targetState = 0;
         currentWishDirection = wishPosition;
         Vector3 targetDirection = wishPosition - transform.position;
@@ -232,7 +247,7 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     void AreWeThereYet()
     {
-        
+
         Vector3 targetDirection = target.position - transform.position;
         float rotationAngle = Vector3.SignedAngle(targetDirection, transform.forward, transform.up);
         Debug.Log(rotationAngle);
@@ -244,16 +259,18 @@ public class ReadQuaternionCSV : MonoBehaviour
             motionType = 0;
             if (motionType != currentMotionType)
             {
+                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
             }
         }
-           
+
         else if (Mathf.Abs(rotationAngle) < trigger90)
         {
             motionType = 1;
             if (motionType != currentMotionType)
             {
+                isTurning = false;
                 iterateThroughJoint = FindClosestMotionState(iterateThroughJoint, motionType);
                 currentMotionType = motionType;
             }
@@ -261,14 +278,14 @@ public class ReadQuaternionCSV : MonoBehaviour
 
     }
 
-    int FindClosestMotionState(int current, int state)
+    int FindClosestMotionState(int current, int state, int range = 0)
     {
         int stateFrame = 0;
         float distance = float.MaxValue;
 
         for (int i = 0; i < mST.Length; i++)
         {
-            if (mST[i].GetMotionType() != state)
+            if (mST[i].GetMotionType() != state || i <= current + range && i >= current - range)
                 continue;
             if (MotionState.SquareDistance(mST[current], mST[i]) < distance)
             {
