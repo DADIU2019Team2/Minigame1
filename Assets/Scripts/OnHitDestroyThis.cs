@@ -16,7 +16,7 @@ public class OnHitDestroyThis : MonoBehaviour
         Rigidbody rb = other.GetComponent<Rigidbody>();
         if(rb == null)
         {
-            Debug.LogError("There is no rigid body on the object (" + other.name + ") that collided with the trigger");
+          //  Debug.LogError("There is no rigid body on the object (" + other.name + ") that collided with the trigger");
             return;
         }
         if (rb.mass < massThreshold)
