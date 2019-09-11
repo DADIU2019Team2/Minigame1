@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class OnCollisionPlay : MonoBehaviour
 {
-
+    bool loading = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Player")))
         {
-            MainMenu.loadLevelAfterLastCompletedLevel();
+            if (loading == false)
+            {
+                loading = true;
+                MainMenu.loadLevelAfterLastCompletedLevel();
+            }
         }
     }
 }

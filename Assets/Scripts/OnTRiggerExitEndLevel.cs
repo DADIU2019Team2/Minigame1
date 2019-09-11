@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OnTRiggerExitEndLevel : MonoBehaviour
 {
+    bool loading = false;
     private void OnTriggerExit(Collider other)
     {
         //Debug.Log("Something exited the window");
@@ -16,10 +17,14 @@ public class OnTRiggerExitEndLevel : MonoBehaviour
         }
         if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Player")))
         {
-            //player goes out the window
-            GameManager.instance.levelCompleted();
-            //temp to see if it actually works...
-            MainMenu.loadLevelAfterLastCompletedLevel();
+            if (loading == false)
+            {
+                loading = true;
+                //player goes out the window
+                GameManager.instance.levelCompleted();
+                //temp to see if it actually works...
+                MainMenu.loadLevelAfterLastCompletedLevel();
+            }
         }
 
     }
