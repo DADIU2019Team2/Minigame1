@@ -1,4 +1,4 @@
-UI_MENU_NEWGAME="New Game"
+﻿UI_MENU_NEWGAME="New Game"
 UI_MENU_CONTINUE="Continue Game"
 UI_MENU_OPTIONS="Options"
 UI_MENU_MASTERVOLUME="Master Volume"
@@ -10,4 +10,5 @@ UI_TRANSITION_DIALOGUE_2-3="This flat.. This is where I got the call. I never wa
 UI_TRANSITION_DIALOGUE_3-4="No! No! Anywhere else.. please..."
 UI_TRANSITION_DIALOGUE_4-END="Thank you."
 UI_RELOAD_SCENE="Reload Level"
+UI_RESET_SCENE="Reset"
 
