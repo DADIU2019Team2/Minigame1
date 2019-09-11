@@ -8,6 +8,7 @@ public class PlayerLevel4 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Monster"))
         {
+            Debug.Log("GAME OVER");
             GameObject[] arr = GameManager.instance.GetComponent<MainMenu>().sceneTransitionCanvas;
             arr[arr.Length].SetActive(true);
         }
