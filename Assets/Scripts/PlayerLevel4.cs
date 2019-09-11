@@ -10,7 +10,7 @@ public class PlayerLevel4 : MonoBehaviour
         {
             Debug.Log("GAME OVER");
             GameObject[] arr = GameManager.instance.GetComponent<MainMenu>().sceneTransitionCanvas;
-            arr[arr.Length].SetActive(true);
+            arr[arr.Length-1].SetActive(true);
         }
     }
 }
