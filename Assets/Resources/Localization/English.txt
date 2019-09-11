@@ -11,4 +11,5 @@ UI_TRANSITION_DIALOGUE_3-4="No! No! Anywhere else.. please..."
 UI_TRANSITION_DIALOGUE_4-END="Thank you."
 UI_RELOAD_SCENE="Reload Level"
 UI_RESET_SCENE="Reset"
+UI_MUSIC_sLIDER="Music"
 
