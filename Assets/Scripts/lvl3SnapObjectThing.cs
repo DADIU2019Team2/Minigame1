@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class lvl3SnapObjectThing : MonoBehaviour
 {
+    public Rigidbody hatchRB;
 
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Collision with = " + other.name);
         if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Triggers")))
         {
+            hatchRB.freezeRotation = false;
             #region snap to object
             Transform obj = other.transform;
             obj.position = transform.position;
@@ -21,4 +23,5 @@ public class lvl3SnapObjectThing : MonoBehaviour
             GameObject.FindObjectOfType<FollowPathFromNearest>().setWindowSuction(true);
         }
     }
+
 }
