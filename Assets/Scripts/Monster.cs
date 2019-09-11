@@ -8,12 +8,15 @@ public class Monster : MonoBehaviour
     [SerializeField] private NavMeshAgent navAgent;
     [SerializeField] private Transform playerTransform;
 
+    [SerializeField] public List<Transform> randomPositionArr;
+
     [SerializeField] private Transform destinationOne, destinationTwo;
 
+    public Transform cubeposition;
     private int keysUsed = 0;
     private float timer = 0;
 
-    private Vector3 currentDestination;
+    [SerializeField] private Vector3 currentDestination;
 
     public bool noKeyUsedYet = true; //Accessed by lvl4snapobject
     public bool vaseBridgeInPlace = false; //Accessed by snapbridge.cs
@@ -31,7 +34,7 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if (noKeyUsedYet)
         {
             timer += Time.deltaTime;
@@ -39,9 +42,9 @@ public class Monster : MonoBehaviour
             {
                 Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
 
-                Vector3 playerPos = playerTransform.position;
+                Vector3 randomPosition = randomPositionArr[Random.Range(0, 3)].position;
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(playerPos, out hit, 8f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPosition, out hit, 8f, NavMesh.AllAreas))
                 {
                     currentDestination = hit.position;
                 }
@@ -53,10 +56,19 @@ public class Monster : MonoBehaviour
             }
             timer %= 2;
         }
-        else if (vaseBridgeInPlace)
+        
+        if (vaseBridgeInPlace)
         {
-            navAgent.destination = magicKeyUsed ? destinationTwo.position : destinationOne.position; 
+            Vector3 targetPosition = magicKeyUsed ? destinationTwo.position : destinationOne.position;
+            Debug.Log("Target position: " + targetPosition.ToString());
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(targetPosition, out hit, 8f, NavMesh.AllAreas))
+            {
+                currentDestination = hit.position;
+            }
+            Debug.Log("Current destination: " + currentDestination);
         }
+        navAgent.destination = currentDestination;
 
     }
 }

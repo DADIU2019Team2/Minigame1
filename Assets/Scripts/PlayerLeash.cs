@@ -8,7 +8,7 @@ public class PlayerLeash : MonoBehaviour
     [SerializeField] private GameObject playerObj;
     
 
-    private void Awake()
+    private void Start()
     {
         if (playerObj == null)
         {
@@ -19,12 +19,7 @@ public class PlayerLeash : MonoBehaviour
         transform.position = playerInitPos;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    
+    // Start is called
 
     void FixedUpdate()
     {

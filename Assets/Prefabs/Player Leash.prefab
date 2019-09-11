@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7737722400503624417}
   - component: {fileID: 7737722400503624413}
   - component: {fileID: 7737722400503624416}
-  - component: {fileID: 7737722400503624414}
   m_Layer: 0
   m_Name: Player Leash
   m_TagString: Untagged
@@ -87,7 +86,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.1772223, y: -1.6558368, z: -0.0000005981545}
+  m_ConnectedAnchor: {x: -15.383938, y: 2.4582064, z: 13.607066}
   serializedVersion: 2
   m_Spring: 30
   m_Damper: 0.7
@@ -100,16 +99,3 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &7737722400503624414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3905363059650075093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 892162f0f858a7f42b38003e4e94f2b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObj: {fileID: 0}
