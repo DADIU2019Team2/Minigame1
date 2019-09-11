@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicPlaylistContainer Name="Phone" ID="{97F4A5BC-CB81-4A41-91D7-DBE8138E6EDA}" ShortID="30180040">
+				<MusicPlaylistContainer Name="Level1" ID="{CD013DE9-B34F-4C6C-B773-91A8C8EA2552}" ShortID="482512340">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
@@ -13,13 +13,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="Phone ringing" ID="{57287D4E-712E-4F49-AC35-46DB64AC5FFD}" ShortID="475132415">
+						<MusicSegment Name="Loop1" ID="{EF6AD2F7-F4A4-4476-9733-01C330346BAF}" ShortID="1000414538">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-17</Value>
-									</ValueList>
-								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="16000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -30,13 +26,9 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Phone ringing" ID="{66952CA6-5030-4424-97C2-7DAFD4205D82}" ShortID="179841396">
+								<MusicTrack Name="Purgatory level 1 loop1" ID="{7CD742E0-9C20-4177-83DB-22E5BAC183C0}" ShortID="497733336">
 									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
@@ -44,13 +36,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Phone ringing" ID="{614F5A9B-5FB1-41AE-BCF0-6A9BC7FF863B}" ShortID="905005226">
+										<AudioFileSource Name="Purgatory level 1 loop1" ID="{ED781462-D435-4F7E-9A28-59F7C116A42A}" ShortID="859261905">
 											<Language>SFX</Language>
-											<AudioFile>Phone ringing.wav</AudioFile>
+											<AudioFile>Purgatory level 1 loop1.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{467F209D-4B61-4911-B965-159FE2EA719F}">
+										<MusicTransition Name="Root" ID="{C5FF4148-3651-4161-B3FB-4A927D1AF00F}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -58,15 +50,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{31C8F69E-864A-4C81-991B-7B7498D674E9}">
+										<MusicTrackSequence Name="" ID="{13F0EE68-5AAC-42F5-85BD-D8769E97B8FC}">
 											<ClipList>
-												<MusicClip Name="Phone ringing" ID="{3C831233-F813-452D-B22D-BD5A437FA0B4}">
+												<MusicClip Name="Purgatory level 1 loop1" ID="{E55F8B72-00BC-4411-8488-E7EF8F039945}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3454.67120181406"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Phone ringing" ID="{614F5A9B-5FB1-41AE-BCF0-6A9BC7FF863B}"/>
+													<AudioSourceRef Name="Purgatory level 1 loop1" ID="{ED781462-D435-4F7E-9A28-59F7C116A42A}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -74,18 +66,18 @@
 								</MusicTrack>
 							</ChildrenList>
 							<CueList>
-								<MusicCue Name="Entry Cue" ID="{BE5A21C7-610F-4E78-9DCF-9BA0035040D8}"/>
-								<MusicCue Name="Exit Cue" ID="{9345BBBF-DDA8-415A-8F3E-D32135168208}">
+								<MusicCue Name="Entry Cue" ID="{11ED152A-DD4F-45AF-9631-E86125C518BD}"/>
+								<MusicCue Name="Exit Cue" ID="{E570AE2C-B3F4-4666-9BB2-03D0D036E06B}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="3454.67120181406"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
-						<MusicSegment Name="Silence" ID="{6AD96518-04B3-448A-B162-BC8F5B6B17FD}" ShortID="397662830">
+						<MusicSegment Name="Loop2" ID="{CB01A9C4-1EBF-4304-90E8-C7BB943AEA79}" ShortID="135204643">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="70000"/>
+								<Property Name="EndPosition" Type="Real64" Value="32000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -96,27 +88,20 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Silence" ID="{5C567E1B-EE44-430F-A3FA-2E8245B0DC87}" ShortID="395322397">
-									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<MusicTrack Name="Purgatory level 1 loop2" ID="{B4D36372-44EC-4816-AE63-E77B6D45C70D}" ShortID="718063412">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Silence" ID="{580CB77A-B34F-4CBF-878A-25D59020034D}" ShortID="791523558">
+										<AudioFileSource Name="Purgatory level 1 loop2" ID="{FD9BB16C-E969-459D-A7F5-1579BADC3E04}" ShortID="540843851">
 											<Language>SFX</Language>
-											<AudioFile>Silence.wav</AudioFile>
+											<AudioFile>Purgatory level 1 loop2.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{8B485902-CE22-4AF2-9EBC-B2F530643801}">
+										<MusicTransition Name="Root" ID="{7C5DFB81-AC77-4F31-9714-8E6E3E5C6450}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -124,15 +109,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{78CDB798-C1CE-4DDA-92C6-EAE842F1690A}">
+										<MusicTrackSequence Name="" ID="{E557A037-634F-4830-88AD-B3D89B0E3EE5}">
 											<ClipList>
-												<MusicClip Name="Silence" ID="{624A1996-F20E-4EBB-A8F6-CD339BF25BAA}">
+												<MusicClip Name="Purgatory level 1 loop2" ID="{52E88B78-E415-4614-9CB5-3F8B860E9535}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="70000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Silence" ID="{580CB77A-B34F-4CBF-878A-25D59020034D}"/>
+													<AudioSourceRef Name="Purgatory level 1 loop2" ID="{FD9BB16C-E969-459D-A7F5-1579BADC3E04}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -140,23 +125,23 @@
 								</MusicTrack>
 							</ChildrenList>
 							<CueList>
-								<MusicCue Name="Entry Cue" ID="{6EE565B9-7DC4-4DC5-8980-1CCF3951BC9C}"/>
-								<MusicCue Name="Exit Cue" ID="{786A3C73-E273-4F9E-84A7-837D4C90E33C}">
+								<MusicCue Name="Entry Cue" ID="{1940204C-34C8-4CBF-B046-4A6425224DCA}"/>
+								<MusicCue Name="Exit Cue" ID="{0D522836-E732-4CA2-8098-3E33718DDEF7}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="70000"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
-						<MusicTransition Name="Root" ID="{589A1E5C-4424-467A-8006-0AAFEDFACB19}">
+						<MusicTransition Name="Root" ID="{D546A8B5-4A89-41DA-9A7A-53F5082C176C}">
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{32D97FEB-252E-458D-B120-AC1E8C53ABD6}">
+								<MusicTransition Name="Transition" ID="{AA51A44C-30FC-48BD-A84F-37975D4C92D5}">
 									<TransitionInfo/>
 								</MusicTransition>
 							</ChildrenList>
@@ -164,56 +149,27 @@
 						</MusicTransition>
 					</TransitionList>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{A5EF0B36-65E3-411F-87AB-F70F20EACAC3}" ShortID="178316669">
+						<MusicPlaylistItem Name="" ID="{8A89543F-675D-45DA-9C04-8A9B400ED963}" ShortID="339849202">
 							<PropertyList>
-								<Property Name="LoopCount" Type="int16" Value="0"/>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="PlayMode" Type="int16" Value="2"/>
+								<Property Name="PlayMode" Type="int16" Value="1"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicPlaylistItem Name="" ID="{B94FD603-0B4D-41EF-A9CA-025BEE6D3A18}" ShortID="881006515">
+								<MusicPlaylistItem Name="" ID="{F18EFC7A-14E9-40A2-BE57-130E8FD0BA61}" ShortID="526182969">
 									<PropertyList>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>25</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
-									<SegmentRef Name="Phone ringing" ID="{57287D4E-712E-4F49-AC35-46DB64AC5FFD}"/>
+									<SegmentRef Name="Loop1" ID="{EF6AD2F7-F4A4-4476-9733-01C330346BAF}"/>
 								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{E64EEC81-2B46-4BAA-92FC-C0697C2490C3}" ShortID="235357667">
+								<MusicPlaylistItem Name="" ID="{DC5A3C7D-DE2F-456F-B255-BB672A68E63A}" ShortID="762190569">
 									<PropertyList>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>25</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
-									<SegmentRef Name="Silence" ID="{6AD96518-04B3-448A-B162-BC8F5B6B17FD}"/>
+									<SegmentRef Name="Loop2" ID="{CB01A9C4-1EBF-4304-90E8-C7BB943AEA79}"/>
 								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{5C1B8519-8153-49BE-8275-FE1490F42702}" ShortID="1067175411">
+								<MusicPlaylistItem Name="" ID="{6472772D-ED44-4384-80A6-E95454131D9B}" ShortID="277396728">
 									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>25</Value>
-											</ValueList>
-										</Property>
+										<Property Name="PlayMode" Type="int16" Value="1"/>
 									</PropertyList>
-									<SegmentRef Name="Silence" ID="{6AD96518-04B3-448A-B162-BC8F5B6B17FD}"/>
-								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{0DDC848D-5912-40E7-8FFE-1D89BE69341E}" ShortID="98334166">
-									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>25</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<SegmentRef Name="Silence" ID="{6AD96518-04B3-448A-B162-BC8F5B6B17FD}"/>
 								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>

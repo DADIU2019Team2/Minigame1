@@ -2,31 +2,8 @@ fileFormatVersion: 2
 guid: b778328d0de8cb84a9fa5ece93acc306
 ModelImporter:
   serializedVersion: 25
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: //RootNode
-  - first:
-      4: 400000
-    second: //RootNode
-  - first:
-      21: 2100000
-    second: monsterLow_defaultMat1
-  - first:
-      23: 2300000
-    second: //RootNode
-  - first:
-      33: 3300000
-    second: //RootNode
-  - first:
-      43: 4300000
-    second: monsterA_geo
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: monsterLow_defaultMat1
-    second: {fileID: 2100000, guid: f320e5ead6e103d48a083f350d40662d, type: 2}
+  internalIDToNameTable: []
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

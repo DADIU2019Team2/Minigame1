@@ -413,18 +413,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.755011
       minDuration: 1.755011
-    - name: Play_Phone
-      guid: 1147c759dfa7f04baee5b2c9e10f25b3
-      id: 190234274
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Phone
-        ObjectType: 3
-      Path: Default Work Unit/Play_Phone
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Portal_enter_next_level
       guid: d7dbd3c52a471540b0f0a95d5d2ab5a4
       id: 3255294874

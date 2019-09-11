@@ -26,8 +26,6 @@ public class FollowPathFromNearest : MonoBehaviour
 
     public bool windowSuction = false;
 
-    PlayerLeash harness;
-
     bool hasBeenInitiated;
 
     private void Start()
@@ -35,7 +33,7 @@ public class FollowPathFromNearest : MonoBehaviour
         windowSuction = false;
         _pathToFollow = pathToFollow.GetComponent<PathToWindow>().getWindowPath();
         hasBeenInitiated = false;
-        harness = FindObjectOfType<PlayerLeash>();
+        
     }
 
     private void Update()
@@ -50,14 +48,12 @@ public class FollowPathFromNearest : MonoBehaviour
                 initiateWindowSuction();
         }
         updateTarget();
-        //Debug.Log("Has target = " + updateTarget());
         if (updateTarget())
             moveToTarget();        
     }
 
     void initiateWindowSuction()
     {
-        destroyHarness();
         Debug.Log("closest chekpoint is index: " + getClosestCheckpoint(_pathToFollow));
         indexOfTarget = getClosestCheckpoint(_pathToFollow);
         initialTarget = _pathToFollow[indexOfTarget];
@@ -127,16 +123,10 @@ public class FollowPathFromNearest : MonoBehaviour
         //Debug.Log("Distance to target we are attempting to move to: " + dirToTarget.magnitude);
         transform.position = Vector3.SmoothDamp(transform.position, 
             target.position, ref velocity, smoothTime * animationSpeedMaybe * Time.deltaTime);
-        //Debug.Log("Attempting to move to " + target.name);
     }
 
     public void setWindowSuction(bool _windowSuction)
     {
         windowSuction = _windowSuction;
-    }
-
-    void destroyHarness()
-    {
-        Destroy(harness.gameObject);
     }
 }

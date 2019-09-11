@@ -1,68 +1,11 @@
 fileFormatVersion: 2
 guid: e7a5d79cbcc72a846a6271bf71fcf690
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: character_geo
-    100002: //RootNode
-    100004: Head
-    100006: Hips
-    100008: LeftArm
-    100010: LeftFoot
-    100012: LeftForeArm
-    100014: LeftHand
-    100016: LeftShin
-    100018: LeftShoulder
-    100020: LeftThigh
-    100022: LeftToe
-    100024: Neck
-    100026: RightArm
-    100028: RightFoot
-    100030: RightForeArm
-    100032: RightHand
-    100034: RightShin
-    100036: RightShoulder
-    100038: RightThigh
-    100040: RightToe
-    100042: Root
-    100044: Spine1
-    100046: Spine2
-    100048: Spine3
-    100050: Spine4
-    400000: character_geo
-    400002: //RootNode
-    400004: Head
-    400006: Hips
-    400008: LeftArm
-    400010: LeftFoot
-    400012: LeftForeArm
-    400014: LeftHand
-    400016: LeftShin
-    400018: LeftShoulder
-    400020: LeftThigh
-    400022: LeftToe
-    400024: Neck
-    400026: RightArm
-    400028: RightFoot
-    400030: RightForeArm
-    400032: RightHand
-    400034: RightShin
-    400036: RightShoulder
-    400038: RightThigh
-    400040: RightToe
-    400042: Root
-    400044: Spine1
-    400046: Spine2
-    400048: Spine3
-    400050: Spine4
-    2100000: skin_mat
-    2100002: pants_mat
-    2100004: shoes_mat
-    2100006: shirt_mat
-    4300000: character_geo
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: character_geo
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -94,6 +37,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
+      internalID: 1827226128182048838
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -125,6 +69,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -132,27 +77,32 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -162,8 +112,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

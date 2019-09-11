@@ -6,17 +6,12 @@ using UnityEngine;
 public class Game
 {
     public static Game current = null;
-
-
-
-    //variables to save
     public bool[] levelProgress = new bool[5];
     public string name = "FLOAT";
     public string company = "Seal Side Resort";
     public int tries = 9999;
-
-
-
+    // Start is called before the first frame update
+   
     public Game()
     {
         if (current == null)
@@ -27,9 +22,5 @@ public class Game
     public void CompletedLevel(int level)
     {
         Game.current.levelProgress[level] = true;
-    }
-    public bool IsLevelCompleted(int level)
-    {
-        return current.levelProgress[level];
     }
 }

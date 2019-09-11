@@ -19,7 +19,6 @@
 						<ObjectRef Name="Play_Level1music" ID="{252E3725-5A82-4AA7-8E19-3C089D868EE0}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Couch_Impact" ID="{656A2D8C-EFF3-4B4B-8F89-5719CB67CBE4}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Level4musicloop" ID="{EF06AB5C-1857-4B6D-B117-239C3C09C7B8}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Phone" ID="{59C74711-A7DF-4BF0-AEE5-B2C9E10F25B3}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Glass_breaking" ID="{D5327865-436E-4C8F-9CE6-0D9DB5ECCC98}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Level2music" ID="{B3FE91B3-BE86-4CAD-B7BC-AE2844C50249}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Set_Game_Parameter_World" ID="{8C159C11-AE71-4D5D-8B41-FF8EB4B7D481}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>

@@ -8,16 +8,7 @@
 		<ExternalSourcesOutputRoot>/Users/fredo/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/Minigame1/minigame1_sound_ny/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles>
-		<File Id="791523558" Language="SFX">
-			<ShortName>Silence.wav</ShortName>
-			<Path>SFX/Silence_D79FB2B7.wem</Path>
-		</File>
-		<File Id="905005226" Language="SFX">
-			<ShortName>Phone ringing.wav</ShortName>
-			<Path>SFX/Phone ringing_D79FB2B7.wem</Path>
-		</File>
-	</StreamedFiles>
+	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -47,17 +38,12 @@
 				<Event Id="26906972" Name="Play_Metal_impact" ObjectPath="\Events\Default Work Unit\Play_Metal_impact" DurationType="OneShot" DurationMin="0.650000" DurationMax="0.650000"/>
 				<Event Id="1470122796" Name="Play_Monster_crawl_scrape1" ObjectPath="\Events\Default Work Unit\Play_Monster_crawl_scrape1" DurationType="OneShot" DurationMin="0.666803" DurationMax="0.666803"/>
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.755011" DurationMax="1.755011"/>
-				<Event Id="190234274" Name="Play_Phone" ObjectPath="\Events\Default Work Unit\Play_Phone" DurationType="Infinite"/>
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="2.565011" DurationMax="2.565011"/>
 				<Event Id="1720134853" Name="Play_Smaller_glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Smaller_glass_breaking" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="864292832" Name="Play_Wood_impact2" ObjectPath="\Events\Default Work Unit\Play_Wood_impact2" DurationType="OneShot" DurationMin="0.674059" DurationMax="0.674059"/>
 				<Event Id="236152504" Name="Set_Game_Parameter_Music" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4138451597" Name="Set_Game_Parameter_World" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_World" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
-			<ReferencedStreamedFiles>
-				<File Id="791523558"/>
-				<File Id="905005226"/>
-			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="19848566" Language="SFX">
 					<ShortName>Gravity shift.wav</ShortName>

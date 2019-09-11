@@ -18,8 +18,6 @@ public class PlayerHitWin : MonoBehaviour
 
     public void playerWonLevel()
     {
-        //WinScreenOverlay.SetActive(true);
-        GameManager.instance.levelCompleted();
-        MainMenu.loadLevelAfterLastCompletedLevel();
+        WinScreenOverlay.SetActive(true);
     }
 }

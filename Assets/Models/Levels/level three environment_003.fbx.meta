@@ -1,74 +1,8 @@
 fileFormatVersion: 2
 guid: 743a26afe7eb1d247b184375c3674b47
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: House_002
-    100002: //RootNode
-    100004: pCube11
-    100006: pCube12
-    100008: pCube13
-    100010: polySurface1
-    100012: polySurface10
-    100014: polySurface2
-    100016: polySurface3
-    100018: polySurface4
-    100020: polySurface4 1
-    100022: polySurface5
-    100024: polySurface6
-    100026: polySurface7
-    100028: polySurface8
-    100030: polySurface9
-    100032: transform10
-    100034: transform11
-    100036: transform12
-    100038: transform13
-    100040: transform14
-    100042: transform15
-    100044: transform16
-    100046: transform17
-    100048: transform18
-    400000: House_002
-    400002: //RootNode
-    400004: pCube11
-    400006: pCube12
-    400008: pCube13
-    400010: polySurface1
-    400012: polySurface10
-    400014: polySurface2
-    400016: polySurface3
-    400018: polySurface4
-    400020: polySurface4 1
-    400022: polySurface5
-    400024: polySurface6
-    400026: polySurface7
-    400028: polySurface8
-    400030: polySurface9
-    400032: transform10
-    400034: transform11
-    400036: transform12
-    400038: transform13
-    400040: transform14
-    400042: transform15
-    400044: transform16
-    400046: transform17
-    400048: transform18
-    2100000: lambert1
-    2300000: pCube12
-    2300002: pCube13
-    2300004: polySurface1
-    2300006: polySurface3
-    2300008: polySurface4
-    3300000: pCube12
-    3300002: pCube13
-    3300004: polySurface1
-    3300006: polySurface3
-    3300008: polySurface4
-    4300000: polySurface1
-    4300002: polySurface3
-    4300004: polySurface4
-    4300006: pCube12
-    4300008: pCube13
+  serializedVersion: 25
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -103,6 +37,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -110,27 +45,32 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -140,8 +80,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
