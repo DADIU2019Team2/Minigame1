@@ -7,10 +7,11 @@ public class LocalizationManager : MonoBehaviour
 {
 
     public static Dictionary<string, string> dictionary;
-    public enum GameLanguage { English, Danish };
+    public enum GameLanguage { English = 0, Danish = 1 };
     private int languageID;
     public GameLanguage gameLanguage;
     private string languageFolder = "Assets/Resources/Localization/";
+    public TextAsset[] translationFiles;
 
     void Awake()
     {
@@ -22,10 +23,12 @@ public class LocalizationManager : MonoBehaviour
     void LoadLanguageFile(GameLanguage language)
     {
         dictionary.Clear();
-        string path = languageFolder + language.ToString() + ".txt";
-        if (File.Exists(path) == true)
+        //string path = languageFolder + language.ToString() + ".txt";
+        if (translationFiles[(int)language] != null)
         {
-            string[] tempString = File.ReadAllLines(path);
+            ///Debug.Log("language"+(int)language);
+            //string[] tempString = File.ReadAllLines(path);
+            string[] tempString = translationFiles[(int)language].text.Split('\n');
             foreach (string s in tempString)
             {
                 string[] line = s.Split('=');
