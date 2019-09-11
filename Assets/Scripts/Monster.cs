@@ -34,7 +34,7 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (noKeyUsedYet)
         {
             timer += Time.deltaTime;
@@ -56,7 +56,7 @@ public class Monster : MonoBehaviour
             }
             timer %= 2;
         }
-        
+
         if (vaseBridgeInPlace)
         {
             Vector3 targetPosition = magicKeyUsed ? destinationTwo.position : destinationOne.position;
@@ -69,6 +69,13 @@ public class Monster : MonoBehaviour
             Debug.Log("Current destination: " + currentDestination);
         }
         navAgent.destination = currentDestination;
+    }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+        }
     }
 }
