@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	26906972	Play_Metal_impact			\Default Work Unit\Play_Metal_impact	
+	190234274	Play_Phone			\Default Work Unit\Play_Phone	
 	236152504	Set_Game_Parameter_Music			\Default Work Unit\Set_Game_Parameter_Music	
 	565626987	Play_Level2music			\Default Work Unit\Play_Level2music	
 	785252386	Play_Fridge_impact			\Default Work Unit\Play_Fridge_impact	
@@ -43,4 +44,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	968578251	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		121892
 	1000857820	Monster crawl scrape1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Monster crawl scrape1_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster crawl scrape1		117688
 	1037106992	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		521740
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	791523558	Silence	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Silence_D79FB2B7.wem	791523558.wem	\Interactive Music Hierarchy\Music\Phone\Silence\Silence	
+	905005226	Phone ringing	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Phone ringing_D79FB2B7.wem	905005226.wem	\Interactive Music Hierarchy\Music\Phone\Phone ringing\Phone ringing	
 
