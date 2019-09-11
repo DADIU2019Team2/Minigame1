@@ -45,11 +45,14 @@ public class ReadQuaternionCSV : MonoBehaviour
     {
         iterateThroughJoint = motionStartFrame;
         rotations = new Quaternion[24];
-        string path = "Assets/Resources/" + fileName + ".csv";
-        string[] everyLine = File.ReadAllLines(path);
-        mST = new MotionState[everyLine.Length - 1];
+        //string path = "Assets/Resources/" + fileName + ".csv";
+        TextAsset ta = Resources.Load("monsterCSV/monster/combined") as TextAsset;
+        string[] everyLine = ta.text.Split('\n');
+        //Debug.Log(everyLine[1]);
+        //string[] everyLine = File.ReadAllLines(path);
+        mST = new MotionState[everyLine.Length - 2];
         //Debug.Log(everyLine.Length);
-        for (int i = 1; i < everyLine.Length; i++)
+        for (int i = 1; i < everyLine.Length-1; i++)
         {
             string[] splitLine = everyLine[i].Split(',');
 
@@ -94,7 +97,7 @@ public class ReadQuaternionCSV : MonoBehaviour
 
 
         //this is debug controls
-        if (Input.GetKeyDown("up"))
+        /* if (Input.GetKeyDown("up"))
         {
             TurnHip();
             //previousPoseOrientation = Quaternion.LookRotation(forwardOrientation);
@@ -132,7 +135,7 @@ public class ReadQuaternionCSV : MonoBehaviour
             Debug.Log(rotationAngle);
             GiveInput(target);
             GetComponent<NavMeshAgent>().destination = target;
-        }
+        } */
     }
 
     void LateUpdate()
@@ -225,14 +228,6 @@ public class ReadQuaternionCSV : MonoBehaviour
     }
 
 
-    void SetMotionFrameBoundaries(int lower, int higher)
-    {
-        motionStartFrame = lower;
-        motionEndFrame = higher;
-        iterateThroughJoint = lower;
-        Debug.Log("Frame boundaries:" + lower + " to " + higher);
-    }
-
     public void GiveInput(Vector3 wishPosition)
     {
         isTurning = true;
@@ -303,7 +298,7 @@ public class ReadQuaternionCSV : MonoBehaviour
                 distance = MotionState.SquareDistance(mST[current], mST[i]);
             }
         }
-        Debug.Log("Frame to jump to: " + stateFrame + ". Distance from current state: " + distance);
+        //Debug.Log("Frame to jump to: " + stateFrame + ". Distance from current state: " + distance);
         return stateFrame;
     }
 }
