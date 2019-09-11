@@ -33,6 +33,7 @@ public class SnapBridge : MonoBehaviour
             obj.position = snapPos;
             #endregion
 
+            bridge.GetComponent<BoxCollider>().enabled = true;
             monster.noKeyUsedYet = false;
             monster.vaseBridgeInPlace = true;
         }
