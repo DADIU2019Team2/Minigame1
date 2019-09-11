@@ -5,16 +5,16 @@ using UnityEngine;
 public class OnHitDestroyVase : MonoBehaviour
 {
     [SerializeField]
-    private int massThreshold = 10;
+    private float massThreshold = 1;
     [SerializeField]
-    private float speedThreshold = 5f;
-     
-    private void OnTriggerEnter(Collider other)
+    private float speedThreshold = 3f;
+
+    private void OnCollisionEnter(Collision other)
     {
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        if(rb == null)
+        Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+        if (rb == null)
         {
-            Debug.LogError("There is no rigid body on the object (" + other.name + ") that collided with the trigger");
+            Debug.LogError("There is no rigid body on the object (" + other.gameObject.name + ") that collided with the trigger");
             return;
         }
         if (rb.mass < massThreshold)
@@ -26,6 +26,6 @@ public class OnHitDestroyVase : MonoBehaviour
         }
         Debug.Log(rb.name + " Had a speed of " + rb.velocity.magnitude + " on hit.");
         Debug.Log("Something hit the vase!");
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

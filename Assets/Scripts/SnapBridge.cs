@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lvl4SnapObject : MonoBehaviour
+public class SnapBridge : MonoBehaviour
 {
-    [SerializeField] public GameObject bridgeToEnable;
-    public Monster monster;
 
-    private void Awake()
+    [SerializeField] private GameObject bridge;
+    [SerializeField] private Monster monster;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        if (monster == null)
-        {
-            monster = FindObjectOfType<Monster>();
-        }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Collision with = " + other.name);
-        if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Triggers")))
+        if (other.gameObject.name == "bridge")
         {
-            #region snap to object
+             #region snap to object
             Transform obj = other.transform;
             obj.position = transform.position;
             obj.rotation = transform.rotation;
@@ -29,11 +33,8 @@ public class lvl4SnapObject : MonoBehaviour
             obj.position = snapPos;
             #endregion
 
-            
-            bridgeToEnable.SetActive(true);
-
             monster.noKeyUsedYet = false;
-            monster.magicKeyUsed = true;
+            monster.vaseBridgeInPlace = true;
         }
     }
 }
