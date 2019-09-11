@@ -12,6 +12,8 @@ public class Monster : MonoBehaviour
 
     private Vector3 currentDestination;
 
+    public bool noKeyUsedYet = true; //Accessed by lvl4snapobject
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,23 +27,27 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= 2)
+
+        if (noKeyUsedYet)
         {
-            Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
-
-            Vector3 playerPos = playerTransform.position;
-            NavMeshHit hit;
-            if (NavMesh.SamplePosition(playerPos, out hit, 8f, NavMesh.AllAreas))
+            timer += Time.deltaTime;
+            if (timer >= 2)
             {
-                currentDestination = hit.position;
-            } else { currentDestination = transform.position; }
+                Debug.Log("Is agent on navmesh? " + navAgent.isOnNavMesh);
+
+                Vector3 playerPos = playerTransform.position;
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(playerPos, out hit, 8f, NavMesh.AllAreas))
+                {
+                    currentDestination = hit.position;
+                }
+                else { currentDestination = transform.position; }
 
 
-            //navAgent.destination = playerTransform.position;
-            navAgent.destination = currentDestination;
+                //navAgent.destination = playerTransform.position;
+                navAgent.destination = currentDestination;
+            }
+            timer %= 2;
         }
-        timer %= 2;
-        
     }
 }
