@@ -28,7 +28,7 @@
 				<Event Id="2072427939" Name="Play_Drum_collision" ObjectPath="\Events\Default Work Unit\Play_Drum_collision" DurationType="OneShot" DurationMin="0.750624" DurationMax="0.750624"/>
 				<Event Id="2142485738" Name="Play_Float_theme" ObjectPath="\Events\Default Work Unit\Play_Float_theme" DurationType="OneShot" DurationMin="64.000000" DurationMax="64.000000"/>
 				<Event Id="785252386" Name="Play_Fridge_impact" ObjectPath="\Events\Default Work Unit\Play_Fridge_impact" DurationType="OneShot" DurationMin="0.615286" DurationMax="0.615286"/>
-				<Event Id="2424027906" Name="Play_Glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Glass_breaking" DurationType="OneShot" DurationMin="2.957347" DurationMax="2.957347"/>
+				<Event Id="2424027906" Name="Play_Glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Glass_breaking" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3025114257" Name="Play_Gravity_shift" ObjectPath="\Events\Default Work Unit\Play_Gravity_shift" DurationType="OneShot" DurationMin="3.186576" DurationMax="3.186576"/>
 				<Event Id="3605952550" Name="Play_Level1music" ObjectPath="\Events\Default Work Unit\Play_Level1music" DurationType="Infinite"/>
 				<Event Id="565626987" Name="Play_Level2music" ObjectPath="\Events\Default Work Unit\Play_Level2music" DurationType="Infinite"/>
@@ -39,6 +39,7 @@
 				<Event Id="1470122796" Name="Play_Monster_crawl_scrape1" ObjectPath="\Events\Default Work Unit\Play_Monster_crawl_scrape1" DurationType="OneShot" DurationMin="0.666803" DurationMax="0.666803"/>
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.755011" DurationMax="1.755011"/>
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="2.565011" DurationMax="2.565011"/>
+				<Event Id="4262365201" Name="Play_Seal" ObjectPath="\Events\Default Work Unit\Play_Seal" DurationType="OneShot" DurationMin="2.250023" DurationMax="2.250023"/>
 				<Event Id="1720134853" Name="Play_Smaller_glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Smaller_glass_breaking" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="864292832" Name="Play_Wood_impact2" ObjectPath="\Events\Default Work Unit\Play_Wood_impact2" DurationType="OneShot" DurationMin="0.674059" DurationMax="0.674059"/>
 				<Event Id="236152504" Name="Set_Game_Parameter_Music" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -109,6 +110,10 @@
 					<ShortName>Fridge impact.wav</ShortName>
 					<Path>SFX/Fridge impact_10C4C929.wem</Path>
 				</File>
+				<File Id="956737364" Language="SFX">
+					<ShortName>Seal.wav</ShortName>
+					<Path>SFX/Seal_10C4C929.wem</Path>
+				</File>
 				<File Id="962014589" Language="SFX">
 					<ShortName>Float theme.wav</ShortName>
 					<Path>SFX/Float theme_10C4C929.wem</Path>
@@ -120,10 +125,6 @@
 				<File Id="1000857820" Language="SFX">
 					<ShortName>Monster crawl scrape1.wav</ShortName>
 					<Path>SFX/Monster crawl scrape1_10C4C929.wem</Path>
-				</File>
-				<File Id="1037106992" Language="SFX">
-					<ShortName>Glass breaking.wav</ShortName>
-					<Path>SFX/Glass breaking_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

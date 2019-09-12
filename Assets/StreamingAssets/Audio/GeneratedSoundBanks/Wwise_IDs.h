@@ -31,6 +31,7 @@ namespace AK
         static const AkUniqueID PLAY_MONSTER_CRAWL_SCRAPE1 = 1470122796U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
+        static const AkUniqueID PLAY_SEAL = 4262365201U;
         static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
         static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
         static const AkUniqueID SET_GAME_PARAMETER_MUSIC = 236152504U;
@@ -60,6 +61,11 @@ namespace AK
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID NEW_TRIGGER = 4163741908U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

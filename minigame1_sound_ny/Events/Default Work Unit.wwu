@@ -105,9 +105,12 @@
 				<Event Name="Play_Glass_breaking" ID="{D5327865-436E-4C8F-9CE6-0D9DB5ECCC98}">
 					<ChildrenList>
 						<Action Name="" ID="{CA623BC7-1E95-48A0-AF9D-F7330070AF9C}" ShortID="409840196">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Glass breaking" ID="{8B669966-0B54-466D-BA76-CEDA2E08D139}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+									<ObjectRef Name="New_Trigger" ID="{A0B62441-EBE6-4E00-878B-472512A8B19C}" WorkUnitID="{FA529B58-634D-41A5-9568-16C3C25183F3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -246,6 +249,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}" WorkUnitID="{D2B83B49-2C61-4AD0-AB96-36C6020424B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Seal" ID="{E1A2B521-7A45-4791-9654-9E6737997B66}">
+					<ChildrenList>
+						<Action Name="" ID="{41D0874D-A4F3-4CFE-B41E-7351F2BC6208}" ShortID="267727810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seal" ID="{648BEFDE-689F-4415-A137-7317265FE055}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -15,6 +15,7 @@ public class MakeSound : MonoBehaviour
     {
         if(Input.GetKeyDown("space")) {
             //play sound once
+            AkSoundEngine.PostEvent("Play_Seal", gameObject);
             Debug.Log("Space pressed.");
             
         }

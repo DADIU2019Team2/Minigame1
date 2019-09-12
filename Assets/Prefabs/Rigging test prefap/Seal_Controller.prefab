@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1748454063066941137}
   - component: {fileID: 5822372791257249119}
   - component: {fileID: 4558914207214568646}
-  - component: {fileID: 8480041999429847443}
   - component: {fileID: 4067444610024811042}
+  - component: {fileID: 5311529389467493760}
   m_Layer: 0
   m_Name: Seal_Controller
   m_TagString: Untagged
@@ -69,7 +69,20 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &8480041999429847443
+--- !u!65 &4067444610024811042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104844437155786762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.553469, y: 1.558526, z: 1}
+  m_Center: {x: 0.17606509, y: 0.27926302, z: 0}
+--- !u!114 &5311529389467493760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,7 +102,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 953c0d121c0e71d428ed01aba27de095,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -98,19 +112,6 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!65 &4067444610024811042
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104844437155786762}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.553469, y: 1.558526, z: 1}
-  m_Center: {x: 0.17606509, y: 0.27926302, z: 0}
 --- !u!1 &354688007676092995
 GameObject:
   m_ObjectHideFlags: 0

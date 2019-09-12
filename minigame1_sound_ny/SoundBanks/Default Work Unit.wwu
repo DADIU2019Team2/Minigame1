@@ -13,6 +13,7 @@
 						<ObjectRef Name="Play_Box_plastic_impact_2" ID="{282CC75C-4C83-43AB-8AC5-D138B1593E88}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Monster_crawl_scrape1" ID="{07FB1DBD-2A43-4410-9088-22269EB6E11E}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Fridge_impact" ID="{E1188F74-5E13-474A-84BA-2B5EE607F2B4}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Seal" ID="{E1A2B521-7A45-4791-9654-9E6737997B66}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Monster_impact" ID="{3D7DC1E8-0C61-49AC-8977-5FB8B0BCFAAC}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Wood_impact2" ID="{F6F168F2-9C90-49E0-BDE5-3338971BA44E}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Metal_impact" ID="{EA833B41-6E7B-4A1D-A7D6-355CC5AD5FC5}" WorkUnitID="{12E6065D-EEF0-4AC9-B85B-B5DE10AC826D}" Filter="7" Origin="Manual"/>

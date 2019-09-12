@@ -191,7 +191,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f92c26f321240f4f9309ee83162c4682
     GuidInternal: 
-    m_lastTime: -8586334230954775808
+    m_lastTime: -8586333283594775808
     List:
     - name: Main
       guid: 27021db6c3a9b64b929f67caad76d52f
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5d06e612f0eec94ab85bb5de10ac826d
     GuidInternal: 
-    m_lastTime: -8586334230964775808
+    m_lastTime: -8586333283604775808
     List:
     - name: Play_Box_plastic_impact_1
       guid: 9db3e28a319b724f8654b55212d56b77
@@ -303,8 +303,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Play_Glass_breaking
       maxAttenuation: 0
-      maxDuration: 2.957347
-      minDuration: 2.957347
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Gravity_shift
       guid: b51a4fc84652194ea78ce5cf9488d731
       id: 3025114257
@@ -425,6 +425,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.565011
       minDuration: 2.565011
+    - name: Play_Seal
+      guid: 21b5a2e1457a914796549e6737997b66
+      id: 4262365201
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Seal
+        ObjectType: 3
+      Path: Default Work Unit/Play_Seal
+      maxAttenuation: 0
+      maxDuration: 2.250023
+      minDuration: 2.250023
     - name: Play_Smaller_glass_breaking
       guid: 9d2a40b9452fd54f9230e334b5f15c90
       id: 1720134853
@@ -703,8 +715,17 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 589b52fa4d63a541956816c3c25183f3
     GuidInternal: 
-    m_lastTime: -8586340090254775808
-    List: []
+    m_lastTime: -8586333283594775808
+    List:
+    - name: New_Trigger
+      guid: 4124b6a0e6eb004e878b472512a8b19c
+      id: 4163741908
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_Trigger
+        ObjectType: 14
+      Path: Default Work Unit/New_Trigger
   ExpandedItems:
   - /minigame1_sound_ny
   autoPopulateEnabled: 1

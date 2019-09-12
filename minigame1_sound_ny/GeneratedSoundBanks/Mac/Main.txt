@@ -21,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
+	4262365201	Play_Seal			\Default Work Unit\Play_Seal	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Gravity shift_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		562176
@@ -39,8 +40,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	696233840	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Smaller glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		352864
 	921042868	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		309648
 	955037914	Fridge impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Fridge impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Fridge impact		121892
+	956737364	Seal	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Seal_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Seal		396968
 	962014589	Float theme	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Float theme_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Float theme		11289664
 	968578251	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Couch Impact_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		121892
 	1000857820	Monster crawl scrape1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster crawl scrape1_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Monster crawl scrape1		117688
-	1037106992	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Glass breaking_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		521740
 
