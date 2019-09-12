@@ -573,6 +573,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Seal" ID="{DD700457-6271-4A7F-8729-1C5977343104}">
+					<ChildrenList>
+						<Action Name="" ID="{914631C6-2FB0-4E46-AC70-6C6BBFEA49B3}" ShortID="305531499">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seal" ID="{1E89F910-1D22-4C47-BFDD-307B4C4982A2}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

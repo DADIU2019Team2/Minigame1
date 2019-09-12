@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E3531240-3928-4F0F-8EF1-38A4895ED803}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="World" ID="{E3531240-3928-4F0F-8EF1-38A4895ED803}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="World" ID="{07B4B695-8CDE-4EA1-85FD-37A04F53B19A}" ShortID="298171806">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39AC1F81-C175-4E0E-9F5F-DBFA46E7C2F9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="World" ID="{16AF9160-E5DC-4223-9850-B6DA5E189B1A}" WorkUnitID="{4390342C-1738-462C-9503-2BEBA702939E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Drum collision" ID="{197FAA6E-7CDF-4BD1-A2D9-8B5915318AAA}" ShortID="459685114">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39AC1F81-C175-4E0E-9F5F-DBFA46E7C2F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4390342C-1738-462C-9503-2BEBA702939E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Drum collision" ID="{13D2B19F-D82E-4DED-A055-61E82CD2DB10}" ShortID="649723641">
+									<Language>SFX</Language>
+									<AudioFile>Drum collision.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Drum collision" ID="{13D2B19F-D82E-4DED-A055-61E82CD2DB10}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fridge impact" ID="{C8991C49-7410-47F0-87B9-35367F19A65D}" ShortID="225730279">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39AC1F81-C175-4E0E-9F5F-DBFA46E7C2F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4390342C-1738-462C-9503-2BEBA702939E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fridge impact" ID="{B6896055-7ADE-476F-BC7F-7E43FDA26598}" ShortID="340610440">
+									<Language>SFX</Language>
+									<AudioFile>Fridge impact.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fridge impact" ID="{B6896055-7ADE-476F-BC7F-7E43FDA26598}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Glass breaking" ID="{63AE38CE-92E9-42C2-8EB2-7ECA916C134B}" ShortID="146912580">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39AC1F81-C175-4E0E-9F5F-DBFA46E7C2F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4390342C-1738-462C-9503-2BEBA702939E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Glass breaking" ID="{EE83CD4C-C2A4-4274-AC6D-820B1064F4CF}" ShortID="961263825">
+									<Language>SFX</Language>
+									<AudioFile>Glass breaking.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Glass breaking" ID="{EE83CD4C-C2A4-4274-AC6D-820B1064F4CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gravity shift" ID="{D67595AA-1BFE-4FEB-A2F7-9BCC6EB982BC}" ShortID="895381315">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39AC1F81-C175-4E0E-9F5F-DBFA46E7C2F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4390342C-1738-462C-9503-2BEBA702939E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gravity shift" ID="{560C4F8E-61AC-45BE-9FB2-CD6E5AB5AFAA}" ShortID="168565227">
+									<Language>SFX</Language>
+									<AudioFile>Gravity shift.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gravity shift" ID="{560C4F8E-61AC-45BE-9FB2-CD6E5AB5AFAA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

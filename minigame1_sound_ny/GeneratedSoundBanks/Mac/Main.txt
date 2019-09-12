@@ -23,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
+	4262365201	Play_Seal			\Default Work Unit\Play_Seal	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Gravity shift_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		23415
@@ -38,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	523084725	Box plastic impact 1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Box plastic impact 1_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 1		12217
 	534304541	Level1music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Level1music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level1music		233003
 	546481007	Metal impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Metal impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Metal impact		5773
+	559877714	Seal	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Seal_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Seal		18183
 	625558375	Wood impact2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Wood impact2_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Wood impact2		4957
 	696233840	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Smaller glass breaking_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		15391
 	921042868	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Mac\SFX\Monster impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		13644

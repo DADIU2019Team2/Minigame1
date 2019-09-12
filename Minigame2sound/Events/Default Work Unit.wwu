@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Drum_collision" ID="{AA23A027-F9EA-4204-A875-9FBD7138E694}">
+					<ChildrenList>
+						<Action Name="" ID="{62B47482-CD5F-4936-9ADB-1C9EEE291DF7}" ShortID="796915822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drum collision" ID="{197FAA6E-7CDF-4BD1-A2D9-8B5915318AAA}" WorkUnitID="{E3531240-3928-4F0F-8EF1-38A4895ED803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Fridge_impact" ID="{9D914BC0-9346-402D-AEC9-FE742ED7EFF6}">
+					<ChildrenList>
+						<Action Name="" ID="{F2624169-978E-49F8-B448-C6056BCCBC24}" ShortID="381248225">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fridge impact" ID="{C8991C49-7410-47F0-87B9-35367F19A65D}" WorkUnitID="{E3531240-3928-4F0F-8EF1-38A4895ED803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Glass_breaking" ID="{CB6712CC-1BFD-4B4E-9CB3-53C538041E19}">
+					<ChildrenList>
+						<Action Name="" ID="{33A3C6E6-8755-4552-8A96-B206CE278C8E}" ShortID="1028955407">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Glass breaking" ID="{63AE38CE-92E9-42C2-8EB2-7ECA916C134B}" WorkUnitID="{E3531240-3928-4F0F-8EF1-38A4895ED803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Gravity_shift" ID="{0403C826-200D-4213-883C-01241C869C3A}">
+					<ChildrenList>
+						<Action Name="" ID="{C8A77F6A-8DA9-4A4A-BA33-CBECD9A09626}" ShortID="314427360">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gravity shift" ID="{D67595AA-1BFE-4FEB-A2F7-9BCC6EB982BC}" WorkUnitID="{E3531240-3928-4F0F-8EF1-38A4895ED803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

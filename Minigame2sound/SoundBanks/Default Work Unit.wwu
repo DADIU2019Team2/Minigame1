@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3061AAE4-D0C6-476D-B334-A1463EBEE52B}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3061AAE4-D0C6-476D-B334-A1463EBEE52B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{76405D74-675F-43BC-B64C-179B1D02467B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Fridge_impact" ID="{9D914BC0-9346-402D-AEC9-FE742ED7EFF6}" WorkUnitID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Drum_collision" ID="{AA23A027-F9EA-4204-A875-9FBD7138E694}" WorkUnitID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Gravity_shift" ID="{0403C826-200D-4213-883C-01241C869C3A}" WorkUnitID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Glass_breaking" ID="{CB6712CC-1BFD-4B4E-9CB3-53C538041E19}" WorkUnitID="{31E7439D-30F7-4495-B7A8-D9F14F3C2D16}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

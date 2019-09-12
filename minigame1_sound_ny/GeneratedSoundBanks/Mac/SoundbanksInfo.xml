@@ -50,6 +50,7 @@
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.755011" DurationMax="1.755011"/>
 				<Event Id="190234274" Name="Play_Phone" ObjectPath="\Events\Default Work Unit\Play_Phone" DurationType="Infinite"/>
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="2.565011" DurationMax="2.565011"/>
+				<Event Id="4262365201" Name="Play_Seal" ObjectPath="\Events\Default Work Unit\Play_Seal" DurationType="OneShot" DurationMin="2.250023" DurationMax="2.250023"/>
 				<Event Id="1720134853" Name="Play_Smaller_glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Smaller_glass_breaking" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="864292832" Name="Play_Wood_impact2" ObjectPath="\Events\Default Work Unit\Play_Wood_impact2" DurationType="OneShot" DurationMin="0.674059" DurationMax="0.674059"/>
 				<Event Id="236152504" Name="Set_Game_Parameter_Music" ObjectPath="\Events\Default Work Unit\Set_Game_Parameter_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -111,6 +112,10 @@
 				<File Id="546481007" Language="SFX">
 					<ShortName>Metal impact.wav</ShortName>
 					<Path>SFX/Metal impact_451E9D95.wem</Path>
+				</File>
+				<File Id="559877714" Language="SFX">
+					<ShortName>Seal.wav</ShortName>
+					<Path>SFX/Seal_451E9D95.wem</Path>
 				</File>
 				<File Id="625558375" Language="SFX">
 					<ShortName>Wood impact2.wav</ShortName>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{48EF32BD-6B00-472A-AA19-0450F2ABEB03}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="Levelmusic" ID="{48EF32BD-6B00-472A-AA19-0450F2ABEB03}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Levelmusic" ID="{89CA2D17-9C6C-4C5F-9EF7-E10D4E749C90}">
+					<ChildrenList>
+						<State Name="None" ID="{44354960-4358-4EFB-98D7-BE4450F574BF}"/>
+						<State Name="Level1music" ID="{3F52CD3E-C38B-4600-8176-D53BA6D06C37}"/>
+						<State Name="Level2music" ID="{7C31F40F-653E-4194-8F75-E0C6CC11B974}"/>
+						<State Name="Level3music" ID="{2792112A-AABC-467E-8A0D-0B4402D8D8EC}"/>
+						<State Name="Level4music" ID="{F7D2004B-F8E5-4E97-8F20-D8169B785E08}"/>
+						<State Name="Menumusic" ID="{D2E1DC7E-1D4D-44C9-993B-FD233178E466}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Level1music" ID="{3F52CD3E-C38B-4600-8176-D53BA6D06C37}"/>
+							<EndState Name="Level2music" ID="{7C31F40F-653E-4194-8F75-E0C6CC11B974}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level2music" ID="{7C31F40F-653E-4194-8F75-E0C6CC11B974}"/>
+							<EndState Name="Level3music" ID="{2792112A-AABC-467E-8A0D-0B4402D8D8EC}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level3music" ID="{2792112A-AABC-467E-8A0D-0B4402D8D8EC}"/>
+							<EndState Name="Level4music" ID="{F7D2004B-F8E5-4E97-8F20-D8169B785E08}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level4music" ID="{F7D2004B-F8E5-4E97-8F20-D8169B785E08}"/>
+							<EndState Name="Menumusic" ID="{D2E1DC7E-1D4D-44C9-993B-FD233178E466}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Menumusic" ID="{D2E1DC7E-1D4D-44C9-993B-FD233178E466}"/>
+							<EndState Name="Level1music" ID="{3F52CD3E-C38B-4600-8176-D53BA6D06C37}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
