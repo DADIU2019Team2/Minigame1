@@ -5,17 +5,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	565626987	Play_Level2music			\Default Work Unit\Play_Level2music	
 	785252386	Play_Fridge_impact			\Default Work Unit\Play_Fridge_impact	
 	839894203	Play_Level4musicloop			\Default Work Unit\Play_Level4musicloop	
+	851280441	Play_Level3Playlist			\Default Work Unit\Play_Level3Playlist	
 	864292832	Play_Wood_impact2			\Default Work Unit\Play_Wood_impact2	
+	991286973	Play_MenuPlaylist			\Default Work Unit\Play_MenuPlaylist	
 	1470122796	Play_Monster_crawl_scrape1			\Default Work Unit\Play_Monster_crawl_scrape1	
 	1720134853	Play_Smaller_glass_breaking			\Default Work Unit\Play_Smaller_glass_breaking	
+	1723072867	Play_Level1Playlist			\Default Work Unit\Play_Level1Playlist	
 	1946308780	Play_Level3music			\Default Work Unit\Play_Level3music	
 	2048554185	Play_Cardboard_impact			\Default Work Unit\Play_Cardboard_impact	
 	2072427939	Play_Drum_collision			\Default Work Unit\Play_Drum_collision	
-	2142485738	Play_Float_theme			\Default Work Unit\Play_Float_theme	
 	2228153899	Play_Menu_Music			\Default Work Unit\Play_Menu_Music	
 	2306258661	Play_Box_plastic_impact_1			\Default Work Unit\Play_Box_plastic_impact_1	
 	2306258662	Play_Box_plastic_impact_2			\Default Work Unit\Play_Box_plastic_impact_2	
 	2424027906	Play_Glass_breaking			\Default Work Unit\Play_Glass_breaking	
+	2677003740	Play_Level2Playlist			\Default Work Unit\Play_Level2Playlist	
 	2776670769	Play_Couch_Impact			\Default Work Unit\Play_Couch_Impact	
 	3025114257	Play_Gravity_shift			\Default Work Unit\Play_Gravity_shift	
 	3045698593	Play_Level4music			\Default Work Unit\Play_Level4music	
@@ -23,31 +26,60 @@ Event	ID	Name			Wwise Object Path	Notes
 	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
+	4214098874	Play_Level4Playlist			\Default Work Unit\Play_Level4Playlist	
 	4262365201	Play_Seal			\Default Work Unit\Play_Seal	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2678230316	Levels			\Default Work Unit\Levels	
+
+State	ID	Name	State Group			Notes
+	0	None	Levels			
+	2607556080	Menu	Levels			
+	2678230379	Level4	Levels			
+	2678230380	Level3	Levels			
+	2678230381	Level2	Levels			
+	2678230382	Level1	Levels			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19848566	Gravity shift	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Gravity shift_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Gravity shift		23415
+	39735643	Level32	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level32_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level3Playlist\Level32\Level32		5644864
 	49339866	Level4musicloop	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level4musicloop_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4musicloop		425134
 	55922586	Cardboard_impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Cardboard_impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Cardboard_impact		8799
+	72132183	Level23	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level23_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level2Playlist\Level23\Level23		5644864
 	109745358	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Drum collision_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Drum collision		5270
+	120216307	Level12	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level12_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1Playlist\Level12\Level12		2822464
 	124015959	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Portal enter next level_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Portal enter next level		19930
+	132828646	Level24	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level24_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level2Playlist\Level24\Level24		5644864
+	265316467	Level33	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level33_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level3Playlist\Level33\Level33		5644864
 	284439750	Level2music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level2music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level2music		412664
+	299030346	Level21	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level21_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level2Playlist\Level21\Level21		5644864
 	328393997	Level4music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level4music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4music		422335
 	340749903	Level3music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level3music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level3music		433949
+	363094592	Menumusic	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Menumusic_D79FB2B7.wem		\Interactive Music Hierarchy\Music\MenuPlaylist\Menumusic\Menumusic		5644864
 	364062423	Menu Music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Menu Music_6296B0F9.wem		\Actor-Mixer Hierarchy\Music\Music\Menu Music		421667
+	423727762	Level34	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level34_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level3Playlist\Level34\Level34		5644864
 	424168267	Box plastic impact 2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Box plastic impact 2_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 2		9214
 	523084725	Box plastic impact 1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Box plastic impact 1_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 1		12217
 	534304541	Level1music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level1music_9B96ECC7.wem		\Actor-Mixer Hierarchy\Music\Music\Level1music		233003
+	545049054	Level13	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level13_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1Playlist\Level13\Level13		2822464
 	546481007	Metal impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Metal impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Metal impact		5773
 	559877714	Seal	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Seal_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Seal		18183
+	588518650	Menumusic2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Menumusic2_D79FB2B7.wem		\Interactive Music Hierarchy\Music\MenuPlaylist\Menumusic2\Menumusic2		5644864
 	625558375	Wood impact2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Wood impact2_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Wood impact2		4957
 	696233840	Smaller glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Smaller glass breaking_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Smaller glass breaking		15391
+	859650351	Level22	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level22_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level2Playlist\Level22\Level22		5644864
+	885070155	Level14	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level14_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1Playlist\Level14\Level14		2822464
+	906018343	Level11	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level11_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level1Playlist\Level11\Level11		2822464
+	916046832	Level31	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level31_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level3Playlist\Level31\Level31		5644864
 	921042868	Monster impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Monster impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Monster impact		13644
+	950294949	Level44	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level4Playlist\Level44\Level44		5644864
 	955037914	Fridge impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Fridge impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Fridge impact		4705
-	962014589	Float theme	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Float theme_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Float theme		496154
+	963068146	Level42	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level42_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level4Playlist\Level42\Level42		5644864
 	968578251	Couch Impact	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Couch Impact_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Couch Impact		4721
+	976425140	Level43	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level43_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level4Playlist\Level43\Level43		5644864
 	1000857820	Monster crawl scrape1	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Monster crawl scrape1_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Monster crawl scrape1		6907
 	1037106992	Glass breaking	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Glass breaking_451E9D95.wem		\Actor-Mixer Hierarchy\World\World\Glass breaking		28010
+	1059707130	Level41	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Level41_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Level4Playlist\Level41\Level41		5644864
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	791523558	Silence	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Android\SFX\Silence_CB105973.wem	791523558.wem	\Interactive Music Hierarchy\Music\Phone\Silence\Silence	

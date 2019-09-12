@@ -18,16 +18,20 @@ namespace AK
         static const AkUniqueID PLAY_CARDBOARD_IMPACT = 2048554185U;
         static const AkUniqueID PLAY_COUCH_IMPACT = 2776670769U;
         static const AkUniqueID PLAY_DRUM_COLLISION = 2072427939U;
-        static const AkUniqueID PLAY_FLOAT_THEME = 2142485738U;
         static const AkUniqueID PLAY_FRIDGE_IMPACT = 785252386U;
         static const AkUniqueID PLAY_GLASS_BREAKING = 2424027906U;
         static const AkUniqueID PLAY_GRAVITY_SHIFT = 3025114257U;
         static const AkUniqueID PLAY_LEVEL1MUSIC = 3605952550U;
+        static const AkUniqueID PLAY_LEVEL1PLAYLIST = 1723072867U;
         static const AkUniqueID PLAY_LEVEL2MUSIC = 565626987U;
+        static const AkUniqueID PLAY_LEVEL2PLAYLIST = 2677003740U;
         static const AkUniqueID PLAY_LEVEL3MUSIC = 1946308780U;
+        static const AkUniqueID PLAY_LEVEL3PLAYLIST = 851280441U;
         static const AkUniqueID PLAY_LEVEL4MUSIC = 3045698593U;
         static const AkUniqueID PLAY_LEVEL4MUSICLOOP = 839894203U;
+        static const AkUniqueID PLAY_LEVEL4PLAYLIST = 4214098874U;
         static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
+        static const AkUniqueID PLAY_MENUPLAYLIST = 991286973U;
         static const AkUniqueID PLAY_METAL_IMPACT = 26906972U;
         static const AkUniqueID PLAY_MONSTER_CRAWL_SCRAPE1 = 1470122796U;
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
@@ -39,6 +43,24 @@ namespace AK
         static const AkUniqueID SET_GAME_PARAMETER_MUSIC = 236152504U;
         static const AkUniqueID SET_GAME_PARAMETER_WORLD = 4138451597U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace LEVELS
+        {
+            static const AkUniqueID GROUP = 2678230316U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LEVEL1 = 2678230382U;
+                static const AkUniqueID LEVEL2 = 2678230381U;
+                static const AkUniqueID LEVEL3 = 2678230380U;
+                static const AkUniqueID LEVEL4 = 2678230379U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace STATE
+        } // namespace LEVELS
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

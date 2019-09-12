@@ -1,3 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2678230316	Levels			\Default Work Unit\Levels	
+
+State	ID	Name	State Group			Notes
+	0	None	Levels			
+	2607556080	Menu	Levels			
+	2678230379	Level4	Levels			
+	2678230380	Level3	Levels			
+	2678230381	Level2	Levels			
+	2678230382	Level1	Levels			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	

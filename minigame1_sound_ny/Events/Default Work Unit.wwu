@@ -230,17 +230,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Float_theme" ID="{A9051A33-7641-4192-A0C7-E24803F4C54C}">
-					<ChildrenList>
-						<Action Name="" ID="{650D6A47-3679-45C1-995F-8AA5A7BFD022}" ShortID="105975442">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Float theme" ID="{E64834BB-600F-43F0-8466-A2F75B4AC938}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Fridge_impact" ID="{E1188F74-5E13-474A-84BA-2B5EE607F2B4}">
 					<ChildrenList>
 						<Action Name="" ID="{BC2C370F-93B6-4656-AD21-64236C190E88}" ShortID="642241301">
@@ -579,6 +568,61 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Seal" ID="{1E89F910-1D22-4C47-BFDD-307B4C4982A2}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level1Playlist" ID="{68B5F3B3-E902-4E80-B4EA-08F04483861C}">
+					<ChildrenList>
+						<Action Name="" ID="{62E620EF-7160-4F09-8AFD-1701066D7B92}" ShortID="251525379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level1Playlist" ID="{7FAA1801-BD56-4686-B50A-B77FD504C7A7}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level2Playlist" ID="{E14AB6C9-CB8E-48E0-BCC7-6CC685669BC4}">
+					<ChildrenList>
+						<Action Name="" ID="{2556EF2C-9BDA-4F24-A10C-F255DC0EE8B1}" ShortID="30598548">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level2Playlist" ID="{5202916E-0711-4CAA-9C92-B6126C5C336E}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level3Playlist" ID="{A84C31DE-01D4-49B5-82DE-C324802077C0}">
+					<ChildrenList>
+						<Action Name="" ID="{05921026-8029-4B9D-A3E6-656F6ABEF976}" ShortID="677436196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level3Playlist" ID="{246B60B0-4EB4-416F-8CA0-FCBA4A5B7431}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level4Playlist" ID="{AAB23127-7C4D-4C01-88FC-76D94272DF13}">
+					<ChildrenList>
+						<Action Name="" ID="{77D00B4E-64E1-4329-AA9E-6FC61E9F97B8}" ShortID="541541858">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level4Playlist" ID="{A57D0016-BF93-401A-B981-C797827D51E3}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MenuPlaylist" ID="{CD2838E0-FA5E-4E46-8A43-A6ADA630DFD9}">
+					<ChildrenList>
+						<Action Name="" ID="{B40DE858-8E0B-4607-885C-BBF3760D2CD7}" ShortID="777352948">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuPlaylist" ID="{1D5324E1-1A7A-4C3D-94F8-186036763CF7}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
