@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_MONSTER_IMPACT = 3939836301U;
         static const AkUniqueID PLAY_PORTAL_ENTER_NEXT_LEVEL = 3255294874U;
         static const AkUniqueID PLAY_SEAL = 4262365201U;
+        static const AkUniqueID PLAY_SEALSLAP = 2756428223U;
         static const AkUniqueID PLAY_SMALLER_GLASS_BREAKING = 1720134853U;
         static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
         static const AkUniqueID SET_GAME_PARAMETER_MUSIC = 236152504U;

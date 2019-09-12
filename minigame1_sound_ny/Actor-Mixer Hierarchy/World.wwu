@@ -404,6 +404,25 @@
 								<ActiveSource Name="Seal" ID="{4436A825-434B-4944-BCD9-BE48531F18DA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Sealslap" ID="{E04E03D5-7F28-4E3C-86EB-F27800FF2919}" ShortID="509567271">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C519D04C-0DFA-4CBB-A114-E1EC6EE706E2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sealslap" ID="{E8C0319C-ABDE-4269-9636-D2B0066B9519}" ShortID="325841065">
+									<Language>SFX</Language>
+									<AudioFile>Sealslap.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sealslap" ID="{E8C0319C-ABDE-4269-9636-D2B0066B9519}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -191,7 +191,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f92c26f321240f4f9309ee83162c4682
     GuidInternal: 
-    m_lastTime: -8586333283594775808
+    m_lastTime: -8586333110464775808
     List:
     - name: Main
       guid: 27021db6c3a9b64b929f67caad76d52f
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5d06e612f0eec94ab85bb5de10ac826d
     GuidInternal: 
-    m_lastTime: -8586333283604775808
+    m_lastTime: -8586333110464775808
     List:
     - name: Play_Box_plastic_impact_1
       guid: 9db3e28a319b724f8654b55212d56b77
@@ -437,6 +437,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.250023
       minDuration: 2.250023
+    - name: Play_Sealslap
+      guid: 41dd2afd77f93848ac6622f0dfa2964f
+      id: 2756428223
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Sealslap
+        ObjectType: 3
+      Path: Default Work Unit/Play_Sealslap
+      maxAttenuation: 0
+      maxDuration: 0.187506
+      minDuration: 0.187506
     - name: Play_Smaller_glass_breaking
       guid: 9d2a40b9452fd54f9230e334b5f15c90
       id: 1720134853
@@ -701,7 +713,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f72a159793ee4749af10afaa9503e672
     GuidInternal: 
-    m_lastTime: -8586340090264775808
+    m_lastTime: -8586333123294775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -715,7 +727,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 589b52fa4d63a541956816c3c25183f3
     GuidInternal: 
-    m_lastTime: -8586333283594775808
+    m_lastTime: -8586333123294775808
     List:
     - name: New_Trigger
       guid: 4124b6a0e6eb004e878b472512a8b19c
@@ -728,5 +740,7 @@ MonoBehaviour:
       Path: Default Work Unit/New_Trigger
   ExpandedItems:
   - /minigame1_sound_ny
+  - /minigame1_sound_ny/Events
+  - /minigame1_sound_ny/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

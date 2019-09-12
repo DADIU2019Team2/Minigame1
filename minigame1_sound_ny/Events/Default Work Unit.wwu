@@ -265,6 +265,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Sealslap" ID="{FD2ADD41-F977-4838-AC66-22F0DFA2964F}">
+					<ChildrenList>
+						<Action Name="" ID="{645F9E83-4184-4BCE-8CFB-14A0C348C56B}" ShortID="151908769">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sealslap" ID="{E04E03D5-7F28-4E3C-86EB-F27800FF2919}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

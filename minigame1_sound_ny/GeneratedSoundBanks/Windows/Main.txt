@@ -14,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2306258661	Play_Box_plastic_impact_1			\Default Work Unit\Play_Box_plastic_impact_1	
 	2306258662	Play_Box_plastic_impact_2			\Default Work Unit\Play_Box_plastic_impact_2	
 	2424027906	Play_Glass_breaking			\Default Work Unit\Play_Glass_breaking	
+	2756428223	Play_Sealslap			\Default Work Unit\Play_Sealslap	
 	2776670769	Play_Couch_Impact			\Default Work Unit\Play_Couch_Impact	
 	3025114257	Play_Gravity_shift			\Default Work Unit\Play_Gravity_shift	
 	3045698593	Play_Level4music			\Default Work Unit\Play_Level4music	
@@ -30,6 +31,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	109745358	Drum collision	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Drum collision_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Drum collision		118028
 	124015959	Portal enter next level	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Portal enter next level_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Portal enter next level		452532
 	284439750	Level2music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Level2music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level2music		5644864
+	325841065	Sealslap	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Sealslap_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Sealslap		33140
 	328393997	Level4music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Level4music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level4music		5644864
 	340749903	Level3music	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Level3music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Music\Music\Level3music		5644864
 	424168267	Box plastic impact 2	Y:\Documents\GitHub\Minigame1\minigame1_sound_ny\.cache\Windows\SFX\Box plastic impact 2_10C4C929.wem		\Actor-Mixer Hierarchy\World\World\Box plastic impact 2		159736
