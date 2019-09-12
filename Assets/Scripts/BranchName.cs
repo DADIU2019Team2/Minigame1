@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
+using System;
+using System.IO;
 
 public class BranchName : MonoBehaviour
 {
@@ -21,7 +23,13 @@ public class BranchName : MonoBehaviour
         process.Start();
 
         string branchname = process.StandardOutput.ReadLine();
-        UnityEngine.Debug.Log(branchname);
+        string path = (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
+               @"builds\"+branchname));
+
+        Directory.CreateDirectory(path);
+        UnityEngine.Debug.Log(path);
+
+
     }
 
     // Update is called once per frame

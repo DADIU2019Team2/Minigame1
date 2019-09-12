@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using System.Diagnostics;
 namespace UnityEditor
 {
     public class Pipeline
@@ -9,6 +10,7 @@ namespace UnityEditor
         [MenuItem("Pipeline/Build: Android")]
         public static void BuildAndroid()
         {
+            Directory.CreateDirectory(pathname);
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 locationPathName = Path.Combine(pathname, filename),
@@ -17,7 +19,7 @@ namespace UnityEditor
                 target = BuildTarget.Android
             });
 
-            Debug.Log(report);
+            UnityEngine.Debug.Log(report);
         }
 
         /*
@@ -33,7 +35,7 @@ namespace UnityEditor
             {
                 return
                (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-               "builds"));
+               @"builds\" + repoBranchName));
             }
         }
 
@@ -48,8 +50,31 @@ namespace UnityEditor
         {
             get
             {
-                return (DateTime.Now.ToString("yyyyMMddHHmm") + ".apk");
+                return (DateTime.Now.ToString("yyyyMMddHHmm"+repoBranchName) + ".apk");
             }
         }
+
+        public static string repoBranchName
+        {
+            get
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo("git.exe");
+
+                startInfo.UseShellExecute = false;
+                startInfo.WorkingDirectory = @"C:\Users\Dadiu student\DADIU Team 2 - Minigame 1\Minigame1";
+                startInfo.RedirectStandardInput = true;
+                startInfo.RedirectStandardOutput = true;
+                startInfo.Arguments = "rev-parse --abbrev-ref HEAD";
+
+                Process process = new Process();
+                process.StartInfo = startInfo;
+                process.Start();
+
+                string branchname = process.StandardOutput.ReadLine();
+                return branchname;
+            }
+        }
+
+
     }
 }
