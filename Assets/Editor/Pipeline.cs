@@ -50,7 +50,6 @@ namespace UnityEditor
         {
             get
             {
-                System.Console.WriteLine(DateTime.Now.ToString("yyyyMMddHHmm") + repoBranchName + ".apk");
                 return (DateTime.Now.ToString("yyyyMMddHHmm") + repoBranchName + ".apk");
             }
         }
