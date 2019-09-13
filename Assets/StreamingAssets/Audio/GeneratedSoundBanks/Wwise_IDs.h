@@ -46,9 +46,9 @@ namespace AK
 
     namespace STATES
     {
-        namespace LEVELS
+        namespace LEVELSMUSIC
         {
-            static const AkUniqueID GROUP = 2678230316U;
+            static const AkUniqueID GROUP = 2871769893U;
 
             namespace STATE
             {
@@ -56,9 +56,9 @@ namespace AK
                 static const AkUniqueID LEVEL2 = 2678230381U;
                 static const AkUniqueID LEVEL3 = 2678230380U;
                 static const AkUniqueID LEVEL4 = 2678230379U;
-                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID MENUMUSIC = 679636833U;
             } // namespace STATE
-        } // namespace LEVELS
+        } // namespace LEVELSMUSIC
 
     } // namespace STATES
 

@@ -254,6 +254,16 @@
 				</Event>
 				<Event Name="Play_Gravity_shift" ID="{C84F1AB5-5246-4E19-A78C-E5CF9488D731}">
 					<ChildrenList>
+						<Action Name="" ID="{0C56FEE1-AAE0-4D8F-80B6-68F3739E5944}" ShortID="213903186">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gravity shift" ID="{B6C5941E-63E2-4D20-A6DE-D0554A9246BA}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{376E2FEE-05A3-4982-8E25-4718D59EFD4A}" ShortID="569959468">
 							<ReferenceList>
 								<Reference Name="Target">

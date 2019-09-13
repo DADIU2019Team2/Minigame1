@@ -184,14 +184,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3713ca50998571499d3e31b46f895c9d
     GuidInternal: 
-    m_lastTime: -8586335013544775808
+    m_lastTime: -8586332422494775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f92c26f321240f4f9309ee83162c4682
     GuidInternal: 
-    m_lastTime: -8586333125114775808
+    m_lastTime: -8586332422494775808
     List:
     - name: Main
       guid: 27021db6c3a9b64b929f67caad76d52f
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5d06e612f0eec94ab85bb5de10ac826d
     GuidInternal: 
-    m_lastTime: -8586333125114775808
+    m_lastTime: -8586332422494775808
     List:
     - name: Play_Box_plastic_impact_1
       guid: 9db3e28a319b724f8654b55212d56b77
@@ -303,8 +303,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Play_Gravity_shift
       maxAttenuation: 0
-      maxDuration: 3.186576
-      minDuration: 3.186576
+      maxDuration: 3.745972
+      minDuration: 3.745972
     - name: Play_Level1music
       guid: 25372e25825aa74a8e193c089d868ee0
       id: 3605952550
@@ -773,50 +773,56 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f72a159793ee4749af10afaa9503e672
     GuidInternal: 
-    m_lastTime: -8586333125114775808
+    m_lastTime: -8586332422494775808
+    List: []
+  - PhysicalPath: States/LevelsMusic.wwu
+    ParentPhysicalPath: 
+    guid: 6448c7784eb88c428472b981b199019a
+    GuidInternal: 
+    m_lastTime: -8586332422494775808
     List:
-    - name: Levels
-      guid: bc992bef9c32324f8eff86b6a19fccac
-      id: 2678230316
+    - name: LevelsMusic
+      guid: 61554e0ba9b0344f8bf0ef84fa30a622
+      id: 2871769893
       PathAndIcons:
-      - ElementName: Default Work Unit
+      - ElementName: LevelsMusic
         ObjectType: 12
-      - ElementName: Levels
+      - ElementName: LevelsMusic
         ObjectType: 9
-      Path: Default Work Unit/Levels
+      Path: LevelsMusic/LevelsMusic
       values:
       - name: Level1
-        guid: 4e16e797fa2d884c8755cb595735d40e
+        guid: 0c33e292b1f90b459d2117f26ff1693e
         id: 2678230382
         PathAndIcons:
         - ElementName: Level1
           ObjectType: 8
       - name: Level2
-        guid: c58ad492cf463e45a04d4bcd2bb464f3
+        guid: 20376fe58e08074e8d44fde8539c74ca
         id: 2678230381
         PathAndIcons:
         - ElementName: Level2
           ObjectType: 8
       - name: Level3
-        guid: 476022b575f7c048a9fa86f0c5a84236
+        guid: ff36eb38c2d6034b97f8a16a74398d78
         id: 2678230380
         PathAndIcons:
         - ElementName: Level3
           ObjectType: 8
       - name: Level4
-        guid: 2b09537cf89d7e44b1fecfb806082021
+        guid: 4f65dc3ece8cc94ebe3ab52a4f7a0a0f
         id: 2678230379
         PathAndIcons:
         - ElementName: Level4
           ObjectType: 8
-      - name: Menu
-        guid: 2b1bf19d843a6a46b86befe298dba87f
-        id: 2607556080
+      - name: MenuMusic
+        guid: a7bf2d07d4d0464abb43741f851cbb60
+        id: 679636833
         PathAndIcons:
-        - ElementName: Menu
+        - ElementName: MenuMusic
           ObjectType: 8
       - name: None
-        guid: eb50e9f1be723c4eabe8f23144e7831b
+        guid: 4a80e000f0fd1341bbb37de0a53769b1
         id: 748895195
         PathAndIcons:
         - ElementName: None
@@ -836,9 +842,11 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 589b52fa4d63a541956816c3c25183f3
     GuidInternal: 
-    m_lastTime: -8586333247044775808
+    m_lastTime: -8586332484264775808
     List: []
   ExpandedItems:
   - /minigame1_sound_ny
+  - /minigame1_sound_ny/Events
+  - /minigame1_sound_ny/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

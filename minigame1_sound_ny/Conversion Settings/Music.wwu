@@ -43,13 +43,25 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{AD94DA04-28C5-48AF-9955-F8E004C3113B}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+							<ConversionPlugin Name="" ID="{AD94DA04-28C5-48AF-9955-F8E004C3113B}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="7"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{6FA47FD9-9333-423E-8F54-ED12D146B883}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+							<ConversionPlugin Name="" ID="{6FA47FD9-9333-423E-8F54-ED12D146B883}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="7"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{B715D2A4-291E-493E-91DD-C59403F4F874}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+							<ConversionPlugin Name="" ID="{B715D2A4-291E-493E-91DD-C59403F4F874}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="7"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
