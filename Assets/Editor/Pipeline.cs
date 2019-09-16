@@ -10,6 +10,7 @@ namespace UnityEditor
         [MenuItem("Pipeline/Build: Android")]
         public static void BuildAndroid()
         {
+            updateBuildNumberIdentifier(); //update our build number file
             Directory.CreateDirectory(pathname);
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
@@ -75,20 +76,22 @@ namespace UnityEditor
             }
         }
         
-        [MenuItem("Pipeline/Build: update build number")]
+        //[MenuItem("Pipeline/Build: update build number")]
         public static void updateBuildNumberIdentifier()
         {
-            int buildNum;
-            string text;
-            string number;
+            int buildNum = 0;
+            string text = "";
+            string number = "";
             string buildNumFilePath = Application.dataPath + "/buildNumbers.txt";
             FileStream file = File.Open(buildNumFilePath, FileMode.OpenOrCreate,FileAccess.ReadWrite);
             file.Close();
             string[] everyLine = File.ReadAllLines(buildNumFilePath);
-
-            UnityEngine.Debug.Log("newline: " + everyLine[0] + "newline: " + everyLine[1]);
-            text = everyLine[0];
-            number = everyLine[1];
+            if(everyLine.Length > 0)
+            {
+                UnityEngine.Debug.Log("The build number file contains: \n" + everyLine[0] + " " + everyLine[1]);
+                text = everyLine[0];
+                number = everyLine[1];
+            }
             try
             {
                 buildNum = int.Parse(number);
@@ -98,42 +101,21 @@ namespace UnityEditor
                 
             }
 
-            int curBuildNum;
-            if(buildNum == null)
+            int curBuildNum = buildNum + 1; ;
+            if(number == "")
             {
                 buildNum = 1;
-            }
-            else
-            {
-                curBuildNum = buildNum++;
             }
 
             string[] stuffToWrite = new string[2];
-            stuffToWrite[0] = "The current builde number of the project is \n";
+            stuffToWrite[0] = "The current build number of the project is";
             stuffToWrite[1] = curBuildNum.ToString();
 
-            File.WriteAllLines(buildNumFilePath,)
-            /*using (StreamReader reader = new StreamReader(file))
-            {
-                text = reader.ReadLine();
-                number = reader.ReadLine();
-            }
-            UnityEngine.Debug.Log("The text says: " + text + " And the number is: " + number);
+            //UnityEngine.Debug.Log("Cur build nr = " + curBuildNum);
 
-            if(number == null)
-            {
-                buildNum = 1;
-            }else
-            {
-                buildNum = int.Parse(number);
-            }*/
+            File.WriteAllLines(buildNumFilePath, stuffToWrite);
 
-            /*using (StreamWriter writer = new StreamWriter(file))
-            {
-                writer.WriteLine("The current build number of the app is \n"+ buildNum.ToString());
-            }*/
-
-            //UnityEngine.Debug.Log(buildNumFilePath);
+            UnityEngine.Debug.Log("I have updated the build number");
         }
     }
 }
