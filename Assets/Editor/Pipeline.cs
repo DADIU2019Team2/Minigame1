@@ -82,10 +82,20 @@ namespace UnityEditor
             int buildNum = 0;
             string text = "";
             string number = "";
-            string buildNumFilePath = Application.dataPath + "/buildNumbers.txt";
+            string buildNumFilePath = Application.dataPath + "/Resources/buildNumbers.txt";
             FileStream file = File.Open(buildNumFilePath, FileMode.OpenOrCreate,FileAccess.ReadWrite);
             file.Close();
-            string[] everyLine = File.ReadAllLines(buildNumFilePath);
+
+            TextAsset buildNRFile = Resources.Load("buildNumbers") as TextAsset;
+            string allLines = buildNRFile.text;
+            string[] everyLine = new string[2];
+            if (allLines.Count<Char>() > 0)
+            {
+
+                everyLine = allLines.Split(new[] { "\r\n", "\r", "\n" },StringSplitOptions.None);
+            }
+            
+            //string[] everyLine = File.ReadAllLines(buildNumFilePath);
             if(everyLine.Length > 0)
             {
                 UnityEngine.Debug.Log("The build number file contains: \n" + everyLine[0] + " " + everyLine[1]);
@@ -111,7 +121,7 @@ namespace UnityEditor
             stuffToWrite[0] = "The current build number of the project is";
             stuffToWrite[1] = curBuildNum.ToString();
 
-            //UnityEngine.Debug.Log("Cur build nr = " + curBuildNum);
+            UnityEngine.Debug.Log("Cur build nr = " + curBuildNum);
 
             File.WriteAllLines(buildNumFilePath, stuffToWrite);
 

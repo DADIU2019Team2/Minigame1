@@ -1,6 +1,6 @@
-﻿using UnityEngine;
-using System.IO;
-using UnityEngine.UI;
+﻿using System;
+using UnityEngine;
+using System.Linq;
 using TMPro;
 
 public class ReadBuildNumber : MonoBehaviour
@@ -16,11 +16,21 @@ public class ReadBuildNumber : MonoBehaviour
 
     string readBuildNRFile()
     {
-        string buildNumFilePath = Application.dataPath + "/buildNumbers.txt";
-        string[] everyLine = File.ReadAllLines(buildNumFilePath);
-        if(everyLine.Length > 0)
+        /*string buildNumFilePath = Application.dataPath + "/buildNumbers.txt";
+        string[] everyLine = File.ReadAllLines(buildNumFilePath);*/
+
+        TextAsset buildNRFile = Resources.Load("buildNumbers") as TextAsset;
+        string allLines = buildNRFile.text;
+        string[] everyLine = new string[2];
+        if (allLines.Count<Char>() > 0)
         {
-            return "Build NR: " + everyLine[everyLine.Length-1];//the number should be the last line in the file always
+
+            everyLine = allLines.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+        }
+
+        if (everyLine.Length > 0)
+        {
+            return "Build NR: " + everyLine[1];//the number should be in the second line always
         }
         return "There is no build number to be found";
     }
