@@ -74,7 +74,66 @@ namespace UnityEditor
                 return branchname;
             }
         }
+        
+        [MenuItem("Pipeline/Build: update build number")]
+        public static void updateBuildNumberIdentifier()
+        {
+            int buildNum;
+            string text;
+            string number;
+            string buildNumFilePath = Application.dataPath + "/buildNumbers.txt";
+            FileStream file = File.Open(buildNumFilePath, FileMode.OpenOrCreate,FileAccess.ReadWrite);
+            file.Close();
+            string[] everyLine = File.ReadAllLines(buildNumFilePath);
 
+            UnityEngine.Debug.Log("newline: " + everyLine[0] + "newline: " + everyLine[1]);
+            text = everyLine[0];
+            number = everyLine[1];
+            try
+            {
+                buildNum = int.Parse(number);
+            }
+            catch (Exception e)
+            {
+                
+            }
 
+            int curBuildNum;
+            if(buildNum == null)
+            {
+                buildNum = 1;
+            }
+            else
+            {
+                curBuildNum = buildNum++;
+            }
+
+            string[] stuffToWrite = new string[2];
+            stuffToWrite[0] = "The current builde number of the project is \n";
+            stuffToWrite[1] = curBuildNum.ToString();
+
+            File.WriteAllLines(buildNumFilePath,)
+            /*using (StreamReader reader = new StreamReader(file))
+            {
+                text = reader.ReadLine();
+                number = reader.ReadLine();
+            }
+            UnityEngine.Debug.Log("The text says: " + text + " And the number is: " + number);
+
+            if(number == null)
+            {
+                buildNum = 1;
+            }else
+            {
+                buildNum = int.Parse(number);
+            }*/
+
+            /*using (StreamWriter writer = new StreamWriter(file))
+            {
+                writer.WriteLine("The current build number of the app is \n"+ buildNum.ToString());
+            }*/
+
+            //UnityEngine.Debug.Log(buildNumFilePath);
+        }
     }
 }
