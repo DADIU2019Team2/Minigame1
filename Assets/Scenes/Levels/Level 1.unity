@@ -2906,7 +2906,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804909111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e90f193eb6a4471aa487dcddc3dc4d8, type: 3}
+  m_Script: {fileID: 11500000, guid: b2f3a07886eff41c6a8894d07f24e133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -2917,7 +2917,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fc1549679c23f4324a56ef082a41207c,
+    WwiseObjectReference: {fileID: 11400000, guid: 9941fd9ad8c1e41d8be3ecd9bedfddb1,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -2927,6 +2927,10 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!114 &1804909114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2949,6 +2953,29 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1804909115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804909111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7048f445bcc2646dfae03cfcafd4ba17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 12c48e24cadf7465a833e510b1213f3d,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
 --- !u!1 &1805490851
