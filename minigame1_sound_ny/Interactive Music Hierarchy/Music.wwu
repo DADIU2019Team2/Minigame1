@@ -9,7 +9,7 @@
 							<ObjectRef Name="World" ID="{886AF221-1794-4E6E-AD00-AF06D264AC36}" WorkUnitID="{BEE67B39-44BB-4FA5-8F58-AE2742BB2D3F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+							<ObjectRef Name="World" ID="{8C3EEA4D-73F0-4D58-A48A-41CC095FBA00}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -225,7 +225,7 @@
 							<ObjectRef Name="Music" ID="{08FDB012-76EA-4B17-8E15-1346299DFDFB}" WorkUnitID="{BD581FC9-1F19-43E9-A933-6021A0AF10B3}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
+							<ObjectRef Name="Music" ID="{6E3BDB51-A7C7-4346-8565-D5E3C77F02E6}" WorkUnitID="{50CA1337-8599-4971-9D3E-31B46F895C9D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -479,6 +479,35 @@
 									</CueList>
 								</MusicSegment>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo MusicSyncType="2">
+										<StateGroupRef Name="LevelsMusic" ID="{0B4E5561-B0A9-4F34-8BF0-EF84FA30A622}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Level1" ID="{92E2330C-F9B1-450B-9D21-17F26FF1693E}"/>
+										<CustomState Name="" ID="{336EB00D-0565-4416-B34C-8E0C684EAC4F}" ShortID="243647870"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MenuMusic" ID="{072DBFA7-D0D4-4A46-BB43-741F851CBB60}"/>
+										<CustomState Name="" ID="{AE5430DA-538A-443A-816F-31C78D28E5DD}" ShortID="988265888"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level3" ID="{38EB36FF-D6C2-4B03-97F8-A16A74398D78}"/>
+										<CustomState Name="" ID="{6534C188-526C-4BF4-8879-AC1E5A421534}" ShortID="850107380"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level2" ID="{E56F3720-088E-4E07-8D44-FDE8539C74CA}"/>
+										<CustomState Name="" ID="{8C42EB5E-A368-4F89-AC7D-FA09E18EC5E4}" ShortID="239615542"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level4" ID="{3EDC654F-8CCE-4EC9-BE3A-B52A4F7A0A0F}"/>
+										<CustomState Name="" ID="{314B4052-88A4-4C07-BE48-C8A173D29BCF}" ShortID="140594056"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{BEDE7EC4-7F45-4916-A237-7FCF9DC6B88A}">
 									<PropertyList>
@@ -777,6 +806,35 @@
 									</CueList>
 								</MusicSegment>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="LevelsMusic" ID="{0B4E5561-B0A9-4F34-8BF0-EF84FA30A622}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Level1" ID="{92E2330C-F9B1-450B-9D21-17F26FF1693E}"/>
+										<CustomState Name="" ID="{9064B26E-E45B-4601-849F-90AB8286C548}" ShortID="62183249"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MenuMusic" ID="{072DBFA7-D0D4-4A46-BB43-741F851CBB60}"/>
+										<CustomState Name="" ID="{F0F38362-BCE7-43D3-874D-5C8254F342D0}" ShortID="407530129"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level3" ID="{38EB36FF-D6C2-4B03-97F8-A16A74398D78}"/>
+										<CustomState Name="" ID="{B994410F-778A-4A2B-8083-226BDDB2850F}" ShortID="189302639"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level2" ID="{E56F3720-088E-4E07-8D44-FDE8539C74CA}"/>
+										<CustomState Name="" ID="{D97908E5-23C9-47E3-8BC4-AC557E85FF01}" ShortID="48660287"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Level4" ID="{3EDC654F-8CCE-4EC9-BE3A-B52A4F7A0A0F}"/>
+										<CustomState Name="" ID="{3CAF6655-50A8-458F-972D-DA333A4E070A}" ShortID="268590109"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{9EB1B6F1-8F02-439D-8E5E-28BE7A718EB3}">
 									<PropertyList>
@@ -1591,6 +1649,35 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo MusicSyncType="2">
+								<StateGroupRef Name="LevelsMusic" ID="{0B4E5561-B0A9-4F34-8BF0-EF84FA30A622}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Level1" ID="{92E2330C-F9B1-450B-9D21-17F26FF1693E}"/>
+								<CustomState Name="" ID="{7615A34D-199F-4670-B713-4D61BA9420EC}" ShortID="22292459"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MenuMusic" ID="{072DBFA7-D0D4-4A46-BB43-741F851CBB60}"/>
+								<CustomState Name="" ID="{5AB026BD-2421-4CF6-A144-DBE4334B2AB6}" ShortID="995176343"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Level3" ID="{38EB36FF-D6C2-4B03-97F8-A16A74398D78}"/>
+								<CustomState Name="" ID="{AA590888-AC71-4732-9C64-BA39FF62D0AD}" ShortID="35588183"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Level2" ID="{E56F3720-088E-4E07-8D44-FDE8539C74CA}"/>
+								<CustomState Name="" ID="{F96CC6C1-BBB0-4EA6-94A3-2303C4FEB789}" ShortID="949739716"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Level4" ID="{3EDC654F-8CCE-4EC9-BE3A-B52A4F7A0A0F}"/>
+								<CustomState Name="" ID="{11300881-528F-4225-95F5-BE59146C9753}" ShortID="756075755"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{AD2D18B2-374B-41DA-8654-533A147BE534}">
 							<PropertyList>
@@ -1601,6 +1688,66 @@
 									<PropertyList>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{088FBDD3-D417-432B-A07F-AF9652F07BB0}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Level2Playlist" ID="{5202916E-0711-4CAA-9C92-B6126C5C336E}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Level1Playlist" ID="{7FAA1801-BD56-4686-B50A-B77FD504C7A7}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{55AE07E6-195C-4DAD-BC72-E3524276AF4F}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Level3Playlist" ID="{246B60B0-4EB4-416F-8CA0-FCBA4A5B7431}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Level2Playlist" ID="{5202916E-0711-4CAA-9C92-B6126C5C336E}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{DCD9F086-E8FD-4A0E-BE67-A3B93F997BA2}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Level4Playlist" ID="{A57D0016-BF93-401A-B981-C797827D51E3}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Level3Playlist" ID="{246B60B0-4EB4-416F-8CA0-FCBA4A5B7431}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{F85204ED-CCB0-4C81-BA53-098F6241DDEB}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Level1Playlist" ID="{7FAA1801-BD56-4686-B50A-B77FD504C7A7}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MenuPlaylist" ID="{1D5324E1-1A7A-4C3D-94F8-186036763CF7}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+										</Reference>
+									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
 							</ChildrenList>

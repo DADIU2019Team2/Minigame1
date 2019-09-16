@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_LEVEL4MUSIC = 3045698593U;
         static const AkUniqueID PLAY_LEVEL4MUSICLOOP = 839894203U;
         static const AkUniqueID PLAY_LEVEL4PLAYLIST = 4214098874U;
+        static const AkUniqueID PLAY_LEVELSMUSIC = 4191183084U;
         static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MENUPLAYLIST = 991286973U;
         static const AkUniqueID PLAY_METAL_IMPACT = 26906972U;
@@ -42,6 +43,11 @@ namespace AK
         static const AkUniqueID PLAY_WOOD_IMPACT2 = 864292832U;
         static const AkUniqueID SET_GAME_PARAMETER_MUSIC = 236152504U;
         static const AkUniqueID SET_GAME_PARAMETER_WORLD = 4138451597U;
+        static const AkUniqueID SET_STATE_LEVEL1 = 2773202283U;
+        static const AkUniqueID SET_STATE_LEVEL2 = 2773202280U;
+        static const AkUniqueID SET_STATE_LEVEL3 = 2773202281U;
+        static const AkUniqueID SET_STATE_LEVEL4 = 2773202286U;
+        static const AkUniqueID SET_STATE_MENUMUSIC = 156091490U;
     } // namespace EVENTS
 
     namespace STATES

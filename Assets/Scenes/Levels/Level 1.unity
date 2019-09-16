@@ -2949,6 +2949,8 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1805490851
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	26906972	Play_Metal_impact			\Default Work Unit\Play_Metal_impact	
+	156091490	Set_State_MenuMusic			\Default Work Unit\Set_State_MenuMusic	
 	190234274	Play_Phone			\Default Work Unit\Play_Phone	
 	236152504	Set_Game_Parameter_Music			\Default Work Unit\Set_Game_Parameter_Music	
 	565626987	Play_Level2music			\Default Work Unit\Play_Level2music	
@@ -19,6 +20,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2306258662	Play_Box_plastic_impact_2			\Default Work Unit\Play_Box_plastic_impact_2	
 	2424027906	Play_Glass_breaking			\Default Work Unit\Play_Glass_breaking	
 	2677003740	Play_Level2Playlist			\Default Work Unit\Play_Level2Playlist	
+	2773202280	Set_State_Level2			\Default Work Unit\Set_State_Level2	
+	2773202281	Set_State_Level3			\Default Work Unit\Set_State_Level3	
+	2773202283	Set_State_Level1			\Default Work Unit\Set_State_Level1	
+	2773202286	Set_State_Level4			\Default Work Unit\Set_State_Level4	
 	2776670769	Play_Couch_Impact			\Default Work Unit\Play_Couch_Impact	
 	3025114257	Play_Gravity_shift			\Default Work Unit\Play_Gravity_shift	
 	3045698593	Play_Level4music			\Default Work Unit\Play_Level4music	
@@ -26,6 +31,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3605952550	Play_Level1music			\Default Work Unit\Play_Level1music	
 	3939836301	Play_Monster_impact			\Default Work Unit\Play_Monster_impact	
 	4138451597	Set_Game_Parameter_World			\Default Work Unit\Set_Game_Parameter_World	
+	4191183084	Play_LevelsMusic			\Default Work Unit\Play_LevelsMusic	
 	4214098874	Play_Level4Playlist			\Default Work Unit\Play_Level4Playlist	
 	4262365201	Play_Seal			\Default Work Unit\Play_Seal	
 
