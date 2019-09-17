@@ -1138,10 +1138,10 @@ RectTransform:
   m_Father: {fileID: 7849561807578320960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 775, y: 325}
-  m_SizeDelta: {x: -1650, y: -750}
+  m_AnchoredPosition: {x: -125, y: -75}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7849561808231374498
 CanvasRenderer:
@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 67.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2493,9 +2493,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -699, y: -350}
-  m_SizeDelta: {x: -1398, y: -700}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 163, y: 100}
+  m_SizeDelta: {x: 326, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7261668677114626615
 CanvasRenderer:
@@ -2541,6 +2541,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7849561807886903149}
     m_Modifications:
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_Name
+      value: Transistion 0-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7353109017542729523, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2646,16 +2656,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_Name
-      value: Transistion 0-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d9e7416a2426264b98312c097da9fa9, type: 3}
 --- !u!224 &4097522276404536792 stripped
@@ -2671,6 +2671,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7849561807886903149}
     m_Modifications:
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_Name
+      value: Transistion 2-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7353109017542729523, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2776,16 +2786,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_Name
-      value: Transistion 2-3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4872067500208357420, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: textKey
@@ -2806,6 +2806,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7849561807886903149}
     m_Modifications:
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_Name
+      value: Transistion 3-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7353109017542729523, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2911,16 +2921,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_Name
-      value: Transistion 3-4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4872067500208357420, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: textKey
@@ -2941,6 +2941,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7849561807886903149}
     m_Modifications:
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_Name
+      value: Transistion 4-END
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7353109017542729523, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3046,16 +3056,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_Name
-      value: Transistion 4-END
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4872067500208357420, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: textKey
@@ -3076,6 +3076,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7849561807886903149}
     m_Modifications:
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_Name
+      value: Transistion 1-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7353109017542729523, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3180,16 +3190,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_Name
-      value: Transistion 1-2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115713415386900280, guid: 2d9e7416a2426264b98312c097da9fa9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4872067500208357420, guid: 2d9e7416a2426264b98312c097da9fa9,
         type: 3}
