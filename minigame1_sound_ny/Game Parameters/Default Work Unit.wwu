@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<GameParameter Name="Music" ID="{31B56D7E-1A6F-478C-A722-9B4F05B3525E}"/>
 				<GameParameter Name="World" ID="{DCFDD614-00A7-45C5-B784-BF570902D5E0}"/>
+				<GameParameter Name="Weight" ID="{07F6395E-53F0-4D7A-A915-5642E15AD7FD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

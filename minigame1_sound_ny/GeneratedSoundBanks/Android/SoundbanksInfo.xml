@@ -35,6 +35,8 @@
 				<Event Id="2048554185" Name="Play_Cardboard_impact" ObjectPath="\Events\Default Work Unit\Play_Cardboard_impact" DurationType="OneShot" DurationMin="0.990250" DurationMax="0.990250"/>
 				<Event Id="2776670769" Name="Play_Couch_Impact" ObjectPath="\Events\Default Work Unit\Play_Couch_Impact" DurationType="OneShot" DurationMin="0.427598" DurationMax="0.427598"/>
 				<Event Id="2072427939" Name="Play_Drum_collision" ObjectPath="\Events\Default Work Unit\Play_Drum_collision" DurationType="OneShot" DurationMin="0.750624" DurationMax="0.750624"/>
+				<Event Id="3093532607" Name="Play_FloatHumm" ObjectPath="\Events\Default Work Unit\Play_FloatHumm" DurationType="Infinite"/>
+				<Event Id="12272781" Name="Play_FloatHumNy" ObjectPath="\Events\Default Work Unit\Play_FloatHumNy" DurationType="Infinite"/>
 				<Event Id="785252386" Name="Play_Fridge_impact" ObjectPath="\Events\Default Work Unit\Play_Fridge_impact" DurationType="OneShot" DurationMin="0.615286" DurationMax="0.615286"/>
 				<Event Id="2424027906" Name="Play_Glass_breaking" ObjectPath="\Events\Default Work Unit\Play_Glass_breaking" DurationType="OneShot" DurationMin="2.957347" DurationMax="2.957347"/>
 				<Event Id="3025114257" Name="Play_Gravity_shift" ObjectPath="\Events\Default Work Unit\Play_Gravity_shift" DurationType="OneShot" DurationMin="3.745972" DurationMax="3.745972"/>
@@ -53,6 +55,7 @@
 				<Event Id="26906972" Name="Play_Metal_impact" ObjectPath="\Events\Default Work Unit\Play_Metal_impact" DurationType="OneShot" DurationMin="0.650000" DurationMax="0.650000"/>
 				<Event Id="1470122796" Name="Play_Monster_crawl_scrape1" ObjectPath="\Events\Default Work Unit\Play_Monster_crawl_scrape1" DurationType="OneShot" DurationMin="0.666803" DurationMax="0.666803"/>
 				<Event Id="3939836301" Name="Play_Monster_impact" ObjectPath="\Events\Default Work Unit\Play_Monster_impact" DurationType="OneShot" DurationMin="1.755011" DurationMax="1.755011"/>
+				<Event Id="1917955682" Name="Play_Object_Weight" ObjectPath="\Events\Default Work Unit\Play_Object_Weight" DurationType="Infinite"/>
 				<Event Id="190234274" Name="Play_Phone" ObjectPath="\Events\Default Work Unit\Play_Phone" DurationType="Infinite"/>
 				<Event Id="3255294874" Name="Play_Portal_enter_next_level" ObjectPath="\Events\Default Work Unit\Play_Portal_enter_next_level" DurationType="OneShot" DurationMin="2.565011" DurationMax="2.565011"/>
 				<Event Id="4262365201" Name="Play_Seal" ObjectPath="\Events\Default Work Unit\Play_Seal" DurationType="OneShot" DurationMin="2.250023" DurationMax="2.250023"/>
@@ -73,7 +76,7 @@
 			<IncludedMemoryFiles>
 				<File Id="19848566" Language="SFX">
 					<ShortName>Gravity shift.wav</ShortName>
-					<Path>SFX/Gravity shift_8B109CD5.wem</Path>
+					<Path>SFX/Gravity shift_10C4C929.wem</Path>
 				</File>
 				<File Id="39735643" Language="SFX">
 					<ShortName>Level32.wav</ShortName>
@@ -101,7 +104,7 @@
 				</File>
 				<File Id="124015959" Language="SFX">
 					<ShortName>Portal enter next level.wav</ShortName>
-					<Path>SFX/Portal enter next level_8B109CD5.wem</Path>
+					<Path>SFX/Portal enter next level_10C4C929.wem</Path>
 				</File>
 				<File Id="132828646" Language="SFX">
 					<ShortName>Level24.wav</ShortName>
@@ -187,13 +190,17 @@
 					<ShortName>Level11.wav</ShortName>
 					<Path>SFX/Level11_85C21AE7.wem</Path>
 				</File>
+				<File Id="907860063" Language="SFX">
+					<ShortName>CardboardBig2.wav</ShortName>
+					<Path>SFX/CardboardBig2_8B109CD5.wem</Path>
+				</File>
 				<File Id="916046832" Language="SFX">
 					<ShortName>Level31.wav</ShortName>
 					<Path>SFX/Level31_85C21AE7.wem</Path>
 				</File>
 				<File Id="921042868" Language="SFX">
 					<ShortName>Monster impact.wav</ShortName>
-					<Path>SFX/Monster impact_8B109CD5.wem</Path>
+					<Path>SFX/Monster impact_10C4C929.wem</Path>
 				</File>
 				<File Id="950294949" Language="SFX">
 					<ShortName>Level44.wav</ShortName>
@@ -207,6 +214,10 @@
 					<ShortName>Level42.wav</ShortName>
 					<Path>SFX/Level42_85C21AE7.wem</Path>
 				</File>
+				<File Id="965274044" Language="SFX">
+					<ShortName>LargeMetal2.wav</ShortName>
+					<Path>SFX/LargeMetal2_8B109CD5.wem</Path>
+				</File>
 				<File Id="968578251" Language="SFX">
 					<ShortName>Couch Impact.wav</ShortName>
 					<Path>SFX/Couch Impact_8B109CD5.wem</Path>
@@ -215,9 +226,21 @@
 					<ShortName>Level43.wav</ShortName>
 					<Path>SFX/Level43_85C21AE7.wem</Path>
 				</File>
+				<File Id="987276074" Language="SFX">
+					<ShortName>FloatHum.wav</ShortName>
+					<Path>SFX/FloatHum_D79FB2B7.wem</Path>
+				</File>
 				<File Id="1000857820" Language="SFX">
 					<ShortName>Monster crawl scrape1.wav</ShortName>
-					<Path>SFX/Monster crawl scrape1_8B109CD5.wem</Path>
+					<Path>SFX/Monster crawl scrape1_10C4C929.wem</Path>
+				</File>
+				<File Id="1007968715" Language="SFX">
+					<ShortName>CardboardSmall3.wav</ShortName>
+					<Path>SFX/CardboardSmall3_8B109CD5.wem</Path>
+				</File>
+				<File Id="1011301454" Language="SFX">
+					<ShortName>FloatHumm.wav</ShortName>
+					<Path>SFX/FloatHumm_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1037106992" Language="SFX">
 					<ShortName>Glass breaking.wav</ShortName>

@@ -708,13 +708,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="SetState" ID="{254D9E39-C15C-4E41-B8D7-FBF008FCAFE0}"/>
 				<Event Name="Play_LevelsMusic" ID="{0026BD54-338B-4609-80FF-E87359B95FDA}">
 					<ChildrenList>
 						<Action Name="" ID="{BBBE096D-4A5D-4DFE-8935-18B2CDE63756}" ShortID="1003550702">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="LevelsMusic" ID="{A45CE6C6-ECAE-42E6-98B7-C67E39102CB8}" WorkUnitID="{B275BE2C-211A-498B-AEB5-B3A279B58F59}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FloatHumm" ID="{78A45866-D77C-4C0B-AACA-D771663855A3}">
+					<ChildrenList>
+						<Action Name="" ID="{8B49000E-02F8-47A7-887E-FDC67C802489}" ShortID="588973051">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FloatHumm" ID="{165E2FD6-E580-4FB2-91A1-B93B2D68A0FA}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FloatHumNy" ID="{7C9CFF21-EF5C-44F7-97CA-4397B37AACC0}">
+					<ChildrenList>
+						<Action Name="" ID="{29DC6EB9-9CE3-4E36-B0C4-DCB1BCF8241D}" ShortID="26643733">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FloatHumNy" ID="{5FC67C81-FF89-41F7-8FD5-6A61BBEF18B5}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Object_Weight" ID="{467D696F-2591-43F0-B7A9-A09DAD4C9E6D}">
+					<ChildrenList>
+						<Action Name="" ID="{65E4668A-6F36-48EC-91C3-01AD00493AC1}" ShortID="403664649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Object Weight" ID="{CDEA8B38-6868-4DE7-9566-C301445E8DA2}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WoodBig" ID="{D6470308-03CE-4766-83AE-63A3BDE3962F}">
+					<ChildrenList>
+						<Action Name="" ID="{3FC6073E-C798-4829-BD7B-A45683D10413}" ShortID="714592368">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WoodBig" ID="{963BD3C8-40F7-4EDD-8872-8C7639A00F8B}" WorkUnitID="{BEB6C068-14C7-4147-840B-567D7D8043BB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

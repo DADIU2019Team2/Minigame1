@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b181f84be9bc744638c61cc912e1fb76, type: 3}
+  m_Name: 467D696F-2591-43F0-B7A9-A09DAD4C9E6D
+  m_EditorClassIdentifier: 
+  objectName: Play_Object_Weight
+  id: 1917955682
+  guid: 467D696F-2591-43F0-B7A9-A09DAD4C9E6D
